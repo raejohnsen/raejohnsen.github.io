@@ -1,0 +1,114 @@
+body{
+    background-image: url(imgs/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: left top;
+    text-align: left;
+    padding: 0px;
+    padding-top: 25px;
+}
+
+h2{
+   text-align: left;
+   padding-left: 25px;
+}
+
+.intro{
+    color: white;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 25ch;
+    padding-left: 25px;
+}
+
+img{
+    width: 450px;
+    padding: 10px;
+}
+
+.blurb{
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #00ffe1;
+    font-size: 20px;
+    padding-right: 25px;
+}
+
+p{
+    width: 50ch;
+    text-align: left;
+    font-size: 17px;
+    color: white;
+}
+
+.api{
+    font-family: 'Jubilat', serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 60px;
+    text-align: center;
+}
+
+.sub{
+    font-family: 'Jubilat', serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: goldenrod;
+}
+
+.end{
+    color: white;
+    width: 30ch;
+    text-align: left;
+    font-family: "neuzeit-grotesk", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 25px;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding-left: 0px;
+}
+
+.concrete{
+    color: #cf0000;
+    padding: 25px;
+    font-family: "futura-pt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+    text-align: justify;
+    width: 35ch;
+}
+
+.manifesto{
+    font-family: 'Courier', monospace;
+    font-style: bold;
+    color: black;
+    padding-left: 25px;
+    text-align: justify;
+    width: 40ch;
+}
+
+.dining{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+    width: 37ch;
+    color: #ffffff;
+    padding-left: 25px;
+    line-height: 1.25;
+    font-size: 18px;
+}
