@@ -1,0 +1,228 @@
+@media all and (min-width: 801px)
+{
+body{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 10px;
+    color: black;
+    overflow: hidden;
+    background-image: url(imgs/Vector.jpg);
+}
+
+h1{
+    font-family: "sarina";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 85px;
+    text-align: center;
+    text-shadow: #00c455 10px 0px,#00b0e6 20px 0px;
+    margin: 38px;
+}
+
+.about{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 7%;
+    padding-left: 0px;
+}
+
+.about:hover {
+    text-shadow: #ff8000 5px 2px,#00c455 10px 4px,#00b0e6 15px 6px;
+    transition: 0.5s ease;
+}
+
+.marquee {
+    font-family: "sarina";
+    font-weight: 400;
+    font-style: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    background: #ffffff;
+    color: #ff8000;
+    padding: 0px;
+    width: 100%;
+    height: fit-content;
+}
+
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 8s linear infinite;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}
+
+.page{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 90px;
+}
+
+.movie{
+    width: 33%;
+    height: 60px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+a{
+    font-family: "league-gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    letter-spacing: 2.5px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.fight:hover {
+    color: #ff6ecf;
+    transition: 0.25s ease;
+}
+
+.french:hover {
+    color: #00e2e6;
+    transition: 0.25s ease;
+}
+
+.window:hover {
+    color: #1836ae;
+    transition: 0.25s ease;
+}
+
+.suspiria:hover {
+    color: #d400ff;
+    transition: 0.25s ease;
+}
+
+.odyssey:hover {
+    color: navy;
+    transition: 0.25s ease;
+}
+}
+
+
+@media all and (max-width: 800px)
+{
+    body{
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 10px;
+        color: black;
+        overflow: hidden;
+        background-image: url(imgs/Vector.jpg);
+    }
+    
+    h1{
+        font-family: "sarina";
+        font-weight: 400;
+        font-style: normal;
+        font-size: 85px;
+        text-align: center;
+        text-shadow: #00c455 10px 0px,#00b0e6 20px 0px;
+        margin: 38px;
+    }
+    
+    .about{
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 7%;
+        padding-left: 0px;
+    }
+    
+    .about:hover {
+        text-shadow: #ff8000 5px 2px,#00c455 10px 4px,#00b0e6 15px 6px;
+        transition: 0.5s ease;
+    }
+    
+    .marquee {
+        font-family: "sarina";
+        font-weight: 400;
+        font-style: normal;
+        white-space: nowrap;
+        overflow: hidden;
+        position: relative;
+        background: #ffffff;
+        color: #ff8000;
+        padding: 0px;
+        width: 100%;
+        height: fit-content;
+    }
+    
+    .marquee span {
+        display: inline-block;
+        padding-left: 100%;
+        animation: marquee 8s linear infinite;
+    }
+    
+    @keyframes marquee {
+        0% { transform: translateX(0%); }
+        100% { transform: translateX(-100%); }
+    }
+    
+    .page{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+        margin: 90px;
+    }
+    
+    .movie{
+        width: 33%;
+        height: 60px;
+        box-sizing: border-box;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    a{
+        font-family: "league-gothic", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 40px;
+        letter-spacing: 2.5px;
+        color: black;
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    .fight:hover {
+        color: #ff6ecf;
+        transition: 0.25s ease;
+    }
+    
+    .french:hover {
+        color: #00e2e6;
+        transition: 0.25s ease;
+    }
+    
+    .window:hover {
+        color: #1836ae;
+        transition: 0.25s ease;
+    }
+    
+    .suspiria:hover {
+        color: #d400ff;
+        transition: 0.25s ease;
+    }
+    
+    .odyssey:hover {
+        color: navy;
+        transition: 0.25s ease;
+    }
+}
