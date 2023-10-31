@@ -110,6 +110,11 @@ a{
     color: navy;
     transition: 0.25s ease;
 }
+
+.hunter:hover {
+    color: grey;
+    transition: 0.25s ease;    
+}
 }
 
 
@@ -118,17 +123,18 @@ a{
     body{
         margin-left: 0px;
         margin-right: 0px;
-        margin-top: 10px;
-        color: black;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        color: rgb(255, 255, 255);
         overflow: hidden;
-        background-image: url(imgs/Vector.jpg);
+        background-image: url(imgs/narrow.jpg);
     }
     
     h1{
         font-family: "sarina";
         font-weight: 400;
         font-style: normal;
-        font-size: 85px;
+        font-size: 55px;
         text-align: center;
         text-shadow: #00c455 10px 0px,#00b0e6 20px 0px;
         margin: 38px;
@@ -155,7 +161,7 @@ a{
         white-space: nowrap;
         overflow: hidden;
         position: relative;
-        background: #ffffff;
+        background: #091b3c;
         color: #ff8000;
         padding: 0px;
         width: 100%;
@@ -175,19 +181,19 @@ a{
     
     .page{
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: column wrap;
         justify-content: center;
         align-content: center;
-        margin: 90px;
+        margin: 10px;
     }
     
     .movie{
-        width: 33%;
-        height: 60px;
+        width: 80%;
+        height: 80px;
         box-sizing: border-box;
         text-align: center;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
     }
     
     a{
@@ -196,33 +202,38 @@ a{
         font-style: normal;
         font-size: 40px;
         letter-spacing: 2.5px;
-        color: black;
+        color: #ffffff;
         text-decoration: none;
         text-align: center;
     }
     
-    .fight:hover {
+    .fight{
         color: #ff6ecf;
-        transition: 0.25s ease;
+        text-shadow: white 3px 2px;
     }
     
-    .french:hover {
+    .french{
         color: #00e2e6;
-        transition: 0.25s ease;
+        text-shadow: white 3px 2px;
     }
     
-    .window:hover {
+    .window{
         color: #1836ae;
-        transition: 0.25s ease;
+        text-shadow: white 3px 2px;
     }
     
-    .suspiria:hover {
+    .suspiria{
         color: #d400ff;
-        transition: 0.25s ease;
+        text-shadow: white 3px 2px;
     }
     
-    .odyssey:hover {
-        color: navy;
-        transition: 0.25s ease;
+    .odyssey{
+        color: #000000;
+        text-shadow: white 3px 2px;
+    }
+
+    .hunter{
+        color: grey;
+        text-shadow: white 3px 2px;
     }
 }

@@ -1,0 +1,120 @@
+
+@media all and (min-width: 801px){
+    body{
+        background-image: linear-gradient(to right, white, black);
+        background-size: 470% 100%;
+        margin-left: 20px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-right: 20px;
+        width: fit-content;
+        
+    }
+
+    h1{
+        font-family: "brim-narrow", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: left;
+        font-size: 70px;
+        padding: 40px;
+    }
+
+    .whole{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around; 
+        width: 100%;
+        height: 100%;
+        padding-top: 30px;
+    }
+
+    .title{
+        width: 30%;
+        height: 100%;
+    }
+   
+    .page{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: flex-end;
+        width: 350%;
+    }
+    
+    source{
+        height: 20%;
+        align-items: center;
+    }
+
+    .videocontainer:hover .overlay {
+        display:block;
+        opacity: 0.75;
+        transition: 0.5s ease;
+    }
+
+    .videocontainer{
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .overlay{
+        background-color: black;
+        width: 100%;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .text{
+        font-family: "bookmania";
+        font-size: 30px;
+        font-weight: 600;
+        font-style: normal;        
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: justify;
+    }
+
+    .back{
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 7%;
+        padding-left: 0px;
+        font-family: "league-gothic";
+        font-weight: 400;
+        font-style: normal;
+        font-size: 40px;
+        letter-spacing: 2.5px;
+        color: #ffffff;
+        text-decoration: none;
+        text-align: center;
+        -webkit-transform: translate(-2000%, 650%);
+        transform: translate(-2000%, 650%);
+    }
+
+    .back:hover {
+        text-shadow: #ff8000 5px 2px,#00c455 10px 4px,#00b0e6 15px 6px;
+        transition: 0.5s ease;
+    }
+}
+
+@media all and (max-width: 800px){
+
+}
