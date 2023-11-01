@@ -70,7 +70,7 @@ h1{
     width: 33%;
     height: 60px;
     box-sizing: border-box;
-    text-align: center;
+    text-align: left;
     display: flex;
     justify-content: space-around;
 }
@@ -111,6 +111,9 @@ a{
     transition: 0.25s ease;
 }
 
+.hunter{
+    text-align: left;
+}
 .hunter:hover {
     color: grey;
     transition: 0.25s ease;    
