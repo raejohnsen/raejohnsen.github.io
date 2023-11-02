@@ -2,7 +2,7 @@
 @media all and (min-width: 801px){
     body{
         background-image: linear-gradient(to right, white, black);
-        background-size: 470% 100%;
+        background-size: 530% 100%;
         margin-left: 20px;
         margin-top: 0px;
         margin-bottom: 0px;
@@ -116,5 +116,128 @@
 }
 
 @media all and (max-width: 800px){
+    body{
+        background-image: linear-gradient(to right, white, black);
+        background-size: 1245% 100%;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-right: 20px;
+        width: fit-content;
+    }
 
+    h1{
+        font-family: "brim-narrow", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: left;
+        font-size: 40px;
+        padding: 20px;
+    }
+
+    .whole{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around; 
+        width: 100%;
+        height: 80%;
+        padding-top: 30px;
+    }
+
+    .title{
+        width: 30%;
+        height: 100%;
+        vertical-align: bottom;
+    }
+   
+    .page{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: flex-end;
+        width: 350%;
+    }
+    
+    source{
+        height: 100%;
+        align-items: center;
+    }
+
+    .videocontainer{
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .overlay{
+        width: 100%;
+        opacity: 1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+        align-items: baseline;
+    }
+
+    .text{
+        font-family: "bookmania";
+        font-size: 17px;
+        font-weight: 600;
+        font-style: normal;        
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-180%, -0%);
+        -ms-transform: translate(-180%, -0%);
+        transform: translate(-180%, -0%);
+        text-align: justify;
+        width: 300px;
+    }
+
+    .texttwo{
+        font-family: "bookmania";
+        font-size: 17px;
+        font-weight: 600;
+        font-style: normal;        
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-180%, -0%);
+        -ms-transform: translate(-180%, -0%);
+        transform: translate(-180%, -0%);
+        text-align: justify;
+        width: 300px;        
+        -webkit-transform: translate(-180%, 75%);
+        -ms-transform: translate(-180%, 75%);
+        transform: translate(-180%, 75%);
+    }
+
+    .back{
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 7%;
+        padding-left: 0px;
+        font-family: "league-gothic";
+        font-weight: 400;
+        font-style: normal;
+        font-size: 40px;
+        letter-spacing: 2.5px;
+        color: #ffffff;
+        text-decoration: none;
+        text-align: center;
+        -webkit-transform: translate(-2000%, 650%);
+        transform: translate(-2000%, 650%);
+        text-shadow: #ff8000 5px 2px,#00c455 10px 4px,#00b0e6 15px 6px;
+        float: left;
+    }
 }
