@@ -1,0 +1,208 @@
+@media all and (min-width: 801px){
+  body {
+      background-color:  #ffffff;
+      height: fit-content;
+    }
+
+  h1{
+    color: #004021;
+    text-align: center;
+    font-size: 50px;
+    font-family: "lores-9-wide", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+    
+  .whole {
+      display:  flex;
+      flex-direction:  row;
+      justify-content: space-around;
+      align-items:  center;
+      height: 70%;
+    }
+
+  img{
+      width: 100%;
+    }
+
+  .redtext{
+    width: 40%;
+    text-align: center;
+    -webkit-transform: translate(75%, 0%);
+    transform: translate(75%, 0%);
+    font-family: "lores-12-narrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    opacity: 0;
+    color: black;
+  }
+
+  .bluetext{
+    width: 40%;
+    text-align: center;
+    -webkit-transform: translate(75%, -120%);
+    transform: translate(75%, -120%);
+    font-family: "lores-12-narrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    opacity: 0;
+    color: black;
+  }
+
+.texts{
+  width: 100%;
+  display: flex;
+}
+  
+.redpill {
+      text-align:  center;
+      transition:  all 100ms;
+      width: 15%;
+      padding-top: 80px;
+      padding-bottom: 130px;
+    }
+
+.redlight {
+      background-color: #ff0000;
+    }
+
+.bluelight {
+      background-color: #0022e4;
+    }
+
+.bluepill {
+      text-align:  center;
+      transition:  all 100ms;
+      width: 15%;
+      padding-top: 80px;
+      padding-bottom: 130px;
+    }
+    
+.back{
+      text-align: center;
+      display: block;
+      font-family: "league-gothic";
+      font-weight: 400;
+      font-style: normal;
+      font-size: 40px;
+      letter-spacing: 2.5px;
+      color: #000000;
+      text-decoration: none;
+      padding-bottom: 15px;
+      -webkit-transform: translate(0px, -80px);
+      transform: translate(0px, -80px);
+  }
+
+.back:hover {
+      text-shadow: #ff8000 5px 2px,#00c455 10px 4px,#00b0e6 15px 6px;
+      transition: 0.5s ease;
+  }
+}
+
+@media all and (max-width: 800px){
+  body {
+    background-color:  #ffffff;
+    height: fit-content;
+  }
+
+h1{
+  color: #004021;
+  text-align: center;
+  font-size: 40px;
+  font-family: "lores-9-wide", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 50px;
+}
+
+.title{
+  align-content: center;
+}
+
+.whole {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 20%;
+  }
+
+img{
+  width: 100%;
+  }
+
+.redtext{
+  width: 75%;
+  text-align: justify;
+  -webkit-transform: translate(20%, 0%);
+  transform: translate(20%, 0%);
+  font-family: "lores-12-narrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  opacity: 0;
+  color: #ffffff;
+  margin: 0px;
+}
+
+.bluetext{
+  width: 75%;
+  text-align: justify;
+  -webkit-transform: translate(17%, -120%);
+  transform: translate(17%, -120%);
+  font-family: "lores-12-narrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  opacity: 0;
+  color: #ffffff;
+  margin: 0px;
+}
+
+.texts{
+width: 100%;
+display: flex;
+}
+
+.redpill {
+    text-align:  center;
+    transition:  all 100ms;
+    width: 30%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  
+.redlight {
+    background-color: #ff0000;
+    opacity: 1;
+    transition: 0.25s ease;
+  }
+
+.bluelight {
+    background-color: #0022e4;
+    opacity: 1;
+    transition: 0.25s ease;
+  }
+
+.bluepill {
+    text-align:  center;
+    transition:  all 100ms;
+    width: 30%;
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+
+.back{
+    float: left;
+    display: block;
+    font-family: "league-gothic";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    letter-spacing: 2.5px;
+    color: #000000;
+    text-decoration: none;
+    margin-bottom: 15px;
+    text-shadow: #ff8000 5px 2px,#00c455 10px 4px,#00b0e6 15px 6px;
+    -webkit-transform: translate(0%, -350%);
+    transform: translate(0%, -350%);
+}
+}
