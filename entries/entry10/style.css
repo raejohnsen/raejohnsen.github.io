@@ -2,9 +2,18 @@
   body {
       background-color:  #ffffff;
       height: fit-content;
+      color: black;
+      font-family: "lores-12-narrow", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      transition: 90ms ease;
     }
 
-  h1{
+  .title{
+    margin-bottom: 150px;
+  }
+  
+    h1{
     color: #004021;
     text-align: center;
     font-size: 50px;
@@ -23,44 +32,20 @@
 
   img{
       width: 100%;
+      padding-bottom: 50px;
     }
 
-  .redtext{
-    width: 40%;
-    text-align: center;
-    -webkit-transform: translate(75%, 0%);
-    transform: translate(75%, 0%);
-    font-family: "lores-12-narrow", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    opacity: 0;
-    color: black;
-  }
-
-  .bluetext{
-    width: 40%;
-    text-align: center;
-    -webkit-transform: translate(75%, -120%);
-    transform: translate(75%, -120%);
-    font-family: "lores-12-narrow", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    opacity: 0;
-    color: black;
-  }
-
-.texts{
-  width: 100%;
-  display: flex;
+.wrapperred{
+  width: 30%;
+  color: #ffffff;
+  text-align: justify;
 }
-  
-.redpill {
-      text-align:  center;
-      transition:  all 100ms;
-      width: 15%;
-      padding-top: 80px;
-      padding-bottom: 130px;
-    }
+
+.wrapperblue{
+  width: 30%;
+  color: #ffffff;
+  text-align: justify;
+}
 
 .redlight {
       background-color: #ff0000;
@@ -68,14 +53,6 @@
 
 .bluelight {
       background-color: #0022e4;
-    }
-
-.bluepill {
-      text-align:  center;
-      transition:  all 100ms;
-      width: 15%;
-      padding-top: 80px;
-      padding-bottom: 130px;
     }
     
 .back{
@@ -89,13 +66,13 @@
       color: #000000;
       text-decoration: none;
       padding-bottom: 15px;
-      -webkit-transform: translate(0px, -80px);
-      transform: translate(0px, -80px);
+      -webkit-transform: translate(0px, 150px);
+      transform: translate(0px, 150px);
   }
 
 .back:hover {
       text-shadow: #ff8000 5px 2px,#00c455 10px 4px,#00b0e6 15px 6px;
-      transition: 0.5s ease;
+      transition: 90ms ease;
   }
 }
 
@@ -103,6 +80,9 @@
   body {
     background-color:  #ffffff;
     height: fit-content;
+    font-family: "lores-12-narrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
 
 h1{
@@ -127,47 +107,22 @@ h1{
   height: 20%;
   }
 
+.wrapperred{
+    width: 50%;
+    color: #ffffff;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+  
+.wrapperblue{
+    width: 50%;
+    color: #ffffff;
+    text-align: justify;
+}
+
 img{
   width: 100%;
-  }
-
-.redtext{
-  width: 75%;
-  text-align: justify;
-  -webkit-transform: translate(20%, 0%);
-  transform: translate(20%, 0%);
-  font-family: "lores-12-narrow", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  opacity: 0;
-  color: #ffffff;
-  margin: 0px;
-}
-
-.bluetext{
-  width: 75%;
-  text-align: justify;
-  -webkit-transform: translate(17%, -120%);
-  transform: translate(17%, -120%);
-  font-family: "lores-12-narrow", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  opacity: 0;
-  color: #ffffff;
-  margin: 0px;
-}
-
-.texts{
-width: 100%;
-display: flex;
-}
-
-.redpill {
-    text-align:  center;
-    transition:  all 100ms;
-    width: 30%;
-    padding-top: 0px;
-    padding-bottom: 0px;
+  margin-bottom: 25px;
   }
   
 .redlight {
@@ -182,27 +137,19 @@ display: flex;
     transition: 0.25s ease;
   }
 
-.bluepill {
-    text-align:  center;
-    transition:  all 100ms;
-    width: 30%;
-    margin-top: 80px;
-    margin-bottom: 40px;
-  }
-
 .back{
-    float: left;
-    display: block;
-    font-family: "league-gothic";
-    font-weight: 400;
-    font-style: normal;
-    font-size: 40px;
-    letter-spacing: 2.5px;
-    color: #000000;
-    text-decoration: none;
-    margin-bottom: 15px;
-    text-shadow: #ff8000 5px 2px,#00c455 10px 4px,#00b0e6 15px 6px;
-    -webkit-transform: translate(0%, -350%);
-    transform: translate(0%, -350%);
+  text-align: center;
+  display: block;
+  font-family: "league-gothic";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  letter-spacing: 2.5px;
+  color: #000000;
+  text-decoration: none;
+  padding-bottom: 15px;
+  -webkit-transform: translate(0px, 150px);
+  transform: translate(0px, 150px);
+  text-shadow: #ff8000 5px 2px,#00c455 10px 4px,#00b0e6 15px 6px;
 }
 }
