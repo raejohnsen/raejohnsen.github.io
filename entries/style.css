@@ -99,28 +99,54 @@ a{
 }
 
 .fight:hover {
-    color: #ff6ecf;
-    transition: 0.25s ease;
+    color: #ffdef4;
+    transition: 90ms ease;
+    text-shadow:
+    0 0 5px #ff78d2,
+    0 0 10px #ff60ca,
+    0 0 15px #ff3cbe,
+    0 0 20px #ff1fb4;
 }
 
 .french:hover {
-    color: #00e2e6;
-    transition: 0.25s ease;
+    color: #fffcee;
+    transition: 90ms ease;
+    text-shadow:
+    0 0 5px #ffeaaf,
+    0 0 10px #ffd76a,
+    0 0 15px #ffc831,
+    0 0 20px #ffbb00;
+
 }
 
 .window:hover {
-    color: #1836ae;
-    transition: 0.25s ease;
+    color: #e4ffff;
+    transition: 90ms ease;
+    text-shadow:
+    0 0 5px #89fdff,
+    0 0 10px #36fcff,
+    0 0 15px #00e2e6,
+    0 0 20px #00bec1;
 }
 
 .suspiria:hover {
-    color: #d400ff;
-    transition: 0.25s ease;
+    color: #f8d6ff;
+    transition: 90ms ease;
+    text-shadow:
+    0 0 5px #ef9eff,
+    0 0 10px #e252ff,
+    0 0 15px #d400ff,
+    0 0 20px #ad00d0;
 }
 
 .odyssey:hover {
-    color: navy;
-    transition: 0.25s ease;
+    color: #e8e8ff;
+    transition: 90ms ease;
+    text-shadow:
+    0 0 5px #4141e8,
+    0 0 10px #0d0dcf,
+    0 0 15px navy,
+    0 0 20px #000061;
 }
 
 .hunter{
@@ -130,8 +156,13 @@ a{
 }
 
 .hunter:hover {
-    color: grey;
-    transition: 0.25s ease;    
+    color: #ededed;
+    transition: 90ms ease;    
+    text-shadow:
+    0 0 5px #9e9e9e,
+    0 0 10px #7c7c7c,
+    0 0 15px #525252,
+    0 0 20px #313131;
 }
 
 .antoinette{
@@ -140,23 +171,43 @@ a{
 }
 
 .antoinette:hover {
-    color: #ffbefd;
-    transition: 0.25s ease;
+    color: #fff6ff;
+    transition: 90ms ease;
+    text-shadow:
+    0 0 5px #ffdbfe,
+    0 0 10px #ffcffd,
+    0 0 15px #ffaefc,
+    0 0 20px #ff83fb;
 }
 
 .interstellar:hover {
-    color: #2f0087;
-    transition: 0.25s ease;
+    color: #ede4ff;
+    transition: 90ms ease;
+    text-shadow:
+    0 0 5px #884df5,
+    0 0 10px #5f1ed6,
+    0 0 15px #3b03a2,
+    0 0 20px #220060;
 }
 
 .matrix:hover {
-    color: #00643c;
-    transition: 0.25s ease;
+    color: #cdffeb;
+    transition: 90ms ease;
+    text-shadow:
+    0 0 5px #1ff29e,
+    0 0 10px #19ab70,
+    0 0 15px #00643c,
+    0 0 20px #003d25;
 }
 
 .conclusion:hover {
-    color: #3b3b3b;
-    transition: 0.25s ease;
+    color: #ececec;
+    transition: 90ms ease;
+    text-shadow:
+    0 0 5px #a3a3a3,
+    0 0 10px #797979,
+    0 0 15px #3b3b3b,
+    0 0 20px #1d1d1d;
 }
 }
 
