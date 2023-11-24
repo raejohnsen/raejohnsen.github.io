@@ -1,5 +1,21 @@
-.back{
+@media all and (min-width: 801px) {
+.gpt{
+    text-align: left;
+    color: #009b6d;
+}
+
+.me{
+    text-align: right;
+    color: #ff2d96;
+}
+
+.meta{
     text-align: center;
+    color: black;
+}
+
+.back{
+    text-align: right;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -18,4 +34,45 @@
 .back:hover {
     text-shadow: #ff8000 5px 2px,#00c455 10px 4px,#00b0e6 15px 6px;
     transition: 0.5s ease;
+}
+}
+
+@media all and (max-width: 800px) {
+    body{
+        background-color: #0b2244;
+        color: white;
+    }
+    
+    .gpt{
+        text-align: left;
+        color: #00af58;
+    }
+    
+    .me{
+        text-align: right;
+        color: #ee6b00;
+    }
+    
+    .meta{
+        text-align: center;
+        color: #00bbff;
+    }
+    
+    .back{
+        text-align: right;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 7%;
+        padding-left: 0px;
+        font-family: "league-gothic", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 40px;
+        letter-spacing: 2.5px;
+        color: black;
+        text-decoration: none;
+        text-align: center;
+        text-shadow: #ff8000 5px 2px,#00c455 10px 4px,#00b0e6 15px 6px;
+    }
 }

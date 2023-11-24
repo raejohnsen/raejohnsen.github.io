@@ -1,3 +1,4 @@
+@media all and (min-width: 801px) {
 body{
     background-color: #000000;
     padding-left: 0px;
@@ -13,6 +14,7 @@ body{
     float: right;
     padding-left: 30px;
     padding-right: 0px;
+    margin: 15px;
 }
 
 .centerimage{
@@ -28,8 +30,13 @@ body{
 .image:hover{opacity:1}
 .centerimage:hover{opacity:1}
 
+.RW{
+    width: 32%;
+    float: right;
+}
+
 h1{
-    text-align: left;
+    text-align: right;
     font-family: "doublebass", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -37,6 +44,7 @@ h1{
     padding-top: 0px;
     margin-top: 0px;
     color: #00e1ff;
+    line-height: 55px;
 }
 
 h2{
@@ -46,6 +54,7 @@ h2{
     font-variation-settings: "wght" 400;
     padding-bottom: 0px;
     margin-bottom: 0px;
+    width: 40%;
 }
 
 h3{
@@ -72,9 +81,10 @@ p{
 }
 
 .jeff{
-    width: 900px;
+    width: 65%;
     float: left;
-    padding-right: 25px;
+    margin-right: 25px;
+    margin-bottom: 20px;
 }
 
 .back{
@@ -97,4 +107,109 @@ p{
 .back:hover {
     text-shadow: #ff8000 5px 2px,#00c455 10px 4px,#00b0e6 15px 6px;
     transition: 0.5s ease;
+}
+}
+
+@media all and (max-width: 800px) {
+    body{
+        background-color: #000000;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+        color: white;
+    }
+    
+    .image{
+        opacity:1;
+        width: 90%;
+        height: auto;
+        margin: 10px;
+    }
+    
+    .centerimage{
+        opacity:0;
+        width: 500px;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 25px;
+    }
+    
+    .image:hover{opacity:1}
+    .centerimage:hover{opacity:1}
+    
+    .RW{
+        margin-left: 15px;
+    }
+
+    h1{
+        text-align: left;
+        font-family: "doublebass", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 35px;
+        padding-top: 0px;
+        margin-top: 0px;
+        color: #00e1ff;
+        width: 60%;
+        line-height: 50px;
+    }
+    
+    h2{
+        font-size: 25px;
+        text-align: left;
+        font-family: "halyard-display-variable", sans-serif;
+        font-variation-settings: "wght" 400;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        width: 60%;
+    }
+    
+    h3{
+        font-family: "halyard-display-variable", sans-serif;
+        font-variation-settings: "wght" 400;
+        text-align: right;
+        width: 300px;
+        float: right;
+        padding-right: 25px;
+    }
+    
+    p{
+        font-family: "niveau-grotesk"; 
+        font-weight: 500;
+        font-style: normal;
+        font-size: 16px;
+        padding-left: 20px;
+        margin-right: 0px;
+        width: 50%;
+    }
+    
+    .title{
+        padding-left: 15px;
+    }
+    
+    .jeff{
+        width: 100%;
+        float: left;
+        padding-right: 0px;
+    }
+    
+    .back{
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 7%;
+        padding-left: 0px;
+        font-family: "league-gothic", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 40px;
+        letter-spacing: 2.5px;
+        color: #ffffff;
+        text-decoration: none;
+        text-align: center;
+        text-shadow: #ff8000 5px 2px,#00c455 10px 4px,#00b0e6 15px 6px;
+    }
 }
