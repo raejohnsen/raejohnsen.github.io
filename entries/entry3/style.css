@@ -267,6 +267,11 @@ h1{
         font-size: 17px;
     }
     
+    .background{
+        width: 100%;
+        height: fit-content;
+    }
+
     .back{
         text-align: center;
         display: block;

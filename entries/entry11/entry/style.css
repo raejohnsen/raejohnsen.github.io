@@ -1,0 +1,132 @@
+@media all and (min-width: 601px) {
+    body{
+        background-color: #090909;
+        color: whitesmoke;
+        overflow: hidden;
+    }
+
+    .wrapper {
+        position: absolute;
+        /* top: 100%;
+        left: 50%; */
+        width: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
+        text-align: center;
+        animation: 40s credits linear infinite;
+        transition: 0.5s ease;
+    }
+
+    .credits {
+        margin-bottom: 0px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .words{
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        font-size: 40px;
+        overflow: wrap;
+        font-family: "league-gothic", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .italic{
+        font-family: league-gothic, sans-serif;
+        font-weight: 400;
+        font-style: italic;
+    }
+
+    @keyframes credits {
+        0% { transform: translateY(45%); }
+      100% { transform: translateY(-100%); }
+    }
+
+    .back{
+        text-align: center;
+        display: block;
+        font-family: "league-gothic";
+        font-weight: 400;
+        font-style: normal;
+        font-size: 40px;
+        letter-spacing: 2.5px;
+        color: #ffffff;
+        text-decoration: none;
+        padding-bottom: 15px;
+        -webkit-transform: translate(-42%, 1000%);
+        transform: translate(-42%, 1000%);
+    }
+
+    .back:hover {
+        text-shadow: #ff8000 5px 2px,#00c455 10px 4px,#00b0e6 15px 6px;
+        transition: 0.5s ease;
+    }
+}
+
+@media all and (max-width: 600px) {
+    body{
+        background-color: whitesmoke;
+        color: #090909;
+        overflow: hidden;
+    }
+
+    .wrapper {
+        position: absolute;
+        /* top: 100%;
+        left: 50%; */
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: center;
+        animation: 40s credits linear infinite;
+        transition: 0.5s ease;
+    }
+
+    .credits {
+        margin-bottom: 0px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .words{
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        font-size: 40px;
+        overflow: wrap;
+        font-family: "league-gothic", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        /* letter-spacing: loose; */
+    }
+
+    .italic{
+        font-family: league-gothic, sans-serif;
+        font-weight: 400;
+        font-style: italic;
+    }
+
+    @keyframes credits {
+        0% { transform: translateY(31%); }
+      100% { transform: translateY(-100%); }
+    }
+
+    .back{
+        text-align: center;
+        display: block;
+        font-family: "league-gothic";
+        font-weight: 400;
+        font-style: normal;
+        font-size: 40px;
+        letter-spacing: 2.5px;
+        color: #ffffff;
+        text-decoration: none;
+        padding-bottom: 15px;
+        -webkit-transform: translate(0px, 630px);
+        transform: translate(0px, 630px);
+        text-shadow: #ff8000 5px 2px,#00c455 10px 4px,#00b0e6 15px 6px;
+    }
+}
