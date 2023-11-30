@@ -1,4 +1,4 @@
-@media all and (min-width: 801px){
+@media all and (min-width: 1176px){
 body{
     margin-left: 0px;
     margin-right: 0px;
@@ -6,8 +6,10 @@ body{
     color: black;
     overflow: hidden;
     background-image: url(imgs/Vector.jpg);
-    background-size: fixed, 102%;
-    background-position: left absolute;
+    background-size: 100% 106%;
+    height: fit-content;
+    /* background-position: left absolute; */
+    cursor: url('imgs/cursor.png'), auto;
 }
 
 h1{
@@ -35,6 +37,7 @@ h1{
     margin-right: auto;
     width: 7%;
     padding-left: 0px;
+    cursor: url('imgs/cursor.png'), auto;
 }
 
 .about:hover {
@@ -85,6 +88,8 @@ h1{
     text-align: left;
     display: flex;
     justify-content: space-around;
+    /* padding-left: 5%;
+    padding-right: 5%; */
 }
 
 a{
@@ -96,6 +101,7 @@ a{
     color: black;
     text-decoration: none;
     text-align: center;
+    cursor: url('imgs/cursor.png'), auto;
 }
 
 .fight:hover {
@@ -106,6 +112,7 @@ a{
     0 0 10px #ff60ca,
     0 0 15px #ff3cbe,
     0 0 20px #ff1fb4;
+    cursor: url('imgs/cursor.png'), auto;
 }
 
 .french:hover {
@@ -116,7 +123,7 @@ a{
     0 0 10px #ffd76a,
     0 0 15px #ffc831,
     0 0 20px #ffbb00;
-
+    cursor: url('imgs/cursor.png'), auto;
 }
 
 .window:hover {
@@ -127,6 +134,7 @@ a{
     0 0 10px #36fcff,
     0 0 15px #00e2e6,
     0 0 20px #00bec1;
+    cursor: url('imgs/cursor.png'), auto;
 }
 
 .suspiria:hover {
@@ -137,6 +145,7 @@ a{
     0 0 10px #e252ff,
     0 0 15px #d400ff,
     0 0 20px #ad00d0;
+    cursor: url('imgs/cursor.png'), auto;
 }
 
 .odyssey:hover {
@@ -147,6 +156,7 @@ a{
     0 0 10px #0d0dcf,
     0 0 15px navy,
     0 0 20px #000061;
+    cursor: url('imgs/cursor.png'), auto;
 }
 
 .hunter{
@@ -163,6 +173,7 @@ a{
     0 0 10px #7c7c7c,
     0 0 15px #525252,
     0 0 20px #313131;
+    cursor: url('imgs/cursor.png'), auto;
 }
 
 .antoinette{
@@ -178,6 +189,7 @@ a{
     0 0 10px #ffcffd,
     0 0 15px #ffaefc,
     0 0 20px #ff83fb;
+    cursor: url('imgs/cursor.png'), auto;
 }
 
 .interstellar:hover {
@@ -188,6 +200,7 @@ a{
     0 0 10px #5f1ed6,
     0 0 15px #3b03a2,
     0 0 20px #220060;
+    cursor: url('imgs/cursor.png'), auto;
 }
 
 .matrix:hover {
@@ -198,6 +211,7 @@ a{
     0 0 10px #19ab70,
     0 0 15px #00643c,
     0 0 20px #003d25;
+    cursor: url('imgs/cursor.png'), auto;
 }
 
 .conclusion:hover {
@@ -208,31 +222,40 @@ a{
     0 0 10px #797979,
     0 0 15px #3b3b3b,
     0 0 20px #1d1d1d;
+    cursor: url('imgs/cursor.png'), auto;
 }
 }
 
-
-@media all and (max-width: 800px){
+@media all and (max-width: 1175px) and (min-width: 1001px){
     body{
         margin-left: 0px;
         margin-right: 0px;
-        margin-top: 0px;
-        margin-bottom: 20px;
-        color: #ffffff;
+        margin-top: 10px;
+        color: black;
         overflow: hidden;
-        background-image: url(imgs/narrow.jpg);
-        background-size: 100% 132.5%;
+        background-image: url(imgs/Vector.jpg);
+        background-size: 100% 106.5%;
         height: fit-content;
+        /* background-position: left absolute; */
+        cursor: url('imgs/cursor.png'), auto;
     }
     
     h1{
         font-family: "sarina";
         font-weight: 400;
         font-style: normal;
-        font-size: 55px;
+        font-size: 85px;
         text-align: center;
-        text-shadow: #00c455 10px 0px,#00b0e6 20px 0px;
         margin: 38px;
+        text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 15px #00c455,
+        0 0 20px #00c455,
+        0 0 30px #0087b0,
+        0 0 40px #0087b0,
+        0 0 50px #00b0e6,
+        0 0 55px #00b0e6;
     }
     
     .about{
@@ -242,8 +265,7 @@ a{
         margin-right: auto;
         width: 7%;
         padding-left: 0px;
-        -webkit-transform: translateY(15px);
-        transform: translateY(15px);
+        cursor: url('imgs/cursor.png'), auto;
     }
     
     .about:hover {
@@ -258,7 +280,237 @@ a{
         white-space: nowrap;
         overflow: hidden;
         position: relative;
-        background: #091b3c;
+        background: #ffffff;
+        color: #ff972f;
+        padding: 0px;
+        width: 100%;
+        height: fit-content;
+    }
+    
+    .marquee span {
+        display: inline-block;
+        padding-left: 100%;
+        animation: marquee 8s linear infinite;
+    }
+    
+    @keyframes marquee {
+        0% { transform: translateX(0%); }
+        100% { transform: translateX(-100%); }
+    }
+    
+    .page{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+        margin: 90px;
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+    }
+    
+    .movie{
+        width: 33%;
+        height: 63px;
+        box-sizing: border-box;
+        text-align: left;
+        display: flex;
+        justify-content: space-around;
+        /* padding-left: 5%;
+        padding-right: 5%; */
+    }
+    
+    a{
+        font-family: "league-gothic", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 35px;
+        letter-spacing: 1.5px;
+        color: black;
+        text-decoration: none;
+        text-align: center;
+        cursor: url('imgs/cursor.png'), auto;
+    }
+    
+    .fight:hover {
+        color: #ffdef4;
+        transition: 90ms ease;
+        text-shadow:
+        0 0 5px #ff78d2,
+        0 0 10px #ff60ca,
+        0 0 15px #ff3cbe,
+        0 0 20px #ff1fb4;
+        cursor: url('imgs/cursor.png'), auto;
+    }
+    
+    .french:hover {
+        color: #fffcee;
+        transition: 90ms ease;
+        text-shadow:
+        0 0 5px #ffeaaf,
+        0 0 10px #ffd76a,
+        0 0 15px #ffc831,
+        0 0 20px #ffbb00;
+        cursor: url('imgs/cursor.png'), auto;
+    }
+    
+    .window:hover {
+        color: #e4ffff;
+        transition: 90ms ease;
+        text-shadow:
+        0 0 5px #89fdff,
+        0 0 10px #36fcff,
+        0 0 15px #00e2e6,
+        0 0 20px #00bec1;
+        cursor: url('imgs/cursor.png'), auto;
+    }
+    
+    .suspiria:hover {
+        color: #f8d6ff;
+        transition: 90ms ease;
+        text-shadow:
+        0 0 5px #ef9eff,
+        0 0 10px #e252ff,
+        0 0 15px #d400ff,
+        0 0 20px #ad00d0;
+        cursor: url('imgs/cursor.png'), auto;
+    }
+    
+    .odyssey:hover {
+        color: #e8e8ff;
+        transition: 90ms ease;
+        text-shadow:
+        0 0 5px #4141e8,
+        0 0 10px #0d0dcf,
+        0 0 15px navy,
+        0 0 20px #000061;
+        cursor: url('imgs/cursor.png'), auto;
+    }
+    
+    .hunter{
+        text-align: left;
+        transform: translateX(-30px);
+        -webkit-transform: translateX(-30px);
+    }
+    
+    .hunter:hover {
+        color: #ededed;
+        transition: 90ms ease;    
+        text-shadow:
+        0 0 5px #9e9e9e,
+        0 0 10px #7c7c7c,
+        0 0 15px #525252,
+        0 0 20px #313131;
+        cursor: url('imgs/cursor.png'), auto;
+    }
+    
+    .antoinette{
+        transform: translateX(20px);
+        -webkit-transform: translateX(20px);
+    }
+    
+    .antoinette:hover {
+        color: #fff6ff;
+        transition: 90ms ease;
+        text-shadow:
+        0 0 5px #ffdbfe,
+        0 0 10px #ffcffd,
+        0 0 15px #ffaefc,
+        0 0 20px #ff83fb;
+        cursor: url('imgs/cursor.png'), auto;
+    }
+    
+    .interstellar:hover {
+        color: #ede4ff;
+        transition: 90ms ease;
+        text-shadow:
+        0 0 5px #884df5,
+        0 0 10px #5f1ed6,
+        0 0 15px #3b03a2,
+        0 0 20px #220060;
+        cursor: url('imgs/cursor.png'), auto;
+    }
+    
+    .matrix:hover {
+        color: #cdffeb;
+        transition: 90ms ease;
+        text-shadow:
+        0 0 5px #1ff29e,
+        0 0 10px #19ab70,
+        0 0 15px #00643c,
+        0 0 20px #003d25;
+        cursor: url('imgs/cursor.png'), auto;
+    }
+    
+    .conclusion:hover {
+        color: #ececec;
+        transition: 90ms ease;
+        text-shadow:
+        0 0 5px #a3a3a3,
+        0 0 10px #797979,
+        0 0 15px #3b3b3b,
+        0 0 20px #1d1d1d;
+        cursor: url('imgs/cursor.png'), auto;
+    }
+    }
+
+@media all and (max-width: 1000px){
+    body{
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        color: #ffffff;
+        overflow: hidden;
+        background-image: url(imgs/narrow.jpg);
+        background-size: 100% 132.5%;
+        height: fit-content;
+        cursor: url('imgs/cursor.png'), auto;
+    }
+    
+    h1{
+        font-family: "sarina";
+        font-weight: 400;
+        font-style: normal;
+        font-size: 55px;
+        text-align: center;
+        text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 15px #00b0e6,
+        0 0 20px #00b0e6,
+        0 0 30px #0087b0,
+        0 0 50px #0087b0,
+        0 0 40px #00c455,
+        0 0 45px #00c455;
+        margin: 38px;
+    }
+    
+    .about{
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 7%;
+        padding-left: 0px;
+        -webkit-transform: translateY(15px);
+        transform: translateY(15px);
+        cursor: url('imgs/cursor.png'), auto;
+    }
+    
+    .about:hover {
+        text-shadow: #ff8000 5px 2px,#00c455 10px 4px,#00b0e6 15px 6px;
+        transition: 0.5s ease;
+    }
+    
+    .marquee {
+        font-family: "sarina";
+        font-weight: 400;
+        font-style: normal;
+        white-space: nowrap;
+        overflow: hidden;
+        position: relative;
+        background: #000000;
         color: #ff8000;
         padding: 0px;
         width: 100%;
@@ -306,6 +558,7 @@ a{
         text-decoration: none;
         text-align: center;
         line-height: 50%;
+        cursor: url('imgs/cursor.png'), auto;
     }
     
     .fight{

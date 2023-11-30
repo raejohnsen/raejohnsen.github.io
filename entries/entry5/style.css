@@ -8,6 +8,7 @@
         font-family: "futura-pt";
         font-weight: 600;
         font-style: italic;
+        cursor: url('imgs/cursor.png'), auto;
     }
 
     img{
@@ -19,14 +20,17 @@
 
     .box:hover .text77 {
         display:block;
+        transition: 90ms ease;
     }
 
     .box:hover .text18 {
         display:block;
+        transition: 90ms ease;
     }
 
     .box:hover .image {
         display: none;
+        transition: 90ms ease;
     }
 
     .box{
@@ -49,6 +53,7 @@
         transition: .5s ease;
         padding-left: 15px;
         padding-right: 5px;
+        transition: 90ms ease;
     }
     
     .text18 {
@@ -184,6 +189,7 @@
         color: #ffffff;
         text-decoration: none;
         text-align: center;
+        cursor: url('imgs/cursor.png'), auto;
     }
 
     .back:hover {
@@ -203,6 +209,7 @@
         font-family: "futura-pt";
         font-weight: 600;
         font-style: italic;
+        cursor: url('imgs/cursor.png'), auto;
     }
     
     img{
@@ -214,14 +221,17 @@
     
     .box:hover .text77 {
         display:block;
+        transition: 90ms ease;
     }
     
     .box:hover .text18 {
         display:block;
+        transition: 90ms ease;
     }
     
     .box:hover .image {
         display: none;
+        transition: 90ms ease;
     }
     
     .box{
@@ -372,10 +382,6 @@
         color: #ffffff;
         text-decoration: none;
         text-align: center;
-    }
-
-    .back:hover {
-        text-shadow: #ff8000 5px 2px,#00c455 10px 4px,#00b0e6 15px 6px;
-        transition: 0.5s ease;
+        cursor: url('imgs/cursor.png'), auto;
     }
  }

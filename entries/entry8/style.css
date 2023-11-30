@@ -1,13 +1,14 @@
 @media all and (min-width: 801px){
     body{
         background-color: #fff6eb;
-        background-size: 530% 100%;
         margin-left: 20px;
         margin-top: 0px;
         margin-bottom: 0px;
         margin-right: 20px;
         width: fit-content;
-        
+        cursor: url('media/cursor.png'), auto;
+        width: fit-content;
+        height: auto;
     }
 
     h1{
@@ -28,14 +29,13 @@
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-around; 
-        width: 100%;
-        height: 100%;
-        padding-top: 30px;
+        margin-top: 20px;
+        top: 5%;
     }
 
     .title{
         width: 30%;
-        height: 100%;
+        height: fit-content;
     }
    
     .page{
@@ -43,12 +43,14 @@
         flex-flow: row nowrap;
         justify-content: space-around;
         align-items: flex-end;
-        width: 350%;
+        height: 20%;
     }
     
-    source{
-        height: 20%;
+   video{
+        height: 670px;
+        width: auto;
         align-items: center;
+
     }
 
     .videocontainer:hover .overlay {
@@ -63,8 +65,7 @@
     }
 
     .videocontainer{
-        width: fit-content;
-        height: fit-content;
+        height: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -104,10 +105,8 @@
     .back{
         text-align: center;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
         width: 7%;
-        padding-left: 0px;
+        margin-right: 50px;
         font-family: "league-gothic";
         font-weight: 400;
         font-style: normal;
@@ -116,8 +115,9 @@
         color: #000000;
         text-decoration: none;
         text-align: center;
-        -webkit-transform: translate(-2000%, 650%);
-        transform: translate(-2000%, 650%);
+        -webkit-transform: translate(-10%, -600%);
+        transform: translate(-10%, -600%);
+        cursor: url('media/cursor.png'), auto;
     }
 
     .back:hover {
@@ -128,13 +128,14 @@
 
 @media all and (max-width: 800px){
     body{
-        background-color: pink;
-        background-size: 1245% 100%;
+        background-color: #ffdae0;
         margin-left: 0px;
         margin-top: 0px;
         margin-bottom: 0px;
         margin-right: 20px;
         width: fit-content;
+        cursor: url('media/cursor.png'), auto;
+        height: auto;
     }
 
     h1{
@@ -157,6 +158,8 @@
         justify-content: space-around; 
         width: 100%;
         padding-top: 5px;
+        margin-left: 2%;
+        margin-right: 50%;
     }
 
     .title{
@@ -168,19 +171,20 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        width: 100;
+        width: 100%;
     }
     
-    source{
-        width: 100%;
+    video{
+        height: auto;
+        width: 980%;
         align-items: center;
-        transform: scale(50%);
+        /* transform: scale(50%);
         -webkit-transform: scale(50%);
-        -ms-transform: scale(50%);
+        -ms-transform: scale(50%); */
     }
 
     .videocontainer{
-        width: 50%;
+        width: 10%;
         height: fit-content;
         display: flex;
         justify-content: center;
@@ -194,9 +198,9 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(50%, -50%);
+        -ms-transform: translate(50%, -50%);
+        transform: translate(50%, -50%);
         text-align: center;
         align-items: baseline;
     }
@@ -210,11 +214,11 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(0%, -50%);
+        -ms-transform: translate(0%, -50%);
+        transform: translate(0%, -50%);
         text-align: justify;
-        width: 400px;
+        width: 700%;
     }
 
     #pink{
@@ -236,8 +240,8 @@
     .back{
         text-align: center;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 50%;
+        margin-right: 50%;
         width: 7%;
         padding-left: 0px;
         font-family: "league-gothic";
@@ -245,12 +249,13 @@
         font-style: normal;
         font-size: 40px;
         letter-spacing: 2.5px;
-        color: #000000;
+        color: #ffffff;
         text-decoration: none;
         text-align: center;
-        -webkit-transform: translate(-2000%, 650%);
-        transform: translate(-2000%, 650%);
+        -webkit-transform: translate(5500%, 0%);
+        transform: translate(5500%, 0%);
         text-shadow: #ff8000 5px 2px,#00c455 10px 4px,#00b0e6 15px 6px;
         float: left;
+        cursor: url('media/cursor.png'), auto;
     }
 }

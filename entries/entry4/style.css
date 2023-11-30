@@ -5,6 +5,7 @@ body{
     padding-right: 0px;
     padding-top: 30px;
     color: white;
+    cursor: url('imgs/cursor.png'), auto;
 }
 
 .image{
@@ -102,6 +103,7 @@ p{
     color: #ffffff;
     text-decoration: none;
     text-align: center;
+    cursor: url('imgs/cursor.png'), auto;
 }
 
 .back:hover {
@@ -117,6 +119,8 @@ p{
         margin-right: 10px;
         margin-top: 20px;
         color: white;
+        cursor: url('imgs/cursor.png'), auto;
+        overflow-x: hidden;
     }
     
     .image{
@@ -211,5 +215,6 @@ p{
         text-decoration: none;
         text-align: center;
         text-shadow: #ff8000 5px 2px,#00c455 10px 4px,#00b0e6 15px 6px;
+        cursor: url('imgs/cursor.png'), auto;
     }
 }

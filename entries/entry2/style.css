@@ -2,7 +2,9 @@
     body {
         font-family: 'Helvetica', sans-serif;
         background-color: #1e1e1e;
-        margin-left: 20px;
+        margin: 20px;
+        cursor: url('imgs/cursor.png'), auto;
+        overflow-x: hidden;
     }
     h1{
         font-size: 175px;
@@ -79,6 +81,7 @@
         color: #ffffff;
         text-decoration: none;
         text-align: center;
+        cursor: url('imgs/cursor.png'), auto;
     }
 
     .back:hover {
@@ -92,6 +95,7 @@
         background-color: #1e1e1e;
         margin: 25px;
         margin-top: 0px;
+        cursor: url('imgs/cursor.png'), auto;
     }
     h1{
         font-size: 125px;
@@ -172,5 +176,6 @@
         text-decoration: none;
         text-align: center;
         text-shadow: #ff8000 5px 2px,#00c455 10px 4px,#00b0e6 15px 6px;
+        cursor: url('imgs/cursor.png'), auto;
     }
 }

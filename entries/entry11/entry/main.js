@@ -1,12 +1,12 @@
-// function paused() {
-//     console.log("Scroll paused");
-//       }
+function paused() {
+    console.log("Scroll paused");
+      }
       
-//       let wrapper = document.querySelector(".wrapper");
-//       wrapper.addEventListener("click", paused());
+      let wrapper = document.querySelector(".wrapper");
+      wrapper.addEventListener("click", paused());
     
 
     
-//     function paused() {
-//       wrapper.classList.toggle("pause");
-//     }
+    function paused() {
+      wrapper.classList.toggle("pause");
+    }

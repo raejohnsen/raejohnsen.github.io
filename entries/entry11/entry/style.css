@@ -3,6 +3,7 @@
         background-color: #090909;
         color: whitesmoke;
         overflow: hidden;
+        cursor: url('imgs/cursor.png'), auto;
     }
 
     .wrapper {
@@ -71,6 +72,7 @@
         padding-bottom: 15px;
         -webkit-transform: translate(-42%, 1000%);
         transform: translate(-42%, 1000%);
+        cursor: url('imgs/cursor.png'), auto;
     }
 
     .back:hover {
@@ -84,6 +86,7 @@
         background-color: whitesmoke;
         color: #090909;
         overflow: hidden;
+        cursor: url('imgs/cursor.png'), auto;
     }
 
     .wrapper {
@@ -147,5 +150,6 @@
         -webkit-transform: translate(0px, 630px);
         transform: translate(0px, 630px);
         text-shadow: #ff8000 5px 2px,#00c455 10px 4px,#00b0e6 15px 6px;
+        cursor: url('imgs/cursor.png'), auto;
     }
 }

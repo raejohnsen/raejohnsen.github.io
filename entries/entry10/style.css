@@ -7,6 +7,7 @@
       font-weight: 400;
       font-style: normal;
       transition: 90ms ease;
+      cursor: url('imgs/cursor.png'), auto;
     }
 
   .title{
@@ -68,6 +69,7 @@
       padding-bottom: 15px;
       -webkit-transform: translate(0px, 150px);
       transform: translate(0px, 150px);
+      cursor: url('imgs/cursor.png'), auto;
   }
 
 .back:hover {
@@ -83,6 +85,7 @@
     font-family: "lores-12-narrow", sans-serif;
     font-weight: 400;
     font-style: normal;
+    cursor: url('imgs/cursor.png'), auto;
   }
 
 h1{
@@ -151,5 +154,6 @@ img{
   -webkit-transform: translate(0px, 150px);
   transform: translate(0px, 150px);
   text-shadow: #ff8000 5px 2px,#00c455 10px 4px,#00b0e6 15px 6px;
+  cursor: url('imgs/cursor.png'), auto;
 }
 }
