@@ -34,14 +34,22 @@
         font-size: 45px;
     }
 
-    h3:hover{
+    .link{
+        font-family: "nimbus-sans", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 45px;     
+        color: antiquewhite;   
+        text-decoration: none;
+    }
+
+    .link:hover{
         font-family: nimbus-sans, sans-serif;
         font-weight: 400;
         font-style: italic;
         font-size: 46px;
         text-decoration: underline;
         transition: 60ms ease-in-out;
-        color: randomColor;
     }
 }
 
@@ -51,7 +59,7 @@
         margin-right: 30px;
         margin-top: 10px;
         color: rgb(255, 250, 243);
-        background-color: #ff00aa
+        background-color: #ff0066
     }    
     
     h1{
@@ -74,10 +82,12 @@
         text-align: center;
     }
 
-    h3{
+    .link{
         font-family: "nimbus-sans", sans-serif;
         font-weight: 400;
         font-style: normal;
-        font-size: 30px;
+        font-size: 30px;     
+        color: #fffaf1;   
+        text-decoration: underline;
     }
 }
