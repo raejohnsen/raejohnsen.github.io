@@ -4,6 +4,7 @@
         margin-top: 35px;
         background-color: #196cd8;
         color: antiquewhite;
+        cursor: url('imgs/cursor2.png'), auto;
     }
     
     h1{
@@ -59,14 +60,15 @@
         margin-right: 30px;
         margin-top: 10px;
         color: rgb(255, 250, 243);
-        background-color: #ff0066
+        background-color: #ff0066;
+        cursor: url('imgs/cursor2.png'), auto;
     }    
     
     h1{
         font-family: "sutturah", sans-serif;
         font-weight: 400;
         font-style: normal;
-        font-size: 65px;
+        font-size: 55px;
         border: 0px;
         text-align: center;
         margin: 0px;
