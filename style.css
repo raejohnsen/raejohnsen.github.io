@@ -44,6 +44,7 @@
         color: antiquewhite;   
         text-decoration: none;
         line-height: 125%;
+        width: fit-content;
     }
 
     .link:hover{
