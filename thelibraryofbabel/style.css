@@ -1,107 +1,227 @@
-body{
-    background-color: azure;
-    font-family: sans-serif;
-    margin: 20px;
-    flex-flow: row nowrap;
-    justify-content: center;
-}
+@media all and (min-width: 601px) {
+    body{
+        background-color: azure;
+        font-family: sans-serif;
+        margin: 20px;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
 
-h2{
-    text-align: center;
-    font-size: 30px;
-    font-family: sans-serif;
-    padding-top: 30px;
-}
+    h2{
+        text-align: center;
+        font-size: 30px;
+        font-family: sans-serif;
+        padding-top: 30px;
+    }
 
-@keyframes fadeInAnimation {
-    0% {
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .title{
+        font-family: forma-djr-display, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 55px;
+        line-height: 77px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-top: 250px;
+        animation: fadeInAnimation ease 4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+    a{
+        font-family: forma-djr-display, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 30px;
         opacity: 0;
+        color: black;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        margin-left: 47%;
+        margin-right: 45%;
+        margin-top: 17%;
+        animation: fadeInAnimation ease-in 0.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 1.5s;
     }
 
-    100% {
-        opacity: 1;
+    a:hover{
+        text-decoration: underline;
+        text-decoration-line: wavy;
+        transition: ease-in 0.9s;
+    }
+
+    html {  
+        scroll-behavior: smooth;  
+    }
+
+    #main{
+        margin-top: 50%;
+        margin-bottom: 150px;
+    }
+
+    #spacer{
+        height: 300px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    #wordContainerTitle {
+        display: flex;
+        justify-content: center;
+        flex-flow: row nowrap;
+        padding-top: 7%;
+    }
+
+    .wordBox {
+        padding: 3px;
+        margin: 0 5px;
+        font-size: 50px;
+        font-family: forma-djr-display, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    #wordContainerBody {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 20%;
+        margin-right: 20%;
+        justify-content: space-around;
+    }
+
+    .word {
+        /* margin: 5px; */
+        padding: 0px 10px;
+        font-family: forma-djr-display, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 25px;
     }
 }
 
-.title{
-    font-family: forma-djr-display, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 55px;
-    line-height: 77px;
-    letter-spacing: 0em;
-    text-align: center;
-    margin-top: 250px;
-    animation: fadeInAnimation ease 4s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
+@media all and (max-width: 600px) {
+    body{
+        background-color: azure;
+        font-family: sans-serif;
+        margin: 20px;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
 
-a{
-    font-family: forma-djr-display, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 30px;
-    opacity: 0;
-    color: black;
-    text-decoration: none;
-    display: block;
-    margin-left: 47%;
-    margin-right: 45%;
-    margin-top: 17%;
-    animation: fadeInAnimation ease 4s ;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-delay: 1.5s;
-}
+    h2{
+        text-align: center;
+        font-size: 30px;
+        font-family: sans-serif;
+        padding-top: 30px;
+    }
 
-a:hover{
-    text-decoration: underline;
-    text-decoration-line: wavy;
-    transition: ease-in 0.9s;
-}
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
 
-html {  
-    scroll-behavior: smooth;  
-}
+        100% {
+            opacity: 1;
+        }
+    }
 
-#main{
-    margin-top: 50%;
-}
+    .title{
+        font-family: forma-djr-display, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 35px;
+        line-height: 77px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-top: 250px;
+        animation: fadeInAnimation ease 4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
 
-#spacer{
-    height: 300px;
-    width: 70%;
-}
+    a{
+        font-family: forma-djr-display, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 30px;
+        opacity: 0;
+        color: black;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        /* margin-left: 47%;
+        margin-right: 45%; */
+        margin-top: 17%;
+        animation: fadeInAnimation ease 4s ;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 1.5s;
+    }
 
-#wordContainerTitle {
-    display: flex;
-    justify-content: center;
-    flex-flow: row nowrap;
-  }
+    a:hover{
+        text-decoration: underline;
+        text-decoration-line: wavy;
+        transition: ease-in 0.9s;
+    }
 
-  .wordBox {
-    padding: 3px;
-    margin: 0 5px;
-    font-size: 50px;
-    font-family: forma-djr-display, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
+    html {  
+        scroll-behavior: smooth;  
+    }
 
-  #wordContainerBody {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 15%;
-    margin-right: 15%;
-    justify-content: space-around;
-}
+    #main{
+        margin-top: 50%;
+        margin-bottom: 150px;
+    }
 
-.word {
-    /* margin: 5px; */
-    padding: 0px 10px;
-    font-family: forma-djr-display, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 25px;
+    #spacer{
+        height: 300px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    #wordContainerTitle {
+        display: flex;
+        justify-content: center;
+        flex-flow: row nowrap;
+        padding-top: 10%;
+    }
+
+    .wordBox {
+        padding: 3px;
+        margin: 0 5px;
+        font-size: 50px;
+        font-family: forma-djr-display, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    #wordContainerBody {
+        display: flex;
+        flex-wrap: wrap;
+        /* margin-left: 20%;
+        margin-right: 20%; */
+        justify-content: space-around;
+    }
+
+    .word {
+        /* margin: 5px; */
+        padding: 0px 10px;
+        font-family: forma-djr-display, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 25px;
+    }
 }
