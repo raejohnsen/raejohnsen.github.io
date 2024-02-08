@@ -1,6 +1,6 @@
 @media all and (min-width: 1201px) {
     body{
-        background-color: azure;
+        background-color: #fff9ed;
         font-family: sans-serif;
         flex-flow: row nowrap;
         justify-content: center;
@@ -101,7 +101,7 @@
 
     .word {
         /* margin: 5px; */
-        padding: 0px 10px;
+        padding: 2px 10px;
         font-family: forma-djr-display, sans-serif;
         font-weight: 500;
         font-style: normal;
@@ -120,7 +120,54 @@
         animation-fill-mode: forwards;
         animation-delay: 0.75s;
     }
-}
+
+    button#backButton {
+        position: fixed;
+        bottom: 25px;
+        left: 10px;
+        width: 160px; /* Adjust width and height as needed */
+        height: 125px;
+        background-color: transparent;
+        border: 5px solid #fff9ed; /* Border color */
+        clip-path: polygon(50% 0%, 86% 25%, 86% 75%, 50% 100%, 14% 75%, 14% 25%);
+        cursor: pointer;
+        z-index: 9999; /* Ensure the button stays above other content */
+        font-family: forma-djr-display, sans-serif;
+        font-size: large;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        }
+
+    #backButton:hover{
+        background-color: black;
+        color: #fff9ed;
+        transition: 1s ease;
+        border: 5px solid #000000; /* Border color */
+    }
+
+    button#refreshButton {
+        position: fixed;
+        bottom: 25px;
+        right: 10px;
+        width: 160px; /* Adjust width and height as needed */
+        height: 125px;
+        background-color: transparent;
+        border: 5px solid #fff9ed; /* Border color */
+        clip-path: polygon(50% 0%, 86% 25%, 86% 75%, 50% 100%, 14% 75%, 14% 25%);
+        cursor: pointer;
+        z-index: 9999; /* Ensure the button stays above other content */
+        font-family: forma-djr-display, sans-serif;
+        font-size: large;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    #refreshButton:hover{
+        background-color: black;
+        color: #fff9ed;
+        transition: 1s ease;
+        border: 5px solid #000000; /* Border color */
+    }
 
 
 @media all and (min-width: 801px) and (max-width: 1200px) {
@@ -226,7 +273,7 @@
 
     .word {
         /* margin: 5px; */
-        padding: 0px 10px;
+        padding: 2px 10px;
         font-family: forma-djr-display, sans-serif;
         font-weight: 500;
         font-style: normal;
@@ -351,7 +398,7 @@
 
     .word {
         /* margin: 5px; */
-        padding: 0px 10px;
+        padding: 1.5px 10px;
         font-family: forma-djr-display, sans-serif;
         font-weight: 500;
         font-style: normal;
@@ -370,4 +417,4 @@
         animation-fill-mode: forwards;
         animation-delay: 0.75s;
     }
-}
+}}
