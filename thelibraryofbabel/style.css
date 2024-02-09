@@ -4,6 +4,7 @@
         font-family: sans-serif;
         flex-flow: row nowrap;
         justify-content: center;
+        cursor: url('imgs/cursor2.png'), auto;
     }
 
     h2{
@@ -176,6 +177,7 @@
         font-family: sans-serif;
         flex-flow: row nowrap;
         justify-content: center;
+        cursor: url('imgs/cursor2.png'), auto;
     }
 
     h2{
@@ -349,6 +351,7 @@
         font-family: sans-serif;
         flex-flow: row nowrap;
         justify-content: center;
+        cursor: url('imgs/cursor2.png'), auto;
     }
 
     h2{
