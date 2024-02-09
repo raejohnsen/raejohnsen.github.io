@@ -5,7 +5,7 @@ document.getElementById('refreshButton').addEventListener('click', function() {
 
 window.addEventListener('scroll', function() {
   var button = document.getElementById('refreshButton');
-  if (window.scrollY > 1750) { // Change 200 to the scroll position where you want the button to appear
+  if (window.scrollY > 1150) { // Change 200 to the scroll position where you want the button to appear
     button.style.opacity = '1';
   } else {
     button.style.opacity = '0';
@@ -18,7 +18,7 @@ document.getElementById('backButton').addEventListener('click', function() {
 
 window.addEventListener('scroll', function() {
   var button = document.getElementById('backButton');
-  if (window.scrollY > 1750) { // Change 200 to the scroll position where you want the button to appear
+  if (window.scrollY > 1150) { // Change 200 to the scroll position where you want the button to appear
     button.style.opacity = '1';
   } else {
     button.style.opacity = '0';
