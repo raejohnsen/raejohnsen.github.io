@@ -135,7 +135,7 @@
         font-family: forma-djr-display, sans-serif;
         font-size: large;
         opacity: 0;
-        transition: opacity 0.5s ease;
+        transition: opacity 0.5s ease-in-out;
         }
 
     #backButton:hover{
@@ -159,7 +159,7 @@
         font-family: forma-djr-display, sans-serif;
         font-size: large;
         opacity: 0;
-        transition: opacity 0.5s ease;
+        transition: opacity 0.5s ease-in-out;
     }
 
     #refreshButton:hover{
