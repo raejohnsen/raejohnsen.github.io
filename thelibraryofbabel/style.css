@@ -375,11 +375,11 @@
         font-family: forma-djr-display, sans-serif;
         font-weight: 700;
         font-style: normal;
-        font-size: 35px;
+        font-size: 30px;
         line-height: 77px;
         letter-spacing: 0em;
         text-align: center;
-        margin-top: 200px;
+        margin-top: 125px;
         animation: fadeInAnimation ease 4s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
@@ -442,8 +442,8 @@
     #wordContainerBody {
         display: flex;
         flex-wrap: wrap;
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 3%;
+        margin-right: 3%;
         justify-content: space-around;
     }
 
