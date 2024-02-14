@@ -4,9 +4,16 @@ body{
     margin-bottom: 50px;
     background-size: 100% 5100%;
     background-repeat: repeat;
+    font-family: "Kohinoor Zerone Zero", sans-serif;
+    color: black;
 }
 
 @font-face {
+    font-family: "Kohinoor Zerone Zero";
+    src: url("KohinoorZerone-Zero.otf");
+}
+
+/* @font-face {
     font-family: "Throwup Fill";
     src: url("Throwup-Fill.otf");
 }
@@ -24,7 +31,7 @@ body{
 @font-face {
     font-family: "Throwup Stroke";
     src: url("Throwup-Stroke.otf");
-}
+} */
 
 .shadow, .fill, .highlight, .stroke {
     position: absolute;
@@ -42,12 +49,12 @@ li{
 }
 
 .shadow{
-    font-family: "Throwup Shadow";
+    /* font-family: "Throwup Shadow"; */
     color: black;
 }
 
 .fill{
-    font-family: "Throwup Fill";
+    /* font-family: "Throwup Fill"; */
     color: #ff3ff9;
     -webkit-animation-direction: normal;
 	-webkit-animation-duration: 9s;
@@ -57,13 +64,13 @@ li{
 }
 
 .highlight{
-    font-family: "Throwup Highlight";
+    /* font-family: "Throwup Highlight"; */
     color: white;
 }
 
 .stroke{
-    font-family: "Throwup Stroke";
-    color: #004cff;
+    /* font-family: "Throwup Stroke"; */
+    /* color: #004cff; */
 }
 
 h1{

@@ -21,25 +21,24 @@
         width: 100%;
     }
 
+    @font-face {
+        font-family: "General Sans Medium";
+        src: url("GeneralSans-Medium.otf");
+    }
+
     h2{
-        font-family: "nimbus-sans", sans-serif;
-        font-weight: 400;
-        font-style: normal;
+        font-family: "General Sans Medium", sans-serif;
         margin: 0px;  
         font-size: 25px; 
     }
 
     h3{
-        font-family: "nimbus-sans", sans-serif;
-        font-weight: 400;
-        font-style: normal;
+        font-family: "General Sans Medium", sans-serif;
         font-size: 45px;
     }
 
     .link{
-        font-family: "nimbus-sans", sans-serif;
-        font-weight: 400;
-        font-style: normal;
+        font-family: "General Sans Medium", sans-serif;
         font-size: 45px;     
         color: antiquewhite;   
         text-decoration: none;
@@ -48,8 +47,7 @@
     }
 
     .link:hover{
-        font-family: nimbus-sans, sans-serif;
-        font-weight: 400;
+        font-family: "General Sans Medium", sans-serif;
         font-style: italic;
         font-size: 46px;
         text-decoration: underline;
@@ -80,18 +78,14 @@
     }
 
     h2{
-        font-family: "nimbus-sans", sans-serif;
-        font-weight: 400;
-        font-style: normal;  
+        font-family: "General Sans Medium", sans-serif;
         font-size: large;
         margin: 0px; 
         text-align: center;
     }
 
     .link{
-        font-family: "nimbus-sans", sans-serif;
-        font-weight: 400;
-        font-style: normal;
+        font-family: "General Sans Medium", sans-serif;
         font-size: 30px;     
         color: #fffaf1;   
         text-decoration: underline;

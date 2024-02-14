@@ -1,62 +1,3 @@
-// <!--The below Javascript randomizing code is sourced from ChatGPT-->
-document.getElementById('refreshButton').addEventListener('click', function() {
-  window.location.reload();
-});
-
-window.addEventListener('scroll', function() {
-  var button = document.getElementById('refreshButton');
-  if (window.scrollY > 1150) { // Change 200 to the scroll position where you want the button to appear
-    button.style.opacity = '1';
-  } else {
-    button.style.opacity = '0';
-  }
-});
-
-document.getElementById('backButton').addEventListener('click', function() {
-  
-});
-
-window.addEventListener('scroll', function() {
-  var button = document.getElementById('backButton');
-  if (window.scrollY > 1150) { // Change 200 to the scroll position where you want the button to appear
-    button.style.opacity = '1';
-  } else {
-    button.style.opacity = '0';
-  }
-});
-
-var wordsArray = ["The", "Library", "of", "Babel"];
-
-// Function to generate random words without repetition
-function getRandomWords(numWords) {
-  var randomWords = [];
-  var availableWords = wordsArray.slice(); // Create a copy of the original array
-
-  for (var i = 0; i < numWords; i++) {
-    var randomIndex = Math.floor(Math.random() * availableWords.length);
-    var selectedWord = availableWords.splice(randomIndex, 1)[0]; // Remove the selected word from the array
-    randomWords.push(selectedWord);
-  }
-  return randomWords;
-}
-
-// Display random words on the page
-function displayRandomWords() {
-  var wordContainerTitle = document.getElementById("wordContainerTitle");
-  var randomWords = getRandomWords(4);
-
-  // Clear previous content
-  wordContainerTitle.innerHTML = "";
-
-  // Append new word boxes
-  randomWords.forEach(function(word) {
-    var wordBox = document.createElement("div");
-    wordBox.className = "wordBox";
-    wordBox.textContent = word;
-    wordContainerTitle.appendChild(wordBox);
-  });
-}
-
 // Call the function to display random words when the page loads
 displayRandomWords();
 
@@ -67,24 +8,13 @@ var longText = "By this art you may contemplate the variations of the 23 letters
 
   arrayOfWords = arrayOfWords.filter((word, index) => arrayOfWords.indexOf(word) === index);
 
-  // Shuffle function
-  function shuffleArray(array) {
-      for (var i = array.length - 1; i > 0; i--) {
-          var j = Math.floor(Math.random() * (i + 1));
-          var temp = array[i];
-          array[i] = array[j];
-          array[j] = temp;
-      }
-  }
+// Get all elements with class 'words'
+const wordElements = document.querySelectorAll('.words');
 
-  // Shuffle the array of words
-  shuffleArray(arrayOfWords);
-
-  // Display the shuffled words on the webpage
-  var wordContainerBody = document.getElementById('wordContainerBody');
-  arrayOfWords.forEach(function(word) {
-      var wordElement = document.createElement('div');
-      wordElement.textContent = word;
-      wordElement.classList.add('word');
-      wordContainerBody.appendChild(wordElement);
-  });
+// Loop through each element and assign a random word
+wordElements.forEach(function(word) {
+    // Get a random word
+    const randomWord = getRandomWord();
+    // Assign the random word to the innerHTML of the element
+    wordElement.innerHTML = randomWord;
+});

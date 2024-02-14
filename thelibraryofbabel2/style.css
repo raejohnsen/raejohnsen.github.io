@@ -1,0 +1,87 @@
+body{
+    font-family: "forma-djr-display", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    overflow: hidden;
+    color: black;
+}
+
+.row1a, .row1b, .row2, .row3a, .row3b, .row4, .row5a, .row5b, .row6, .row7a, .row7b, .row8, .row9a, .row9b{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.row1aword, .row1bword, .row2word, .row3aword, .row3bword, .row4word, .row5aword, .row5bword, .row6word, .row7aword, .row7bword, .row8word, .row9aword, .row9bword{
+    height: 25px;
+    width: 50px;
+    font-size: 30px;
+}
+
+.row1a{
+    transform: translateY(37px) translateX(70px);
+}
+
+.row1b{
+    transform: translateX(230px);
+}
+
+.row2{
+    transform: translateY(115px);
+}
+
+.row3a{
+    transform: translateY(180px) translateX(70px); 
+}
+
+.row3b{
+    transform: translateY(170px) translateX(220px); 
+}
+
+.row4{
+    transform: translateY(280px) translateX(155px); 
+}
+
+.row5a{
+    transform: translateY(367px) translateX(70px);
+}
+
+.row5b{
+    transform: translateX(230px) translateY(330px);
+}
+
+.row6{
+    transform: translateY(460px) translateX(0px); 
+}
+
+.row7a{
+    transform: translateY(540px) translateX(70px);
+}
+
+.row7b{
+    transform: translateY(530px) translateX(230px);
+}
+
+.row8{
+    transform: translateY(640px) translateX(155px);    
+}
+
+
+
+
+.row1aword, .row3bword, .row5aword, .row7bword{
+    transform: rotate(335deg);
+}
+
+.row1bword, .row3aword, .row5bword, .row7aword{
+    transform: rotate(25deg);
+}
+
+.row2word, .row4word, .row6word, .row8word{
+    transform: rotate(270deg);
+}
+
+
+.word{
+    font-size: 30px;
+}
