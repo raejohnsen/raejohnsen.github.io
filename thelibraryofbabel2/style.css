@@ -6,6 +6,7 @@ body{
     color: black;
     background-color: #111111;
     width: 90%;
+    cursor: url('imgs/cursor2.png'), auto;
 }
 
 .row1a, .row1b, .row2, .row3a, .row3b, .row4, .row5a, .row5b, .row6, .row7a, .row7b, .row8, .row9a, .row9b{
