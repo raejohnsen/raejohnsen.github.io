@@ -4,6 +4,8 @@ body{
     font-style: normal;
     overflow: hidden;
     color: black;
+    background-color: #111111;
+    width: 90%;
 }
 
 .row1a, .row1b, .row2, .row3a, .row3b, .row4, .row5a, .row5b, .row6, .row7a, .row7b, .row8, .row9a, .row9b{
@@ -14,12 +16,13 @@ body{
 
 .row1aword, .row1bword, .row2word, .row3aword, .row3bword, .row4word, .row5aword, .row5bword, .row6word, .row7aword, .row7bword, .row8word, .row9aword, .row9bword{
     height: 25px;
-    width: 50px;
-    font-size: 30px;
+    width: 75px;
+    font-size: 27px;
+    text-align: center;
 }
 
 .row1a{
-    transform: translateY(37px) translateX(70px);
+    transform: translateY(33px) translateX(70px);
 }
 
 .row1b{
@@ -31,7 +34,7 @@ body{
 }
 
 .row3a{
-    transform: translateY(180px) translateX(70px); 
+    transform: translateY(190px) translateX(70px); 
 }
 
 .row3b{
@@ -47,7 +50,7 @@ body{
 }
 
 .row5b{
-    transform: translateX(230px) translateY(330px);
+    transform: translateX(230px) translateY(340px);
 }
 
 .row6{
@@ -63,7 +66,7 @@ body{
 }
 
 .row8{
-    transform: translateY(640px) translateX(155px);    
+    transform: translateY(600px) translateX(155px);    
 }
 
 
@@ -81,7 +84,28 @@ body{
     transform: rotate(270deg);
 }
 
+#nav{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    margin: 40px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 93%; /* Set the width to cover the entire viewport */
+}
 
-.word{
-    font-size: 30px;
+button{
+    color: #a0a0a0;
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+    font-family: "forma-djr-display", sans-serif;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+button:hover{
+    color: #f3f3f3;
+    transition: 0.7s ease-in-out;
 }
