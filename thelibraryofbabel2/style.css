@@ -1,3 +1,7 @@
+html{
+    cursor: url('imgs/cursor2.png'), auto;
+}
+
 body{
     font-family: "forma-djr-display", sans-serif;
     font-weight: 500;
@@ -5,8 +9,14 @@ body{
     overflow: hidden;
     color: black;
     background-color: #111111;
-    width: 90%;
-    cursor: url('imgs/cursor2.png'), auto;
+    position: relative;
+    left: -15px;
+    top: -10px;
+}
+
+.words{
+    text-align: center;
+    width: 200px;
 }
 
 .row1a, .row1b, .row2, .row3a, .row3b, .row4, .row5a, .row5b, .row6, .row7a, .row7b, .row8, .row9a, .row9b{
@@ -17,53 +27,52 @@ body{
 
 .row1aword, .row1bword, .row2word, .row3aword, .row3bword, .row4word, .row5aword, .row5bword, .row6word, .row7aword, .row7bword, .row8word, .row9aword, .row9bword{
     height: 25px;
-    width: 75px;
     font-size: 30px;
     text-align: center;
 }
 
 .row1a{
-    transform: translateY(33px) translateX(70px);
+    transform: translateY(43px) translateX(10px);
 }
 
 .row1b{
-    transform: translateX(230px);
+    transform: translateX(160px) translateY(18px);
 }
 
 .row2{
-    transform: translateY(115px);
+    transform: translateX(-65px) translateY(123px);
 }
 
 .row3a{
-    transform: translateY(190px) translateX(70px); 
+    transform: translateY(229px) translateX(10px); 
 }
 
 .row3b{
-    transform: translateY(170px) translateX(220px); 
+    transform: translateY(204px) translateX(160px); 
 }
 
 .row4{
-    transform: translateY(280px) translateX(155px); 
+    transform: translateY(310px) translateX(84px); 
 }
 
 .row5a{
-    transform: translateY(367px) translateX(70px);
+    transform: translateY(427px) translateX(10px);
 }
 
 .row5b{
-    transform: translateX(230px) translateY(340px);
+    transform: translateX(160px) translateY(403px);
 }
 
 .row6{
-    transform: translateY(460px) translateX(0px); 
+    transform: translateY(507px) translateX(-66px); 
 }
 
 .row7a{
-    transform: translateY(540px) translateX(70px);
+    transform: translateY(613px) translateX(10px);
 }
 
 .row7b{
-    transform: translateY(530px) translateX(230px);
+    transform: translateY(588px) translateX(160px);
 }
 
 .row8{
@@ -74,11 +83,11 @@ body{
 
 
 .row1aword, .row3bword, .row5aword, .row7bword{
-    transform: rotate(335deg);
+    transform: rotate(330deg);
 }
 
 .row1bword, .row3aword, .row5bword, .row7aword{
-    transform: rotate(25deg);
+    transform: rotate(30deg);
 }
 
 .row2word, .row4word, .row6word, .row8word{
@@ -91,9 +100,9 @@ body{
     flex-flow: row nowrap;
     margin: 40px;
     position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 93%; /* Set the width to cover the entire viewport */
+    bottom: -20px;
+    left: -20px;
+    width: 97.5%; /* Set the width to cover the entire viewport */
 }
 
 button{
