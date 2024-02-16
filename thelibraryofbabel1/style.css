@@ -1,0 +1,522 @@
+@media all and (min-width: 1201px) {
+    body{
+        background-color: #fff9ed;
+        font-family: sans-serif;
+        flex-flow: row nowrap;
+        justify-content: center;
+        cursor: url('imgs/cursor2.png'), auto;
+    }
+
+    h2{
+        text-align: center;
+        font-size: 30px;
+        font-family: sans-serif;
+        padding-top: 30px;
+    }
+
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .title{
+        font-family: forma-djr-display, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 55px;
+        line-height: 107px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-top: 200px;
+        animation: fadeInAnimation ease 4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+    a{
+        font-family: forma-djr-display, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 30px;
+        opacity: 0;
+        color: black;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        margin-top: 9%;
+        animation: fadeInAnimation ease-in 0.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 1.5s;
+    }
+
+    a:hover{
+        text-decoration: underline;
+        text-decoration-line: wavy;
+        transition: ease-in 0.9s;
+    }
+
+    html {  
+        scroll-behavior: smooth;  
+    }
+
+    #main{
+        margin-top: 50%;
+        margin-bottom: 150px;
+    }
+
+    #spacer{
+        height: 300px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    #wordContainerTitle {
+        display: flex;
+        justify-content: center;
+        flex-flow: row nowrap;
+        padding-top: 7%;
+    }
+
+    .wordBox {
+        padding: 3px;
+        margin: 0 5px;
+        font-size: 50px;
+        font-family: forma-djr-display, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    #wordContainerBody {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 20%;
+        margin-right: 20%;
+        justify-content: space-around;
+    }
+
+    .word {
+        /* margin: 5px; */
+        padding: 2px 10px;
+        font-family: forma-djr-display, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 25px;
+    }
+
+    #hex{
+        width: 125px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 7%;
+        opacity: 0;
+        animation: fadeInAnimation ease 4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 0.75s;
+    }
+
+    #hex:hover{
+        transform: rotate(180deg);
+        transition: 2s ease;
+    }
+
+    button#backButton {
+        position: fixed;
+        bottom: 25px;
+        left: 10px;
+        width: 160px; /* Adjust width and height as needed */
+        height: 125px;
+        background-color: transparent;
+        border: 5px solid #fff9ed; /* Border color */
+        clip-path: polygon(50% 0%, 86% 25%, 86% 75%, 50% 100%, 14% 75%, 14% 25%);
+        cursor: pointer;
+        z-index: 9999; /* Ensure the button stays above other content */
+        font-family: forma-djr-display, sans-serif;
+        font-size: large;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    #backButton:hover{
+        background-color: black;
+        color: #fff9ed;
+        transition: 1s ease;
+        border: 5px solid #000000; /* Border color */
+    }
+
+    button#refreshButton {
+        position: fixed;
+        bottom: 25px;
+        right: 10px;
+        width: 160px; /* Adjust width and height as needed */
+        height: 125px;
+        background-color: transparent;
+        border: 5px solid #fff9ed; /* Border color */
+        clip-path: polygon(50% 0%, 86% 25%, 86% 75%, 50% 100%, 14% 75%, 14% 25%);
+        cursor: pointer;
+        z-index: 9999; /* Ensure the button stays above other content */
+        font-family: forma-djr-display, sans-serif;
+        font-size: large;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    #refreshButton:hover{
+        background-color: black;
+        color: #fff9ed;
+        transition: 1s ease;
+        border: 5px solid #000000; /* Border color */
+    }
+}
+
+@media all and (min-width: 801px) and (max-width: 1200px) {
+    body{
+        background-color: #fff9ed;
+        font-family: sans-serif;
+        flex-flow: row nowrap;
+        justify-content: center;
+        cursor: url('imgs/cursor2.png'), auto;
+    }
+
+    h2{
+        text-align: center;
+        font-size: 30px;
+        font-family: sans-serif;
+        padding-top: 30px;
+    }
+
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .title{
+        font-family: forma-djr-display, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 40px;
+        line-height: 107px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-top: 200px;
+        animation: fadeInAnimation ease 4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+    a{
+        font-family: forma-djr-display, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 30px;
+        opacity: 0;
+        color: black;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        margin-top: 12%;
+        animation: fadeInAnimation ease-in 0.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 1.5s;
+    }
+
+    a:hover{
+        text-decoration: underline;
+        text-decoration-line: wavy;
+        transition: ease-in 0.9s;
+    }
+
+    html {  
+        scroll-behavior: smooth;  
+    }
+
+    #main{
+        margin-top: 50%;
+        margin-bottom: 150px;
+    }
+
+    #spacer{
+        height: 300px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    #wordContainerTitle {
+        display: flex;
+        justify-content: center;
+        flex-flow: row nowrap;
+        padding-top: 7%;
+    }
+
+    .wordBox {
+        padding: 3px;
+        margin: 0 5px;
+        font-size: 50px;
+        font-family: forma-djr-display, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    #wordContainerBody {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 15%;
+        margin-right: 15%;
+        justify-content: space-around;
+    }
+
+    .word {
+        /* margin: 5px; */
+        padding: 2px 10px;
+        font-family: forma-djr-display, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 25px;
+    }
+
+    #hex{
+        display: block;
+        width: 125px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 9%;
+        opacity: 0;
+        animation: fadeInAnimation ease 4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 0.75s;
+    }
+
+    #hex:hover{
+        transform: rotate(180deg);
+        transition: 2s ease;
+    }
+
+    button#backButton {
+        position: fixed;
+        bottom: 25px;
+        left: 10px;
+        width: 160px; /* Adjust width and height as needed */
+        height: 125px;
+        background-color: transparent;
+        border: 5px solid #fff9ed; /* Border color */
+        clip-path: polygon(50% 0%, 86% 25%, 86% 75%, 50% 100%, 14% 75%, 14% 25%);
+        cursor: pointer;
+        z-index: 9999; /* Ensure the button stays above other content */
+        font-family: forma-djr-display, sans-serif;
+        font-size: large;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    #backButton:hover{
+        background-color: black;
+        color: #fff9ed;
+        transition: 1s ease;
+        border: 5px solid #000000; /* Border color */
+    }
+
+    button#refreshButton {
+        position: fixed;
+        bottom: 25px;
+        right: 10px;
+        width: 160px; /* Adjust width and height as needed */
+        height: 125px;
+        background-color: transparent;
+        border: 5px solid #fff9ed; /* Border color */
+        clip-path: polygon(50% 0%, 86% 25%, 86% 75%, 50% 100%, 14% 75%, 14% 25%);
+        cursor: pointer;
+        z-index: 9999; /* Ensure the button stays above other content */
+        font-family: forma-djr-display, sans-serif;
+        font-size: large;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    #refreshButton:hover{
+        background-color: black;
+        color: #fff9ed;
+        transition: 1s ease;
+        border: 5px solid #000000; /* Border color */
+    }
+}
+
+
+@media all and (max-width: 800px) {
+    body{
+        background-color: #fff9ed;
+        font-family: sans-serif;
+        flex-flow: row nowrap;
+        justify-content: center;
+        cursor: url('imgs/cursor2.png'), auto;
+    }
+
+    h2{
+        text-align: center;
+        font-size: 30px;
+        font-family: sans-serif;
+        padding-top: 30px;
+    }
+
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .title{
+        font-family: forma-djr-display, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 30px;
+        line-height: 77px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-top: 125px;
+        animation: fadeInAnimation ease 4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+    a{
+        font-family: forma-djr-display, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 30px;
+        opacity: 0;
+        color: black;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        margin-top: 15%;
+        animation: fadeInAnimation ease 4s ;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 1.5s;
+    }
+
+    a:hover{
+        text-decoration: underline;
+        text-decoration-line: wavy;
+        transition: ease-in 0.9s;
+    }
+
+    html {  
+        scroll-behavior: smooth;  
+    }
+
+    #main{
+        margin-top: 50%;
+        margin-bottom: 150px;
+    }
+
+    #spacer{
+        height: 300px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    #wordContainerTitle {
+        display: flex;
+        justify-content: center;
+        flex-flow: row nowrap;
+        padding-top: 10%;
+    }
+
+    .wordBox {
+        padding: 3px;
+        margin: 0 5px;
+        font-size: 50px;
+        font-family: forma-djr-display, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    #wordContainerBody {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 3%;
+        margin-right: 3%;
+        justify-content: space-around;
+    }
+
+    .word {
+        /* margin: 5px; */
+        padding: 1.5px 10px;
+        font-family: forma-djr-display, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 25px;
+    }
+
+    #hex{
+        display: block;
+        width: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3%;
+        opacity: 0;
+        animation: fadeInAnimation ease 4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 0.75s;
+    }
+
+    #hex:hover{
+        transform: rotate(180deg);
+        transition: 2s ease;
+    }
+
+    button#backButton {
+        position: fixed;
+        bottom: 25px;
+        left: 10px;
+        width: 120px; /* Adjust width and height as needed */
+        height: 95px;
+        background-color: black;
+        border: 5px solid #000000; /* Border color */
+        clip-path: polygon(50% 0%, 86% 25%, 86% 75%, 50% 100%, 14% 75%, 14% 25%);
+        cursor: pointer;
+        z-index: 9999; /* Ensure the button stays above other content */
+        font-family: forma-djr-display, sans-serif;
+        font-size: medium;
+        opacity: 0;
+        color: #fff9ed;
+        transition: ease-in 0.3s;
+    }
+
+    button#refreshButton {
+        position: fixed;
+        bottom: 25px;
+        right: 10px;
+        width: 120px; /* Adjust width and height as needed */
+        height: 95px;
+        background-color: black;
+        border: 5px solid #000000; /* Border color */
+        clip-path: polygon(50% 0%, 86% 25%, 86% 75%, 50% 100%, 14% 75%, 14% 25%);
+        cursor: pointer;
+        z-index: 9999; /* Ensure the button stays above other content */
+        font-family: forma-djr-display, sans-serif;
+        font-size: medium;
+        opacity: 0;
+        color: #fff9ed;
+        transition: ease-in 0.3s;
+    }
+}
