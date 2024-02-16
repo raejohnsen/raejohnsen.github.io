@@ -1,4 +1,8 @@
 @media all and (min-width: 1201px) {
+    html{
+        cursor: url('imgs/cursor2.png'), auto;
+    }
+    
     body{
         background-color: #fff9ed;
         font-family: sans-serif;
@@ -177,6 +181,10 @@
 }
 
 @media all and (min-width: 801px) and (max-width: 1200px) {
+    html{
+        cursor: url('imgs/cursor2.png'), auto;
+    }
+    
     body{
         background-color: #fff9ed;
         font-family: sans-serif;
@@ -356,6 +364,10 @@
 
 
 @media all and (max-width: 800px) {
+    html{
+        cursor: url('imgs/cursor2.png'), auto;
+    }
+    
     body{
         background-color: #fff9ed;
         font-family: sans-serif;

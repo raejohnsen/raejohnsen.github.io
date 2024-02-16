@@ -11,16 +11,34 @@ body{
     top: 150px;
 }
 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 h1{
     font-size: 6vw;
     text-align: center;
     margin-bottom: 0px;
+    animation: fadeInAnimation ease 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 h2{
     font-size: 3vw;
     text-align: center;
     margin-top: 0px;
+    animation: fadeInAnimation ease 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0.7s;
+    opacity: 0;
 }
 
 .nav{
@@ -35,6 +53,11 @@ a{
     font-size: 60px;
     text-decoration: none;
     color: antiquewhite;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1.2s;
+    opacity: 0;
 }
 
 a:hover{
