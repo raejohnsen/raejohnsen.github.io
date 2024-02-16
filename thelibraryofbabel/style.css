@@ -1,5 +1,6 @@
 html{
     vertical-align: center;
+    cursor: url('imgs/cursor2.png'), auto;
 }
 
 body{
@@ -7,12 +8,19 @@ body{
     color: antiquewhite;
     font-family: "forma-djr-display", sans-serif;
     position: relative;
-    top: 100px;
+    top: 150px;
 }
 
 h1{
     font-size: 6vw;
     text-align: center;
+    margin-bottom: 0px;
+}
+
+h2{
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 0px;
 }
 
 .nav{
@@ -30,6 +38,26 @@ a{
 }
 
 a:hover{
-    text-decoration: underline;
-    transition: 0.5s ease;
+    color: #606060;
+    transition: 1s ease;
+}
+
+button#backButton {
+    display: block;
+    background-color: transparent;
+    color: #606060;
+    cursor: pointer;
+    z-index: 9999; /* Ensure the button stays above other content */
+    font-family: "forma-djr-display", sans-serif;
+    font-size: 30px;
+    border: none;
+    position: fixed;
+    top: 40px;
+    left: 40px;
+}
+
+#backButton:hover{
+    background-color: transparent;
+    color: antiquewhite;
+    transition: 1s ease;
 }
