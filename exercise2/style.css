@@ -6,6 +6,39 @@ body{
     background-repeat: repeat;
     font-family: "Kohinoor Zerone Zero", sans-serif;
     color: black;
+    text-transform: uppercase;
+    margin-right: 40px;
+    width: 60%;
+}
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.marquee1 {
+    display: inline-block;
+    animation: marquee 4s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+      transform: translateX(90%);
+    }
+    100% {
+      transform: translateX(-80%);
+    }
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
 }
 
 @font-face {
@@ -13,64 +46,27 @@ body{
     src: url("KohinoorZerone-Zero.otf");
 }
 
-/* @font-face {
-    font-family: "Throwup Fill";
-    src: url("Throwup-Fill.otf");
-}
-
-@font-face {
-    font-family: "Throwup Highlight";
-    src: url("Throwup-Highlight.otf");
-}
-
-@font-face {
-    font-family: "Throwup Shadow";
-    src: url("Throwup-Shadow.otf");
-}
-
-@font-face {
-    font-family: "Throwup Stroke";
-    src: url("Throwup-Stroke.otf");
-} */
-
-.shadow, .fill, .highlight, .stroke {
+.text{
     position: absolute;
     top: 0px;
     left: 20px;
-    line-height: 30px;
+    line-height: 35px;
     letter-spacing: 3px;
 }
 
 li{
     font-size: 35px;
     line-height: normal;
-    line-height: 35px;
-    width: 50%;
+    line-height: 55px;
+    width: 100%;
 }
 
-.shadow{
-    /* font-family: "Throwup Shadow"; */
+.text{
     color: black;
-}
-
-.fill{
-    /* font-family: "Throwup Fill"; */
-    color: #ff3ff9;
     -webkit-animation-direction: normal;
-	-webkit-animation-duration: 9s;
+	-webkit-animation-duration: 7s;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-name: colours;
-	-webkit-animation-timing-function: ease;
-}
-
-.highlight{
-    /* font-family: "Throwup Highlight"; */
-    color: white;
-}
-
-.stroke{
-    /* font-family: "Throwup Stroke"; */
-    /* color: #004cff; */
 }
 
 h1{
@@ -102,16 +98,29 @@ h3{
 }
 
 #pasta{
-    width: 100%;
-    margin: auto;
-    display: block;
+    width: 60%;
+    text-align: left;
 }
 
 #rocket{
-    width: 40%;
+    width: 60%;
     margin-left: 75%; 
+    text-align: left;
 }
 
 #steps{
-    width: 50%;
+    width: 60%;
+    text-align: left;
+}
+
+#pasta:hover{
+    text-align: right;
+}
+
+#steps:hover{
+    text-align: right;
+}
+
+#rocket:hover{
+    text-align: right;
 }
