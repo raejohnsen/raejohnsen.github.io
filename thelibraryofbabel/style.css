@@ -122,6 +122,11 @@
         animation-delay: 0.75s;
     }
 
+    #hex:hover{
+        transform: rotate(180deg);
+        transition: 2s ease;
+    }
+
     button#backButton {
         position: fixed;
         bottom: 25px;
