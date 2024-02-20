@@ -1,86 +1,218 @@
-html{
-    vertical-align: center;
-    cursor: url('imgs/cursor2.png'), auto;
-}
+@media all and (min-width: 801px) {
+    html{
+        vertical-align: center;
+        cursor: url('imgs/cursor2.png'), auto;
+    }
 
-body{
-    background-color: #0f0f0f;
-    color: antiquewhite;
-    font-family: "forma-djr-display", sans-serif;
-    position: relative;
-    top: 150px;
-}
+    body{
+        background-color: #0f0f0f;
+        color: antiquewhite;
+        font-family: "forma-djr-display", sans-serif;
+        position: relative;
+        top: 80px;
+    }
 
-@keyframes fadeInAnimation {
-    0% {
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    h1{
+        font-size: 100px;
+        text-align: center;
+        margin-bottom: 0px;
+        animation: fadeInAnimation ease 4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+    h2{
+        font-size: 3vw;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 80px;
+        animation: fadeInAnimation ease 4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 0.7s;
         opacity: 0;
     }
 
-    100% {
-        opacity: 1;
+    .nav{
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row wrap;
+        position: relative;
+        top: 100px;
+    }
+
+    a{
+        font-size: 60px;
+        text-decoration: none;
+        color: antiquewhite;
+        animation: fadeInAnimation ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 1.5s;
+        opacity: 0;
+    }
+
+    a:hover{
+        color: #606060;
+        transition: 1s ease;
+    }
+
+    button#backButton {
+        display: block;
+        background-color: transparent;
+        color: #828282;
+        cursor: pointer;
+        z-index: 9999; /* Ensure the button stays above other content */
+        font-family: "forma-djr-display", sans-serif;
+        font-size: 60px;
+        border: none;
+        position: fixed;
+        top: 10px;
+        left: 20px;
+    }
+
+    #backButton:hover{
+        background-color: transparent;
+        color: antiquewhite;
+        transition: 1s ease;
+    }
+
+    #hex{
+        width: 170px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        opacity: 0;
+        animation: fadeInAnimation ease 4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 1.25s;
+        
+    }
+
+    #hex:hover{
+        transform: rotate(180deg);
+        transition: 2s ease;
     }
 }
 
-h1{
-    font-size: 6vw;
-    text-align: center;
-    margin-bottom: 0px;
-    animation: fadeInAnimation ease 4s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
+@media all and (max-width:800px) {
+    html{
+        vertical-align: center;
+        cursor: url('imgs/cursor2.png'), auto;
+    }
 
-h2{
-    font-size: 3vw;
-    text-align: center;
-    margin-top: 0px;
-    animation: fadeInAnimation ease 4s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-delay: 0.7s;
-    opacity: 0;
-}
+    body{
+        background-color: #0f0f0f;
+        color: antiquewhite;
+        font-family: "forma-djr-display", sans-serif;
+        position: relative;
+        top: 170px;
+    }
 
-.nav{
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
-    position: relative;
-    top: 150px;
-}
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
 
-a{
-    font-size: 60px;
-    text-decoration: none;
-    color: antiquewhite;
-    animation: fadeInAnimation ease 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-delay: 1.2s;
-    opacity: 0;
-}
+        100% {
+            opacity: 1;
+        }
+    }
 
-a:hover{
-    color: #606060;
-    transition: 1s ease;
-}
+    h1{
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 0px;
+        margin-top: 50px;
+        animation: fadeInAnimation ease 4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
 
-button#backButton {
-    display: block;
-    background-color: transparent;
-    color: #606060;
-    cursor: pointer;
-    z-index: 9999; /* Ensure the button stays above other content */
-    font-family: "forma-djr-display", sans-serif;
-    font-size: 30px;
-    border: none;
-    position: fixed;
-    top: 40px;
-    left: 40px;
-}
+    h2{
+        font-size: 30px;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 80px;
+        animation: fadeInAnimation ease 4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 0.7s;
+        opacity: 0;
+    }
 
-#backButton:hover{
-    background-color: transparent;
-    color: antiquewhite;
-    transition: 1s ease;
+    .nav{
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row wrap;
+        position: relative;
+        top: 100px;
+    }
+
+    a{
+        font-size: 40px;
+        text-decoration: none;
+        color: antiquewhite;
+        animation: fadeInAnimation ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 1.5s;
+        opacity: 0;
+    }
+
+    a:hover{
+        color: #606060;
+        transition: 1s ease;
+    }
+
+    button#backButton {
+        display: block;
+        background-color: transparent;
+        color: #828282;
+        cursor: pointer;
+        z-index: 9999; /* Ensure the button stays above other content */
+        font-family: "forma-djr-display", sans-serif;
+        font-size: 60px;
+        border: none;
+        position: fixed;
+        top: 10px;
+        left: 20px;
+    }
+
+    #backButton:hover{
+        background-color: transparent;
+        color: antiquewhite;
+        transition: 1s ease;
+    }
+
+    #hex{
+        width: 150px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        opacity: 0;
+        animation: fadeInAnimation ease 4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 1.25s;
+        
+    }
+
+    #hex:hover{
+        transform: rotate(180deg);
+        transition: 2s ease;
+    }
 }

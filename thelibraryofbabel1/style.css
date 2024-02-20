@@ -28,63 +28,21 @@
         }
     }
 
-    .title{
-        font-family: forma-djr-display, sans-serif;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 55px;
-        line-height: 107px;
-        letter-spacing: 0em;
-        text-align: center;
-        margin-top: 200px;
-        animation: fadeInAnimation ease 4s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-    }
-
-    a{
-        font-family: forma-djr-display, sans-serif;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 30px;
-        opacity: 0;
-        color: black;
-        text-decoration: none;
-        display: flex;
-        justify-content: center;
-        margin-top: 9%;
-        animation: fadeInAnimation ease-in 0.5s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-        animation-delay: 1.5s;
-    }
-
-    a:hover{
-        text-decoration: underline;
-        text-decoration-line: wavy;
-        transition: ease-in 0.9s;
-    }
-
-    html {  
-        scroll-behavior: smooth;  
-    }
-
     #main{
-        margin-top: 50%;
+        margin-top: 0px;
         margin-bottom: 150px;
-    }
-
-    #spacer{
-        height: 300px;
-        width: 100%;
-        justify-content: center;
     }
 
     #wordContainerTitle {
         display: flex;
         justify-content: center;
         flex-flow: row nowrap;
-        padding-top: 7%;
+        margin-top: 5%;
+        opacity: 0;
+        animation: fadeInAnimation ease-in 1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 0.2s;
     }
 
     .wordBox {
@@ -111,24 +69,11 @@
         font-weight: 500;
         font-style: normal;
         font-size: 25px;
-    }
-
-    #hex{
-        width: 125px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 7%;
         opacity: 0;
-        animation: fadeInAnimation ease 4s;
+        animation: fadeInAnimation ease-in 1.5s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
-        animation-delay: 0.75s;
-    }
-
-    #hex:hover{
-        transform: rotate(180deg);
-        transition: 2s ease;
+        animation-delay: 1s;
     }
 
     button#backButton {
@@ -145,7 +90,10 @@
         font-family: forma-djr-display, sans-serif;
         font-size: large;
         opacity: 0;
-        transition: opacity 0.5s ease-in-out;
+        animation: fadeInAnimation ease-in 1.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 1.7s;
     }
 
     #backButton:hover{
@@ -169,7 +117,10 @@
         font-family: forma-djr-display, sans-serif;
         font-size: large;
         opacity: 0;
-        transition: opacity 0.5s ease-in-out;
+        animation: fadeInAnimation ease-in 1.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 1.7s;
     }
 
     #refreshButton:hover{
@@ -193,13 +144,6 @@
         cursor: url('imgs/cursor2.png'), auto;
     }
 
-    h2{
-        text-align: center;
-        font-size: 30px;
-        font-family: sans-serif;
-        padding-top: 30px;
-    }
-
     @keyframes fadeInAnimation {
         0% {
             opacity: 0;
@@ -210,63 +154,21 @@
         }
     }
 
-    .title{
-        font-family: forma-djr-display, sans-serif;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 40px;
-        line-height: 107px;
-        letter-spacing: 0em;
-        text-align: center;
-        margin-top: 200px;
-        animation: fadeInAnimation ease 4s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-    }
-
-    a{
-        font-family: forma-djr-display, sans-serif;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 30px;
-        opacity: 0;
-        color: black;
-        text-decoration: none;
-        display: flex;
-        justify-content: center;
-        margin-top: 12%;
-        animation: fadeInAnimation ease-in 0.5s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-        animation-delay: 1.5s;
-    }
-
-    a:hover{
-        text-decoration: underline;
-        text-decoration-line: wavy;
-        transition: ease-in 0.9s;
-    }
-
-    html {  
-        scroll-behavior: smooth;  
-    }
-
     #main{
-        margin-top: 50%;
+        margin-top: 90px;
         margin-bottom: 150px;
-    }
-
-    #spacer{
-        height: 300px;
-        width: 100%;
-        justify-content: center;
     }
 
     #wordContainerTitle {
         display: flex;
         justify-content: center;
         flex-flow: row nowrap;
-        padding-top: 7%;
+        margin-top: 0%;
+        opacity: 0;
+        animation: fadeInAnimation ease-in 1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 0.2s;
     }
 
     .wordBox {
@@ -293,24 +195,11 @@
         font-weight: 500;
         font-style: normal;
         font-size: 25px;
-    }
-
-    #hex{
-        display: block;
-        width: 125px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 9%;
         opacity: 0;
-        animation: fadeInAnimation ease 4s;
+        animation: fadeInAnimation ease-in 1s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
-        animation-delay: 0.75s;
-    }
-
-    #hex:hover{
-        transform: rotate(180deg);
-        transition: 2s ease;
+        animation-delay: 1s;
     }
 
     button#backButton {
@@ -327,7 +216,10 @@
         font-family: forma-djr-display, sans-serif;
         font-size: large;
         opacity: 0;
-        transition: opacity 0.5s ease-in-out;
+        animation: fadeInAnimation ease-in 1.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 1.7s;
     }
 
     #backButton:hover{
@@ -351,7 +243,10 @@
         font-family: forma-djr-display, sans-serif;
         font-size: large;
         opacity: 0;
-        transition: opacity 0.5s ease-in-out;
+        animation: fadeInAnimation ease-in 1.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 1.7s;
     }
 
     #refreshButton:hover{
@@ -376,13 +271,6 @@
         cursor: url('imgs/cursor2.png'), auto;
     }
 
-    h2{
-        text-align: center;
-        font-size: 30px;
-        font-family: sans-serif;
-        padding-top: 30px;
-    }
-
     @keyframes fadeInAnimation {
         0% {
             opacity: 0;
@@ -393,56 +281,9 @@
         }
     }
 
-    .title{
-        font-family: forma-djr-display, sans-serif;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 30px;
-        line-height: 77px;
-        letter-spacing: 0em;
-        text-align: center;
-        margin-top: 125px;
-        animation: fadeInAnimation ease 4s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-    }
-
-    a{
-        font-family: forma-djr-display, sans-serif;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 30px;
-        opacity: 0;
-        color: black;
-        text-decoration: none;
-        display: flex;
-        justify-content: center;
-        margin-top: 15%;
-        animation: fadeInAnimation ease 4s ;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-        animation-delay: 1.5s;
-    }
-
-    a:hover{
-        text-decoration: underline;
-        text-decoration-line: wavy;
-        transition: ease-in 0.9s;
-    }
-
-    html {  
-        scroll-behavior: smooth;  
-    }
-
     #main{
-        margin-top: 50%;
+        margin-top: 0px;
         margin-bottom: 150px;
-    }
-
-    #spacer{
-        height: 300px;
-        width: 100%;
-        justify-content: center;
     }
 
     #wordContainerTitle {
@@ -450,50 +291,43 @@
         justify-content: center;
         flex-flow: row nowrap;
         padding-top: 10%;
+        opacity: 0;
+        animation: fadeInAnimation ease-in 1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 0.2s;
     }
 
     .wordBox {
-        padding: 3px;
+        padding: 0px 0px;
         margin: 0 5px;
         font-size: 50px;
-        font-family: forma-djr-display, sans-serif;
+        font-family: "forma-djr-display", sans-serif;
         font-weight: 700;
         font-style: normal;
+        font-size: 40px;
     }
 
     #wordContainerBody {
         display: flex;
         flex-wrap: wrap;
-        margin-left: 3%;
-        margin-right: 3%;
+        margin-left: 5%;
+        margin-right: 5%;
         justify-content: space-around;
     }
 
     .word {
         /* margin: 5px; */
-        padding: 1.5px 10px;
-        font-family: forma-djr-display, sans-serif;
+        padding: 2.5px 5px;
+        font-family: "forma-djr-display", sans-serif;
         font-weight: 500;
         font-style: normal;
-        font-size: 25px;
-    }
-
-    #hex{
-        display: block;
-        width: 100px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 3%;
+        font-size: 20px;
         opacity: 0;
-        animation: fadeInAnimation ease 4s;
+        animation: fadeInAnimation ease-in 1s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
-        animation-delay: 0.75s;
-    }
-
-    #hex:hover{
-        transform: rotate(180deg);
-        transition: 2s ease;
+        animation-delay: 1s;
     }
 
     button#backButton {
@@ -507,11 +341,14 @@
         clip-path: polygon(50% 0%, 86% 25%, 86% 75%, 50% 100%, 14% 75%, 14% 25%);
         cursor: pointer;
         z-index: 9999; /* Ensure the button stays above other content */
-        font-family: forma-djr-display, sans-serif;
+        font-family: "forma-djr-display", sans-serif;
         font-size: medium;
         opacity: 0;
         color: #fff9ed;
-        transition: ease-in 0.3s;
+        animation: fadeInAnimation ease-in 1.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 1.7s;
     }
 
     button#refreshButton {
@@ -525,10 +362,13 @@
         clip-path: polygon(50% 0%, 86% 25%, 86% 75%, 50% 100%, 14% 75%, 14% 25%);
         cursor: pointer;
         z-index: 9999; /* Ensure the button stays above other content */
-        font-family: forma-djr-display, sans-serif;
+        font-family: "forma-djr-display", sans-serif;
         font-size: medium;
         opacity: 0;
         color: #fff9ed;
-        transition: ease-in 0.3s;
+        animation: fadeInAnimation ease-in 1.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 1.7s;
     }
 }
