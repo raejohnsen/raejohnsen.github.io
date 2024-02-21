@@ -1,4 +1,9 @@
 @media all and (min-width: 601px) {
+    @font-face {
+        font-family: "General Sans Medium";
+        src: url("GeneralSans-Medium.woff");
+    }
+    
     html{
         cursor: url('imgs/cursor2.png'), auto;
     }
@@ -23,11 +28,6 @@
 
     .rae{
         width: 100%;
-    }
-
-    @font-face {
-        font-family: "General Sans Medium";
-        src: url("GeneralSans-Medium.otf");
     }
 
     h2{
@@ -62,6 +62,11 @@
 }
 
 @media all and (max-width: 600px) {
+    @font-face {
+        font-family: "General Sans Medium";
+        src: url("GeneralSans-Medium.woff");
+    }
+    
     html{
         cursor: url('imgs/cursor2.png'), auto;
     }
