@@ -45,9 +45,10 @@
         font-family: "General Sans Medium", sans-serif;
         font-size: 45px;     
         color: antiquewhite;   
-        text-decoration: none;
         line-height: 125%;
         width: fit-content;
+        text-decoration: none;
+        cursor: pointer;
     }
 
     .link:hover{
@@ -56,7 +57,7 @@
         font-size: 46px;
         text-decoration: underline;
         transition: 60ms ease-in-out;
-        color: #ffa591;
+        color: inherit;
     }
 }
 
@@ -90,6 +91,7 @@
         font-size: large;
         margin: 0px; 
         text-align: center;
+        color: #fffaf1;   
     }
 
     .link{
