@@ -1,7 +1,7 @@
 @media all and (min-width: 601px) {
     @font-face {
         font-family: "General Sans Medium";
-        src: url("GeneralSans-Medium.woff");
+        src: url("GeneralSans-Medium.woff2");
     }
     
     html{
@@ -64,7 +64,7 @@
 @media all and (max-width: 600px) {
     @font-face {
         font-family: "General Sans Medium";
-        src: url("GeneralSans-Medium.woff");
+        src: url("GeneralSans-Medium.woff2");
     }
     
     html{
