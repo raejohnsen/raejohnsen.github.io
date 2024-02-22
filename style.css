@@ -96,12 +96,18 @@
         margin: 0px; 
         text-align: center;
         color: #fffaf1;   
+        margin-bottom: 0px;
+    }
+
+    .box{
+        margin-bottom: 15px;
     }
 
     .link{
         font-family: "General Sans Medium", sans-serif;
-        font-size: 30px;     
+        font-size: 40px;     
         color: #fffaf1;   
-        text-decoration: underline;
+        text-decoration: none;
+        line-height: 35px;
     }
 }
