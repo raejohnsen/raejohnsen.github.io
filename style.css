@@ -109,5 +109,6 @@
         color: #fffaf1;   
         text-decoration: none;
         line-height: 35px;
+        cursor: pointer;
     }
 }
