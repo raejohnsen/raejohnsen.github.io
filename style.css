@@ -1,11 +1,11 @@
 @media all and (min-width: 601px) {
     @font-face {
         font-family: "General Sans Medium";
-        src: url("GeneralSans-Medium.woff2");
+        src: url('font/GeneralSans-Medium.woff2') format('woff2');
     }
     
     html{
-        cursor: url('imgs/cursor2.png'), auto;
+        cursor: url('sources/cursor2.png'), auto;
     }
     
     body{
@@ -13,7 +13,7 @@
         margin-top: 35px;
         background-color: #196cd8;
         color: antiquewhite;
-        cursor: url('imgs/cursor2.png'), auto;
+        cursor: url('sources/cursor2.png'), auto;
         min-height: 890px;
     }
     
@@ -64,11 +64,11 @@
 @media all and (max-width: 600px) {
     @font-face {
         font-family: "General Sans Medium";
-        src: url("GeneralSans-Medium.woff2");
+        src: url('sources/GeneralSans-Medium.woff2') format('woff2');
     }
     
     html{
-        cursor: url('imgs/cursor2.png'), auto;
+        cursor: url('sources/cursor2.png'), auto;
     }
     
     body{
@@ -77,7 +77,6 @@
         margin-top: 10px;
         color: #fffaf3;
         background-color: #ff0066;
-        cursor: url('imgs/cursor2.png'), auto;
     }    
     
     h1{

@@ -1,10 +1,10 @@
 @font-face {
     font-family: "Kohinoor Zerone Zero";
-    src: url("KohinoorZerone-Zero.woff");
+    src: url('sources/KohinoorZerone-One.woff2');
 }
 
 html{
-    cursor: url('imgs/cursor2.png'), auto;
+    cursor: url('sources/cursor2.png'), auto;
 }
 
 body{
