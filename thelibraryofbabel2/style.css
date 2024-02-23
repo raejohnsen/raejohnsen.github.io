@@ -140,6 +140,11 @@
         width: 1600px;
     }
 
+    .whole{
+        width: 100%;
+        height: auto;
+    }
+
     .words{
         text-align: center;
         width: 150px;
