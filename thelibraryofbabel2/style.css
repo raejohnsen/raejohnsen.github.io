@@ -232,7 +232,7 @@
         position: fixed;
         bottom: -190px;
         left: -290px;
-        width: 30%; /* Set the width to cover the entire viewport */
+        width: 20%; /* Set the width to cover the entire viewport */
         transform: rotate(90deg) scale(170%);
     }
 
