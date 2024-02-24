@@ -132,11 +132,11 @@
         font-family: "forma-djr-display", sans-serif;
         font-weight: 500;
         font-style: normal;
-        overflow: hidden;
+        overflow: -webkit-hidden-unscrollable;
         color: black;
         background-color: antiquewhite;
         position: relative;
-        transform: rotate(270deg) scale(55%) translateX(-60px) translateY(-1325px);
+        transform: rotate(270deg) scale(55%) translateX(-130px) translateY(-1340px);
         width: 1600px;
     }
 
@@ -196,18 +196,22 @@
 
     .row6{
         transform: translateY(507px) translateX(-66px); 
+        display: none;
     }
 
     .row7a{
         transform: translateY(613px) translateX(10px);
+        display: none;
     }
 
     .row7b{
         transform: translateY(588px) translateX(160px);
+        display: none;
     }
 
     .row8{
         transform: translateY(600px) translateX(155px);    
+        display: none;
     }
 
 
@@ -232,8 +236,8 @@
         position: fixed;
         bottom: -190px;
         left: -290px;
-        width: 20%; /* Set the width to cover the entire viewport */
-        transform: rotate(90deg) scale(170%);
+        width: 24%; /* Set the width to cover the entire viewport */
+        transform: rotate(90deg) scale(170%) translateY(-50px) translateX(-35px);
     }
 
     button{
