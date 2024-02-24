@@ -185,7 +185,7 @@
     button#backButton {
         display: block;
         background-color: transparent;
-        color: #828282;
+        color: antiquewhite;
         cursor: pointer;
         z-index: 9999; /* Ensure the button stays above other content */
         font-family: "forma-djr-display", sans-serif;
@@ -203,7 +203,7 @@
 
     #backButton:hover{
         background-color: transparent;
-        color: antiquewhite;
+        color: #606060;
         transition: 1s ease;
     }
 
