@@ -13,7 +13,7 @@
         align-items: baseline;
     }
 
-    a{
+    .back{
         font-family: Helvetica, sans-serif;
         font-size: 110px;
         margin: 15px;
@@ -21,6 +21,21 @@
         text-decoration: none;
         color: black;
         font-weight: 700;
+    }
+
+    p{
+        font-family: helvetica, sans-serif;
+        color: black;
+        font-size: 30px;
+        margin: 30px;
+        width: 50%;
+    }
+
+    a{
+        font-family: helvetica, sans-serif;
+        color: black;
+        font-size: 30px;
+        margin: 30px;
     }
 }
 
