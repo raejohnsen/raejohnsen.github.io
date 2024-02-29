@@ -18,6 +18,9 @@
         font-size: 110px;
         margin: 15px;
         letter-spacing: 0.1px;
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
     }
 }
 
