@@ -1,18 +1,28 @@
 @media all and (min-width: 601px) {
     html{
-        cursor: url('imgs/cursor2.png'), auto;
+        cursor: url('sources/cursor2.png'), auto;
     }
     
     body{
         margin-left: 0px;
         margin-right: 0px;
-        margin-top: 10px;
+        margin-top: 0px;
     }
     
     .top{
         display: flex;
         justify-content: space-between;
         align-items: baseline;
+        position: fixed;
+        top: 0px;
+        mix-blend-mode: difference;
+        color: black;
+        z-index: 9999px;
+        transition: color 0.25s ease;
+    }
+
+    .color-change {
+        color: #00f2ff !important; /* Change to desired color */
     }
 
     h1{
@@ -21,15 +31,22 @@
         margin: 15px;
         letter-spacing: 0.1px;
         line-height: 80%;
+        color: inherit;
+        transition: color 0.3s ease;
     }
 
     a{
         font-family: Helvetica, sans-serif;
         font-size: 50px;
-        color: black;
         margin: 15px;
         text-decoration: none;
         font-weight: 700;
+        color: black;
+        transition: color 0.25s ease;
+    }
+
+    coloredElement:visited {
+        color: #000000;
     }
 
     a:hover{
@@ -40,19 +57,40 @@
     .gallery {
         display: flex;
         flex-flow: row wrap;
-        margin: 0px;
+        margin-top: 110px;
+        margin-left: 0px;
+        margin-right: 0px;
         width: 100%;
     }
 
     .gallery img {
-        height: 32vw;
         margin: 0px;
+    }
+
+    .row1{
+        height: 32.115vw;
+    }
+
+    .row2{
+        height: 33.295vw;
+    }
+
+    .row3{
+        height: 32.5vw;
+    }
+
+    .row4{
+        height: 33.795vw;
+    }
+
+    .row5{
+        height: 35.17vw;
     }
 }
 
 @media all and (max-width: 600px) {
     html{
-        cursor: url('imgs/cursor2.png'), auto;
+        cursor: url('sources/cursor2.png'), auto;
     }
     
     body{
