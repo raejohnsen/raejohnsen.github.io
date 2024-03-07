@@ -4,9 +4,7 @@
     }
     
     body{
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-top: 0px;
+        margin: 0px;
     }
     
     .top{
@@ -89,6 +87,22 @@
         height: 35.17vw;
     }
 
+    .row6{
+        height: 33.65vw;
+    }
+
+    .row7{
+        height: 24.75vw;
+    }
+
+    .row8{
+        height: 29.27vw;
+    }
+
+    .row9{
+        height: 36.64vw;
+    }
+
     #fullpage {
         display: none;
         position: absolute;
@@ -97,7 +111,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat no-repeat;
         background-position: top center;
         background-color: #000000;
@@ -118,6 +132,15 @@
 
     .imagea{
         color: #ff3cbe;
+    }
+
+    .caption{
+        z-index: 10000;
+        position: fixed;
+        bottom: -60px;
+        font-family: helvetica, sans-serif;
+        display: none;
+        mix-blend-mode: difference;
     }
 }
 
