@@ -14,3 +14,37 @@ window.addEventListener('scroll', function() {
         }
     }
 });
+
+function getPics() {} //just for this demo
+const imgs = document.querySelectorAll('.gallery img');
+const fullPage = document.querySelector('#fullpage');
+
+imgs.forEach(img => {
+  img.addEventListener('click', function() {
+    fullPage.style.backgroundImage = 'url(' + img.src + ')';
+    fullPage.style.display = 'block';
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const targetDiv = document.getElementById('targetDiv');
+    const images = document.querySelectorAll('.image');
+  
+    images.forEach(image => {
+      image.addEventListener('click', function() {
+        toggleVisibility(targetDiv);
+      });
+    });
+
+    fullPage.addEventListener('click', function() {
+        targetDiv.style.display = 'flex';
+    });
+  
+    function toggleVisibility(element) {
+      if (element.style.display === 'none') {
+        element.style.display = 'block';
+      } else {
+        element.style.display = 'none';
+      }
+    }
+  });
