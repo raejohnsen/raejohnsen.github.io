@@ -1,0 +1,61 @@
+html{
+    cursor: url('sources/cursor2.png'), auto;
+}
+
+body{
+    background-color: #fffbf6;
+}
+
+.canvas{
+    position: absolute;
+    display: flex;
+    flex-flow: row nowrap;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.letter{
+    display: flex;
+    flex-flow: row wrap;
+    margin-right: 0px;
+}
+
+.H{
+    width: 420px;
+}
+
+.E{
+    width: 210px;
+}
+
+.L{
+    width: 270px;
+}
+
+.L2{
+    width: 240px;
+}
+
+.O{
+    width: 450px;
+}
+
+.empty{
+    width: 30px;
+    height: 30px;
+}
+
+.fill{
+    width: 30px;
+    height: 30px;
+    background-color: #004fd7;
+}
+
+.fill:hover{
+    background-color: pink;
+}
+
+.empty:hover{
+    background-color: #bdffde;
+}
