@@ -1,10 +1,11 @@
-let seasons = ["autumn", "winter", "spring", "summer"];
+function replaceWords(){
+let seasons = ["autumn", "winter", "spring"];
 let lovelys = ["pretty", "sweet", "gorgeous", "cute"];
 let temperates = ["mild", "gentle", "pleasant", "benign"];
 let shakes = ["jostle", "tremble", "quake", "quiver"];
-let months = ["september", "october", "november", "december", "january", "february", "march", "april", "may", "june", "july", "august"];
+let months = ["September", "October", "November", "December", "January", "February", "March", "April", "May", "June", "July", "August"];
 let hots = ["warm", "sweltering", "scorching", "humid"];
-let complexion = ["skin", "face", "visage", "disposition"];
+let complexions = ["skin", "face", "visage", "disposition"];
 let declines = ["reduces", "decreases", "lessens", "dwindles"];
 let chances = ["providence", "destiny", "fate", "odds"];
 let loses = ["misplace", "mislay", "be deprived of", "stop having"];
@@ -70,3 +71,6 @@ blank15.innerHTML = " " + men[randomMen];
 blank16.innerHTML = " " + eyes[randomEyes];
 blank17.innerHTML = " " + thises[randomThis];
 blank18.innerHTML = " " + thises[randomThis];
+}
+
+window.onload = replaceWords;

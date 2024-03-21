@@ -3,22 +3,75 @@
         cursor: url('sources/cursor2.png'), auto;
     }
     
+    body{
+        margin-left: 50px;
+        margin-top: 50px;
+        font-family: helvetica, sans-serif;
+    }
+
+    p{
+        margin-top: 25px;
+        margin-top: 25px;
+    }
+    
     #whole{
-        margin-left: 35%;
-        margin-right: 35%;
         width: 30%;
         display: block;
+        margin-top: 10px;
+        font-family: "filmotype-yale", sans-serif;
+        font-size: 30px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 0px;
+    }
+
+    #whole span{
+        font-family: helvetica, sans-serif;
+        font-size: 18px;
     }
 
     pre{
-        font-family: helvetica, sans-serif;
         font-size: 20px;
-        line-height: 5%;
+        font-family: helvetica, sans-serif; 
+        font-weight: 400;
     }
 }
 
 @media all and (max-width: 600px) {
     html{
         cursor: url('sources/cursor2.png'), auto;
+    }
+    
+    body{
+        margin-left: 15px;
+        margin-top: 30px;
+        font-family: helvetica, sans-serif;
+    }
+
+    p{
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    
+    #whole{
+        width: 30%;
+        display: block;
+        margin-top: 10px;
+        font-family: "filmotype-yale", sans-serif;
+        font-size: 5.5vw;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 0px;
+    }
+
+    #whole span{
+        font-family: helvetica, sans-serif;
+        font-size: 3.5vw;
+    }
+
+    pre{
+        font-size: 20px;
+        font-family: helvetica, sans-serif; 
+        font-weight: 400;
     }
 }
