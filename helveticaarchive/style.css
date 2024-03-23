@@ -1,4 +1,4 @@
-@media all and (min-width: 601px) {
+@media all and (min-width: 1621px) {
     html{
         cursor: url('sources/cursor2.png'), auto;
     }
@@ -14,10 +14,10 @@
         position: fixed;
         top: 0px;
         mix-blend-mode: difference;
-        color: black;
+        color: #000000;
         z-index: 9999px;
         transition: color 0.25s ease;
-        z-index: 9997;
+        z-index: 9999;
     }
 
     .color-change {
@@ -181,6 +181,19 @@
         font-family: helvetica, sans-serif;
         display: none;
         mix-blend-mode: difference;
+    }
+
+    .toggleOn{
+        width: 100vw;
+        height: auto;
+        position: absolute;
+        top: 0px;
+        z-index: 9998;
+        display: block;
+    }
+
+    .hidden{
+        display: none;
     }
 }
 
@@ -393,7 +406,7 @@
     }
 
     .color-change {
-        color: #00f2ff !important; /* Change to desired color */
+        color: #ff0077 !important; /* Change to desired color */
         transition: 0.25s ease;
     }
 
@@ -402,7 +415,7 @@
         font-size: 50px;
         margin: 15px;
         line-height: 80%;
-        width: 30%;
+        width: 40%;
     }
 
     a{
@@ -421,6 +434,7 @@
 
     .gallery{
         margin-top: 150px;
+        flex-flow: column nowrap;
     }
 
     .gallery img {
@@ -441,15 +455,26 @@
         display: none;
         position: absolute;
         z-index: 9998;
-        top: 0;
-        left: 0;
+        top: 0px;
+        left: 0px;
         width: 100%;
         height: 100%;
         background-size: contain;
         background-repeat: no-repeat no-repeat;
-        background-position: top center;
+        background-position: center 50%;
         background-color: #000000;
         transition: 0.25s ease-in-out;
         overflow-y: scroll;
+    }
+
+    .imagetop{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        position: fixed;
+        top: 0px;
+        mix-blend-mode: difference;
+        color: #83ff3c;
+        z-index: 9999;
     }
 }
