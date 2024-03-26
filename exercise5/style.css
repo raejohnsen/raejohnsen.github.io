@@ -1,0 +1,23 @@
+html{
+    cursor: url('sources/cursor2.png'), auto;
+    overflow-y: hidden;
+}
+
+.body{
+    margin-top: 0px;
+}
+
+.row1, .row2, .row3, .row4, .row5, .row6 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.line{
+    background-color: black;
+    height: 185px;
+    width: 5px;
+    transform: rotate(0deg);
+}
