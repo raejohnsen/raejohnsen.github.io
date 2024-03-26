@@ -64,7 +64,7 @@
 @media all and (max-width: 600px) {
     @font-face {
         font-family: "General Sans Medium";
-        src: url('sources/GeneralSans-Medium.woff2') format('woff2');
+        src: url('fonts/GeneralSans-Medium.woff2') format('woff2');
     }
     
     html{
