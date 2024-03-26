@@ -1,6 +1,8 @@
 html{
     cursor: url('sources/cursor2.png'), auto;
     overflow-y: hidden;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .body{
@@ -13,6 +15,8 @@ html{
     justify-content: space-between;
     margin-left: 100px;
     margin-right: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .line{
