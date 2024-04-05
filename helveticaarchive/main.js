@@ -15,14 +15,21 @@ window.addEventListener('scroll', function() {
     }
 });
 
+let caption = document.getElementsByClassName('caption');
+
+
 function toggleClass(elementId) {
     var element = document.getElementById(elementId);
     if (element.classList.contains('toggleOn')) {
         element.classList.remove('toggleOn');
+        
+
     } else {
         element.classList.add('toggleOn');
+        caption.style.display="block";
     }
 }
+
 
 // function toggleClass() {
 //   var element = document.getElementById("green");

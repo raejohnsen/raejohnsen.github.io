@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vw;
+    width: 100vw;
+    overflow: hidden;
+    cursor: url('sources/cursor2.png'), auto;
+    background-color: white;
+}
+  
+#container {
+    width: 100vw;
+    height: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    margin: 0px;
+}
+  
+.square {
+    background-color: #39adff;
+    margin: 0px;
+}
+  
