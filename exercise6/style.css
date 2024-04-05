@@ -20,4 +20,19 @@ body{
     background-color: #39adff;
     margin: 0px;
 }
+
+h1{
+    z-index: 1000;
+    font-family: Helvetica, sans-serif;
+    font-size: 70px;
+    font-weight: 900;
+    color: black;
+    top: 40%;
+    width: 25%;
+    margin-left: 38%;
+    position: absolute;
+    display: fixed;
+    text-align: center;
+    background-color: white;
+}
   
