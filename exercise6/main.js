@@ -29,8 +29,8 @@ document.body.style.backgroundColor = colors[randombg];
 
 
 // Below code is from w3 schools
-// function reload() {
-//   window.location.reload();
-// }
+function reload() {
+  window.location.reload();
+}
 
-// setTimeout(reload, 5000);
+setTimeout(reload, 5000);
