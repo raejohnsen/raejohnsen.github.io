@@ -22,6 +22,7 @@ let squares = document.querySelectorAll(".square");
 for (let box of squares) {
     box.style.backgroundColor = colors[randomColor];
     box.style.opacity = Math.random();
+    if (box.style.backgroundColor = )
 }
 
 let randombg = Math.floor(Math.random() * colors.length);
