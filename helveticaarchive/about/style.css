@@ -72,7 +72,7 @@
     }
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 1100px) {
     html{
         cursor: url('imgs/cursor2.png'), auto;
     }
@@ -124,5 +124,14 @@
         color: black;
         font-size: 20px;
         margin-left: 15px;
+    }
+
+    img{
+        display: block;
+        width: 85vw;
+        top: 65%;
+        left: 7%;
+        z-index: 1000;
+        position: relative;
     }
 }
