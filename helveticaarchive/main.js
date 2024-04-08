@@ -15,53 +15,59 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// let title = document.querySelectorAll("top");
-// let caption = document.getElementsByClassName('caption');
 
-// function toggleClass(elementId) {
-//     var element = document.getElementById(elementId);
-//     if (element.classList.contains('toggleOn')) {
-//         element.classList.remove('toggleOn');
-
-//     } else {
-//         element.classList.add('toggleOn');
-//         caption.style.display = "block";
-//         title.style.color = "pink";
-//     }
-// }
-
-document.addEventListener('DOMContentLoaded', function() {
-    const images = document.querySelectorAll('.image');
-
-    images.forEach(image => {
-        image.addEventListener('click', function() {
-            window.scrollTo({ top: 0, behavior: 'auto' });
-            
-            // Toggle active class for clicked image
-            image.classList.toggle('active');
-
-            // Toggle caption
-            const caption = document.createElement('div');
-            caption.classList.add('image-caption');
-            caption.textContent = image.dataset.caption;
-            document.body.appendChild(caption);
-
-            // Toggle display for other images
-            images.forEach(otherImage => {
-                if (otherImage !== image) {
-                    otherImage.style.display = 'none';
+    document.addEventListener('DOMContentLoaded', function() {
+        const images = document.querySelectorAll('.image');
+    
+        images.forEach(image => {
+            image.addEventListener('click', function() {
+                // Scroll to the top of the page
+                window.scrollTo({ top: 0, behavior: 'auto' });
+    
+                // Toggle active class for clicked image
+                image.classList.toggle('active');
+    
+                // Toggle caption
+                const caption = document.querySelector('.image-caption');
+                if (image.classList.contains('active')) {
+                    if (!caption) {
+                        const newCaption = document.createElement('div');
+                        newCaption.classList.add('image-caption');
+                        newCaption.textContent = image.dataset.caption;
+                        document.body.appendChild(newCaption);
+                    } else {
+                        caption.textContent = image.dataset.caption;
+                    }
+                } else {
+                    if (caption) {
+                        caption.remove();
+                    }
                 }
-            });
-
-            // Remove image and caption when clicking outside the active image
-            if (!image.classList.contains('active')) {
-                document.querySelector('.image-caption').remove();
+    
+                // Toggle display for other images
                 images.forEach(otherImage => {
-                    otherImage.style.display = 'inline';
+                    if (otherImage !== image) {
+                        otherImage.style.display = image.classList.contains('active') ? 'none' : 'inline-block';
+                    }
                 });
+            });
+        });
+    
+        // Remove image and caption when clicking outside the active image
+        document.addEventListener('click', function(event) {
+            if (!event.target.classList.contains('image') && !event.target.classList.contains('image-caption')) {
+                const activeImage = document.querySelector('.image.active');
+                if (activeImage) {
+                    activeImage.classList.remove('active');
+                    const caption = document.querySelector('.image-caption');
+                    if (caption) {
+                        caption.remove();
+                    }
+                    images.forEach(otherImage => {
+                        otherImage.style.display = 'inline-block';
+                    });
+                }
             }
         });
     });
-});
-
-
+    
