@@ -1,3 +1,5 @@
+// The JS below was sourced from chatGPT
+
 window.addEventListener('scroll', function() {
     var elements = document.getElementsByClassName('coloredElement');
     var scrollPosition = window.scrollY;

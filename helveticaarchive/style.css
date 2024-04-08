@@ -469,18 +469,18 @@
 
     .image-caption {
         position: fixed;
-        bottom: 20px;
+        bottom: 0px;
         left: 50%;
         transform: translateX(-50%);
         padding: 5px;
-        color: #00f2ff;
+        color: #000000;
         font-family: Helvetica, sans-serif;
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 700;
         z-index: 1000;
-        width: 60vw;
+        width: 100vw;
         text-align: center;
-        /* background-color: rgba(255, 255, 255, 0.7); */
+        background-color: rgba(255, 255, 255, 1);
     }
 }
 
@@ -597,17 +597,17 @@
 
     .image-caption {
         position: fixed;
-        bottom: 20px;
+        bottom: 0px;
         left: 50%;
         transform: translateX(-50%);
         padding: 5px;
-        color: #00f2ff;
+        color: #000000;
         font-family: Helvetica, sans-serif;
         font-size: 18px;
         font-weight: 700;
         z-index: 1000;
-        width: 80vw;
+        width: 100vw;
         text-align: center;
-        /* background-color: rgba(255, 255, 255, 0.7); */
+        background-color: rgba(255, 255, 255, 1);
     }
 }
