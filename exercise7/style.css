@@ -6,6 +6,7 @@ body{
     background-image: url(sources/starry-night-empty-moma.jpg);
     background-size: cover;
     background-position: 0% 40%;
+    overflow: hidden;
 }
 
 #outer{
@@ -43,5 +44,5 @@ img{
     margin-right: 35%;
     position: fixed;
     bottom: 50px;
-    left: 0px;
+    left: 220px;
 }
