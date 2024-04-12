@@ -1,4 +1,4 @@
-let colors = ["#ff1414", "#ff9600", "#ffd859", "#ccff00", "#80ff92", "#42e9f5", "#0092ff", "#0031ff", "#5600ff", "#c189ff", "#ff89f0", "#ff0078", "#ffffff"];
+let colors = ["#ff1414", "#ff9600", "#ffd859", "#ccff00", "#80ff92", "#42e9f5", "#0092ff", "#0031ff", "#5600ff", "#c189ff", "#ff89f0", "#ff0078"];
 
 let doxie = document.getElementById("doxie");
 let buttonInput = document.getElementById("button");

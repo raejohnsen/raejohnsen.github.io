@@ -27,7 +27,7 @@ body{
 img{
     width: 30%;
     position: fixed;
-    border: 5px solid #ffd859;
+    border: 5px solid white;
     max-width: calc(100% - 300px);
     display: block; /* Ensure the image behaves like a block element */
     margin-left: 25%;
