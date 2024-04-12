@@ -1,0 +1,47 @@
+html{
+    cursor: url('sources/cursor2.png'), auto;
+}
+
+body{
+    background-image: url(sources/starry-night-empty-moma.jpg);
+    background-size: cover;
+    background-position: 0% 40%;
+}
+
+#outer{
+    display: flex;
+    width: 100%;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#container {
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    height: 100vh; /* Set the container height to the full viewport height */
+}
+
+img{
+    width: 30%;
+    position: fixed;
+    border: 5px solid #ffd859;
+    max-width: calc(100% - 300px);
+    display: block; /* Ensure the image behaves like a block element */
+    margin-left: 25%;
+    filter: drop-shadow(6px 10px 7px #222222);
+}
+
+.inputs{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+    position: fixed;
+    bottom: 50px;
+    left: 0px;
+}
