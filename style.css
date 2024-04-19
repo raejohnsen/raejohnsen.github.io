@@ -10,7 +10,7 @@
     
     body{
         margin-left: 50px;
-        margin-top: 25px;
+        margin-top: 20px;
         background-color: #196cd8;
         color: antiquewhite;
         cursor: url('sources/cursor2.png'), auto;
@@ -39,6 +39,16 @@
     h3{
         font-family: "General Sans Medium", sans-serif;
         font-size: 45px;
+    }
+
+    .outer{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .column1, .column2{
+        width: 40%;
+
     }
 
     .link{
