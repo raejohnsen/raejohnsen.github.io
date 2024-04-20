@@ -1,8 +1,8 @@
 @media all and (min-width: 601px) {
-    @font-face {
-        font-family: "General Sans Medium";
+    /* @font-face {
+        font-family: "helvetica";
         src: url('font/GeneralSans-Medium.woff2') format('woff2');
-    }
+    } */
     
     html{
         cursor: url('sources/cursor2.png'), auto;
@@ -52,7 +52,7 @@
     }
 
     .link{
-        font-family: "General Sans Medium", sans-serif;
+        font-family: helvetica, sans-serif;
         font-size: 45px;     
         color: antiquewhite;   
         line-height: 125%;
@@ -72,10 +72,10 @@
 }
 
 @media all and (max-width: 600px) {
-    @font-face {
+    /* @font-face {
         font-family: "General Sans Medium";
         src: url('fonts/GeneralSans-Medium.woff2') format('woff2');
-    }
+    } */
     
     html{
         cursor: url('sources/cursor2.png'), auto;
@@ -114,7 +114,7 @@
     }
 
     .link{
-        font-family: "General Sans Medium", sans-serif;
+        font-family: helvetica, sans-serif;
         font-size: 40px;     
         color: #fffaf1;   
         text-decoration: none;
