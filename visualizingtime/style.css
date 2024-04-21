@@ -19,21 +19,16 @@ body{
     flex-flow: row wrap;
     justify-content: left;
     padding: 0px;
+    border-right: 1px #434343 solid;
   }
   
   .h1square, .h2square, .min1square, .min2square, .sec1square, .sec2square{
-    /* border-width: 1px;
-    border-color: white;
-    border-style: solid; */
     width: 2.66vw;
     height: 2.66vw;
   }
   
   .filled{
     background-color: white;
-    /* border-width: 1px;
-    border-color: white;
-    border-style: solid; */
     width: 2.66vw;
     height: 2.66vw;
   }

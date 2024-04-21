@@ -1,45 +1,13 @@
-// function updateTime(){
-
-//     let today = new Date();
-//     let thisHour = today.getHours();
-//     let thisMinute = today.getMinutes();
-//     let thisSecond = today.getSeconds();
-
-//     if(thisSecond < 10) {
-//         thisSecond = "0" + thisSecond;
-//     }
-        
-//       if(thisMinute < 10) {
-//         thisMinute = "0" + thisMinute;
-//     }
-
-
-
-//     let timeElem = document.getElementById("timeHere");
-//     timeElem.innerHTML = thisHour + ":" + thisMinute + ":" + thisSecond;
-
-//     let hour1 = document.getElementsByClassName("h1square");
-//     let hour2 = document.getElementsByClassName("hour2");
-//     let minute1 = document.getElementsByClassName("min1");
-//     let minute2 = document.getElementsByClassName("min2");
-//     let second1 = document.getElementsByClassName("sec1");
-//     let second2 = document.getElementsByClassName("sec2");
-
-//     let randomId = Math.floor(Math.ramdom() * (114 - 1 + 1) + 1);
-//     let numOfDivs = thisHour;
-
-//     for (var i = 0; i < numOfDivs; i++) {
-//         var randomIndex = Math.floor(Math.random() * hour1.length);
-//         hour1[randomIndex].classList.add('filled');
-
-
-        
-// }
-
-// setInterval(updateTime, 1000);}
-
 function updateTime() {
+    let columns = document.getElementsByClassName("column");
+    let outer = document.getElementsByClassName("outer");
+
     
+
+    columns.onmouseover = function(){
+        columns.style.borderRight = "1px black solid";
+    }
+
     let today = new Date();
     let thisHour = today.getHours();
     let thisMinute = today.getMinutes();
@@ -54,7 +22,7 @@ function updateTime() {
     }
 
     if (thisHour > 12) {
-        thisHour = thisHour;
+        thisHour = thisHour - 12;
     }
 
     if(thisHour < 10) {
@@ -152,12 +120,12 @@ function updateTime() {
     for (let i = 0; i < numOfDivsSec2; i++) {
         let randomIndex = Math.floor(Math.random() * sec2Squares.length);
         sec2Squares[randomIndex].classList.add('filled');
-        filled.style.backgroundColor = colors[randomColor];
     }
 
-
-
+    let colors = ["blue", "pink", "green"];
+    let randomColor = Math.floor(Math.random() * colors.length);
+    filled.style.backgroundColor = colors[randomColor];
 
 }
 
-setInterval(updateTime, 1000);
+setInterval(updateTime, 10000);
