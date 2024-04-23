@@ -128,4 +128,4 @@ function updateTime() {
 
 }
 
-setInterval(updateTime, 10000);
+setInterval(updateTime, 1000);
