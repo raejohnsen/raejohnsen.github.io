@@ -27,46 +27,6 @@ for (let box of squares) {
 let randombg = Math.floor(Math.random() * colors.length);
 document.body.style.backgroundColor = colors[randombg];
 
-// if (colors[randomColor] == "#ff0000"){
-//   document.body.style.backgroundColor != "#ff0000"
-// }
-
-// if (colors[randomColor] == "#ff6200"){
-//   document.body.style.backgroundColor != "#ff6200"
-// }
-
-// if (colors[randomColor] == "#fff700"){
-//   document.body.style.backgroundColor != "#fff700"
-// }
-
-// if (colors[randomColor] == "#00ff62"){
-//   document.body.style.backgroundColor != "#00ff62"
-// }
-
-// if (colors[randomColor] == "#00d0ff"){
-//   document.body.style.backgroundColor != "#00d0ff"
-// }
-
-// if (colors[randomColor] == "#0040ff"){
-//   document.body.style.backgroundColor != "#0040ff"
-// }
-
-// if (colors[randomColor] == "#5500ff"){
-//   document.body.style.backgroundColor != "#5500ff"
-// }
-
-// if (colors[randomColor] == "#ff0090"){
-//   document.body.style.backgroundColor != "#ff0090"
-// }
-
-// if (colors[randomColor] == "#ffffff"){
-//   document.body.style.backgroundColor != "#ffffff"
-// }
-
-// if (colors[randomColor] == "#000000"){
-//   document.body.style.backgroundColor != "#000000"
-// }
-
 // Below code is from w3 schools
 function reload() {
   window.location.reload();

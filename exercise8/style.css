@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+    font-family: "filmotype-yale", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+#info{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 4%;
+}
+
+#dateHere, #timeHere{
+    color: pink;
+    width: 50%;
+    font-size: 80px;
+}
+
+#dataHere{
+    text-align: left;
+}
+
+#timeHere{
+    text-align: right;
+}
+
+#gifs{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+img{
+    height: 50vh;
+}

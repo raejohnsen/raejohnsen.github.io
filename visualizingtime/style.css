@@ -1,8 +1,7 @@
-body{
+  body{
     margin: 0px;
     padding: 0px;
     /* overflow: hidden; */
-    background-color: black;
   }
   
   .outer{
@@ -28,13 +27,37 @@ body{
   }
   
   .filled{
-    background-color: white;
+    background-color: #ffffff;
     width: 2.66vw;
     height: 2.66vw;
   }
 
   #timeHere{
-    color: white;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+  }
+
+  #about{
+    font-family: helvetica, sans-serif;
+    color: white;
+    font-size: 23px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 0.5px white solid;
+    z-index: 1000;
+    position: absolute;
+    width: 50%;
+    top: 25%;
+    left: 20%;
+    padding: 5%;
+    display: none;
+  }
+
+  #button{
+    color: rgb(255, 255, 255);
+    font-family: helvetica, sans-serif;
+    font-size: 30px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
   }
