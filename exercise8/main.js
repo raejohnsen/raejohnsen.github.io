@@ -6,7 +6,7 @@ function updateTime() {
     let months = ["https://media.baamboozle.com/uploads/images/294354/1668445804_171746_gif-url.gif", 
     "https://lh6.googleusercontent.com/proxy/bPWO1LedPSn23ku5i0q0F8oTmtTeCJshdffxqkvZvwD0-r1XRsND8PtU3vmz1BEhmBlP0Fo-EBHEaU1HhxTzyhNP-oYoIbzyzE2rCAJamUUmkftag6bmJOy7b40jB-NaEQpSzy6ha5zRCPM", 
     "https://i.pinimg.com/originals/11/90/b7/1190b7ee995b30ccb939ead77209b724.gif", 
-    "https://lh3.googleusercontent.com/proxy/nNepAXtbEqdx64Xx6hRFVuNrnKqcmGFN4sEXpLJRL1k7LUw4IVznoMjosUQh6tOmG9yRIJCFpUF6fn_Mgz6edWV6Q49dTd4l4lCJtGXDCdm3zXAYMkpUP4L8dxYLdKt0qaIT9Ok9M-ywzszDew", 
+    "https://s3.amazonaws.com/image.blingee.com/images19/content/output/000/000/000/82e/854770256_154116.gif", 
     "https://lh6.googleusercontent.com/proxy/tKc96kTWVjZF0dJ-Fd3dhOEL5xDICn0qFBNHdg_so_wr2lhSCYVDybA6_y2-YydSW_WSGm7ZI1SeRhwwEYXTnvAAx9shAnsJN02UT45L3z8WyJNr0ch7hjeHewn6kF_p4wHncuJdP1M", 
     "https://lh6.googleusercontent.com/proxy/RbVFaEori0bl6BJdi8LQZ0yzav8KvOIPnOecvAkNPlplc5B13SMGz4EZuBTgNUlHyI8DGT5q0WTveW9fOLSNSvP6QoYXvHJOXL7odQCTZF1c9vOS8CN5pp162u0mLbXmxtJobR9TpBQ", 
     "https://lh3.googleusercontent.com/proxy/wIqvYHmFwakHiqfbt4DGNluSwZgFu-PChzz_DJ9ZfXvTlCvZxhBH6sBuj-I1QRnr6f7WlzH4yaJbZ3RPFhfLQSnPBX6ylR406f8bAaSPMuusXEBucQ5uE7amA0NKrZUIyfIztEyPCAs", 
@@ -24,7 +24,7 @@ function updateTime() {
     let thisDate = today.getDate();
 
     let thisWeekday = today.getDay();
-    let dayGifs = ["https://www.google.com/url?sa=i&url=https%3A%2F%2Fblingee.com%2Fblingee%2Fview%2F113734176-Happy-Sunday&psig=AOvVaw2_ZrEOLtNquctuTkTFoWpC&ust=1714174047635000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKi1kJPC3oUDFQAAAAAdAAAAABAK", 
+    let dayGifs = ["https://s3.amazonaws.com/image.blingee.com/images18/content/output/000/000/000/6c7/647497829_2019065.gif", 
     "https://lh4.googleusercontent.com/proxy/VaNc6u-xxplKbYprq_3RkaGhabjr89hJ2oxIpKtQ56g7YN2CtHRvpy33TcOlg9XOgoM4ol2EBYNS98QogmmMsC5P_onUQKwj3v5Ob2UWqfpb1fHhm-phPF61x9oSAlIg7HnPFk5G2tQ", 
     "https://lh6.googleusercontent.com/proxy/F-du-9ysYAO_iMXwuvwOBJuZQg0rc84r_wZ-UuzYJFpAagbKDkye8C6kzIIrkTIT1g3Cca_ls0f7aGTiRZteZVZVioc4EolvGTlIUdKHyKkmIFCV244ZcgEOkm92HrhH0suXfkwKw1k",
     "https://lh5.googleusercontent.com/proxy/JrUWFNP_ROLBA7f_vtRJafHoNp04uHmrn1VJb4AJpbdJDrSAkt-k5GSx4dQPlivY4a5h5E2VC9VpGmbl1ninPfhblQWJliD9IaQUsHW63EI_Mvs9krohiRHAjFEl4w4DFDLROlLCZBh3", 
