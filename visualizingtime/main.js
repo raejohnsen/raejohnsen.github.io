@@ -1,7 +1,19 @@
+
+
+
+
 function updateTime() {
-    let columns = document.getElementsByClassName("column");
-    let outer = document.getElementsByClassName("outer");
-    let filled = document.getElementsByClassName("filled");
+    document.getElementById('button').addEventListener('mouseover', function() {
+        let aboutElement = document.getElementById('about');
+        aboutElement.classList.add('appear');
+        aboutElement.classList.remove('disappear');
+    });
+    
+    document.getElementById('button').addEventListener('mouseout', function() {
+        let aboutElement = document.getElementById('about');
+        aboutElement.classList.remove('appear');
+        aboutElement.classList.add('disappear');
+    });
 
     let today = new Date();
     let thisHour = today.getHours();
@@ -183,16 +195,5 @@ function updateTime() {
     for (let square of sec2Squares) {
         square.classList.remove('filled');
     }
-
-    let about = document.getElementById("about");
-    let button = document.getElementById("button");
-    button.addEventListener('click', function() {
-        about.style.display = "block";
-    });
-
-    columns.onmouseover = function(){
-        columns.style.borderRight = "1px black solid";
-    }
-
 
 } setInterval(updateTime, 1000);

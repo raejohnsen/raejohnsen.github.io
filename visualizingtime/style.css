@@ -1,64 +1,81 @@
-  body{
-    margin: 0px;
-    padding: 0px;
-    /* overflow: hidden; */
-  }
-  
-  .outer{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    width: 100vw;
-  }
-  
-  .column{
-    width: 16.666666666666667vw;
-    height: 97vh;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: left;
-    padding: 0px;
-    /* border-right: 1px #434343 solid; */
-  }
-  
-  .h1square, .h2square, .min1square, .min2square, .sec1square, .sec2square{
-    width: 2.66vw;
-    height: 2.66vw;
-  }
-  
-  .filled{
-    background-color: #000000;
-    width: 2.66vw;
-    height: 2.66vw;
-    transition: 0.2s ease;
-  }
 
-  #timeHere{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-  }
+body{
+  margin: 0px;
+  padding: 0px;
+  /* overflow: hidden; */
+}
 
-  #about{
-    font-family: helvetica, sans-serif;
-    color: white;
-    font-size: 23px;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.7);
-    border: 0.5px white solid;
-    z-index: 1000;
-    position: absolute;
-    width: 50%;
-    top: 25%;
-    left: 20%;
-    padding: 5%;
-    display: none;
-  }
+.outer{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  width: 100vw;
+}
 
-  #button{
-    color: rgb(255, 255, 255);
-    font-family: helvetica, sans-serif;
-    font-size: 30px;
-    position: absolute;
-    right: 5px;
-    bottom: 5px;
-  }
+.column{
+  width: 16.666666666666667vw;
+  height: 97vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+  padding: 0px;
+  /* border-right: 1px #434343 solid; */
+}
+
+.h1square, .h2square, .min1square, .min2square, .sec1square, .sec2square{
+  width: 2.66vw;
+  height: 2.66vw;
+}
+
+.filled{
+  background-color: #000000;
+  width: 2.66vw;
+  height: 2.66vw;
+  transition: 0.2s ease;
+}
+
+#timeHere{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+#about{
+  font-family: helvetica, sans-serif;
+  color: white;
+  font-size: 23px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 0.5px white solid;
+  z-index: 1000;
+  position: absolute;
+  width: 50%;
+  top: 25%;
+  left: 20%;
+  padding: 5%;
+  transition: 0.3s ease;
+  display: block;
+}
+
+.disappear{
+  opacity: 0;
+  transition: 0.3s ease;
+  color: red;
+}
+
+.appear{
+  opacity: 1;
+  transition: 0.3s ease;
+}
+
+#button{
+  color: rgb(0, 0, 0);
+  font-family: helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+  position: absolute;
+  right: 5px;
+  bottom: 25px;
+  cursor: pointer;
+  width: 2%;
+  height: 3%;
+}
