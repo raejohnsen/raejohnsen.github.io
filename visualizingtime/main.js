@@ -23,9 +23,12 @@ function updateTime() {
     if (thisHour >= 6 && thisHour < 18) {
         document.body.style.backgroundColor = "white";
         timeElem.style.color = "black";
+        document.getElementById('button').style.color = "black";
+
     } else {
         document.body.style.backgroundColor = "black";
         timeElem.style.color = "white";
+        document.getElementById('button').style.color = "white";
     }
 
     if (thisSecond < 10) {
@@ -74,6 +77,7 @@ function updateTime() {
 
     // Random colors
     let colors = ["black", "#ff0040", "#00d170", "#00ebd7", "#00a2ff", "#003cff", "#7940ff", "#32008a", "#ff45e3", "#ff0084"];
+    
     let randomColor1 = Math.floor(Math.random() * colors.length);
     let randomColor2 = Math.floor(Math.random() * colors.length);
     let randomColor3 = Math.floor(Math.random() * colors.length);
@@ -166,7 +170,6 @@ function updateTime() {
             }
         }
     }
-
 
 
     // Clearing previous filled squares
