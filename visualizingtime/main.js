@@ -1,12 +1,8 @@
-
-
-
-
 function updateTime() {
     document.getElementById('button').addEventListener('mouseover', function() {
         let aboutElement = document.getElementById('about');
-        aboutElement.classList.add('appear');
         aboutElement.classList.remove('disappear');
+        aboutElement.classList.add('appear');
     });
     
     document.getElementById('button').addEventListener('mouseout', function() {
@@ -25,9 +21,11 @@ function updateTime() {
 
 
     if (thisHour >= 6 && thisHour < 18) {
-
+        document.body.style.backgroundColor = "white";
+        timeElem.style.color = "black";
     } else {
-
+        document.body.style.backgroundColor = "black";
+        timeElem.style.color = "white";
     }
 
     if (thisSecond < 10) {
