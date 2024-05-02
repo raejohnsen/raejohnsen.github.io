@@ -11,6 +11,12 @@ function setup() {
     
     fill(0,0,0)
     ellipse(290, 430, 140, 220);
+
+    push()
+    noFill()
+    curve(905, 206, 580, 265, 603, 390, 1000, 500);
+    line(570, 390, 605, 390)
+    pop()
     
     strokeWeight(15);
     line(410, 385, 385, 395)
@@ -18,11 +24,5 @@ function setup() {
     ellipse(480, 450, 30, 18)
     
     ellipse(500, 230, 140, 40);
-    
-    push()
-    noFill()
-    curve(905, 206, 580, 265, 603, 390, 1000, 500);
-    line(570, 390, 605, 390)
-    pop()
   
   }

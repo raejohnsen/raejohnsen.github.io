@@ -24,12 +24,13 @@ function updateTime() {
         document.body.style.backgroundColor = "white";
         timeElem.style.color = "black";
         document.getElementById('button').style.color = "black";
-
     } else {
         document.body.style.backgroundColor = "black";
         timeElem.style.color = "white";
         document.getElementById('button').style.color = "white";
     }
+
+
 
     if (thisSecond < 10) {
         thisSecond = "0" + thisSecond;
@@ -95,9 +96,10 @@ function updateTime() {
         for(let square of hour1Squares) {
         if(square.classList.contains("filled")) {
             square.style.backgroundColor = colors[randomColor1];
-            // square.style.opacity = Math.random() * (1 - 0.4) + 0.4;
-        } else {
+        } else if (thisHour >= 6 && thisHour < 18){
             square.style.backgroundColor = "white";
+        } else {
+            square.style.backgroundColor = "black";
         }
     }}
 
@@ -107,10 +109,10 @@ function updateTime() {
 
         for(let square of min1Squares) {
             if(square.classList.contains("filled")) {
-                square.style.backgroundColor = colors[randomColor2];
-                // square.style.opacity = Math.random() * (1 - 0.4) + 0.4;
-            } else {
+            } else if (square.classList.contains("filled") == false && thisHour >= 6 && thisHour < 18){
                 square.style.backgroundColor = "white";
+            } else if (square.classList.contains("filled") == false){
+                square.style.backgroundColor = "black";
             }
         }
     }
