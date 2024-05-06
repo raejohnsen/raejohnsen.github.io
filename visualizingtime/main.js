@@ -21,31 +21,6 @@ function updateTime() {
     let sec1Squares = document.getElementsByClassName("sec1square");
     let sec2Squares = document.getElementsByClassName("sec2square");
 
-    // Clearing previous filled squares
-    for (let square of hour1Squares) {
-        square.classList.remove('filled');
-    }
-
-    for (let square of hour2Squares) {
-        square.classList.remove('filled');
-    }
-
-    for (let square of min1Squares) {
-        square.classList.remove('filled');
-    }
-
-    for (let square of min2Squares) {
-        square.classList.remove('filled');
-    }
-
-    for (let square of sec1Squares) {
-        square.classList.remove('filled');
-    }
-
-    for (let square of sec2Squares) {
-        square.classList.remove('filled');
-    }
-
     let today = new Date();
     let thisHour = today.getHours();
     let thisMinute = today.getMinutes();
@@ -65,7 +40,6 @@ function updateTime() {
 
 
 
-
     // Selecting the number of divs to fill based on the first digit of the hour
     let numOfDivsHr1 = parseInt(thisHour.toString()[0]);
     let numOfDivsMin1 = parseInt(thisMinute.toString()[0]);
@@ -77,7 +51,7 @@ function updateTime() {
 
 
     // Random colors
-    let colors = ["#ff0040", "#00d170", "#00ebd7", "#00a2ff", "#003cff", "#7940ff", "#32008a", "#ff45e3", "#ff0084"];
+    let colors = ["#ff0040", "#00d170", "#00ebd7", "#00a2ff", "#003cff", "#7940ff", "#32008a", "#ff45e3", "#ff0084", "#ACEAFF", "#EAFFAC", "#ACFFEC", "#ACC9FF", "#BBFF81", "#815AFF"];
     
     let randomColor1 = Math.floor(Math.random() * colors.length);
     let randomColor2 = Math.floor(Math.random() * colors.length);
@@ -119,7 +93,7 @@ function updateTime() {
         }
     }
 
-    for (let i = 0; i < numOfDivsMin1; i++) {
+    for (let i = 0; i < parseInt(thisMinute.toString()[0]); i++) {
         let randomIndex = Math.floor(Math.random() * min1Squares.length);
         min1Squares[randomIndex].classList.add('filled');
 
@@ -134,7 +108,7 @@ function updateTime() {
         }
     }
 
-    for (let i = 0; i < numOfDivsMin2; i++) {
+    for (let i = 0; i < parseInt(thisMinute.toString()[1]); i++) {
         let randomIndex = Math.floor(Math.random() * min2Squares.length);
         min2Squares[randomIndex].classList.add('filled');
 
@@ -179,26 +153,29 @@ function updateTime() {
         }
     }
 
+    // if(thisHour == 0){
+    //     thisHour = "12";
+    // }
 
-    if(thisHour == 0){
-        thisHour = "12";
-    }
+    // if(thisHour == 13){
+    //     thisHour = "1";
+    // }
 
-    if(thisHour == 13){
-        thisHour = "1";
-    }
+    // if (thisHour == 10) {
+    //     thisHour = "10";
+    // }
 
-    if (thisHour == 10) {
-        thisHour = 10;
-    }
+    // if (thisHour == 18) {
+    //     thisHour = "6";
+    // }
 
-    if (thisSecond < 10) {
-        thisSecond = "0" + thisSecond;
-    }
+    // if (thisSecond < 10) {
+    //     thisSecond = "0" + thisSecond;
+    // }
 
-    if (thisMinute < 10) {
-        thisMinute = "0" + thisMinute;
-    }
+    // if (thisMinute < 10) {
+    //     thisMinute = "0" + thisMinute;
+    // }
 
 
     if (thisHour > 12) {
@@ -209,10 +186,45 @@ function updateTime() {
         thisHour = "0" + thisHour;
     }
 
-    timeElem.innerHTML = thisHour + ":" + thisMinute + ":" + thisSecond;
+    if(thisMinute < 10) {
+        thisMinute = "0" + thisMinute;
+    }
+
+    if(thisSecond < 10) {
+        thisSecond = "0 "+ thisSecond;
+    }
+
+    console.log(thisSecond);
 
 
 
+    // timeElem.innerHTML = thisHour + ":" + thisMinute + ":" + thisSecond;
+
+
+    // Clearing previous filled squares
+    for (let square of hour1Squares) {
+        square.classList.remove('filled');
+    }
+
+    for (let square of hour2Squares) {
+        square.classList.remove('filled');
+    }
+
+    for (let square of min1Squares) {
+        square.classList.remove('filled');
+    }
+
+    for (let square of min2Squares) {
+        square.classList.remove('filled');
+    }
+
+    for (let square of sec1Squares) {
+        square.classList.remove('filled');
+    }
+
+    for (let square of sec2Squares) {
+        square.classList.remove('filled');
+    }
 
 } setInterval(updateTime, 1000);
 
