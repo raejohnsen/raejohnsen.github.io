@@ -15,6 +15,7 @@
         color: antiquewhite;
         cursor: url('sources/cursor2.png'), auto;
         min-height: 890px;
+        overflow: hidden;
     }
     
     h1{
@@ -31,9 +32,10 @@
     }
 
     h2{
-        font-family: "General Sans Medium", sans-serif;
+        font-family: helvetica, sans-serif;
         margin: 0px;  
         font-size: 25px; 
+        font-weight: 600;
     }
 
     h3{
@@ -44,6 +46,7 @@
     .outer{
         display: flex;
         flex-flow: row nowrap;
+        transform: translateY(-15px);
     }
 
     .column1, .column2{
@@ -53,7 +56,7 @@
 
     .link{
         font-family: helvetica, sans-serif;
-        font-size: 45px;     
+        font-size: 40px;     
         color: antiquewhite;   
         line-height: 125%;
         width: fit-content;
@@ -64,10 +67,24 @@
     .link:hover{
         font-family: "General Sans Medium", sans-serif;
         font-style: italic;
-        font-size: 46px;
+        font-size: 41px;
         text-decoration: underline;
         transition: 60ms ease-in-out;
         color: inherit;
+    }
+
+    #photoFrame{
+        height: 100vh;
+        z-index: 1000;
+        position: fixed;
+        width: 40%;
+        top: 0px;
+        right: 0px;
+        background-size: cover;
+    }
+
+    img{
+        transition: 0.2s ease;
     }
 }
 
