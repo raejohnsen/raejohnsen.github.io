@@ -26,7 +26,6 @@ document.addEventListener("DOMContentLoaded", function() {
   });
   });
 
-  let photoHere = document.getElementById("photoHere");
   let photoFrame = document.getElementById("photoFrame");
   let recipeA = document.getElementById("recipeA");
   let recipeB = document.getElementById("recipeB");
@@ -45,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
   recipeA.onmouseover = function(){
     photoFrame.style.backgroundImage = "url('sources/recipeA.png')";
   }
+
   recipeA.onmouseout = function(){
     photoFrame.style.backgroundImage = "";
   }

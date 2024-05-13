@@ -15,7 +15,7 @@
     /* overflow: hidden; */
   }
 
-  .outer{
+  #outer{
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -88,6 +88,70 @@
     width: 35px;
     height: 3%;
   }
+
+  .vl{
+    border-right: 1px solid #636363;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 9998;
+  }
+
+  #line1{
+    border-right: 1px solid #636363;
+    left: 16.666666666666667vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+  }
+
+  #line2{
+    border-right: 1px solid #636363;
+    left: 33.33333333333334vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+  }
+
+  #line3{
+    border-right: 1px solid #636363;
+    left: 50vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+  }
+
+  #line4{
+    border-right: 1px solid #636363;
+    left: 66.66666666666668vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+  }
+
+  #line5{
+    border-right: 1px solid #636363;
+    left: 83.33333333333335vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+  }
+
+  #line6{
+    border-right: 1px solid #636363;
+    left: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+  }
+
+
 }
 
 @media all and (max-width: 600px) {
