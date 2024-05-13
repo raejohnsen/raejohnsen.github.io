@@ -71,6 +71,10 @@ function updateTime() {
         thisHour = thisHour - 12;
     }
 
+    if(thisHour == 0) {
+        thisHour = 12;
+    }
+
     let timeHere = document.getElementById("timeHere");
     timeHere.innerHTML = thisHour + ":" + thisMinute
 }
