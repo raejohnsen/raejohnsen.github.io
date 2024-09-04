@@ -16,8 +16,13 @@ body{
 
 #dateHere, #timeHere{
     color: pink;
-    width: 50%;
+    width: 70%;
     font-size: 80px;
+}
+
+#timeHere{
+    width: 30%;
+    margin-right: 30px;
 }
 
 #dataHere{
