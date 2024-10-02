@@ -1,0 +1,27 @@
+/*
+Font: 		OffBit
+Style: 		Bold
+URL: 		https://youworkforthem.com/font/T17139/offbit
+Foundry: 	Power Type Foundry
+Foundry: 	https://youworkforthem.com/designer/1586/power-type-foundry
+Copyright:	All Right Rserved © 2022 - Power Type™ Foundry
+Version: 	17
+Created:	December 15, 2022
+License: 	https://www.youworkforthem.com/font-license 
+License: 	The WebFont(s) listed in this document must follow the YouWorkForThem
+			WebFont license rules. All other parties are strictly restricted 
+			from using the WebFonts(s) listed without a purchased license. 
+			All details above must always remain unaltered and visible in your CSS.
+*/
+
+@font-face {
+	font-family: 'OffBit-DotBold';
+	src: url('offbit-dot-bold.eot');
+	src: url('offbit-dot-bold.eot?#iefix') format('embedded-opentype'),
+             url('offbit-dot-bold.woff2') format('woff2'),
+	     url('offbit-dot-bold.woff') format('woff'),
+	     url('offbit-dot-bold.ttf') format('truetype'),
+	     url('offbit-dot-bold.svg#youworkforthem') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

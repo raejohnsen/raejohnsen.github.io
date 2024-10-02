@@ -1,0 +1,73 @@
+@font-face{
+    font-family: "OffBit";
+    src: url('sources/offbit-dot-bold-webfont-full/webfonts/offbit-dot-bold.woff2') format('woff2');
+}
+
+body{
+    background-image: url("sources/shelves.png");
+    background-position: 50% 15%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0px;
+    font-family: "OffBit", sans-serif;
+}
+
+.folioBg{
+    width: 100%;
+    height: 7%;
+    background-color: black;
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+}
+
+.navBg{
+    width: 100%;
+    height: 7%;
+    background-color: black;
+    z-index: 2;
+    position: absolute;
+    bottom: 0px;
+}
+
+span{
+    font-size: 50px;
+    margin-top: 9px;
+}
+
+.folioMarquee{
+    width: 200vw;
+    height: 7%;
+    display: block;
+    color: white;
+    z-index: 9999;
+    --gap: 1rem;
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: var(--gap);
+    top: 0px;
+    animation: marquee 10s linear infinite;
+}
+
+.navMarquee{
+    width: 200vw;
+    height: 7%;
+    display: block;
+    color: white;
+    z-index: 9999;
+    --gap: 1rem;
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: var(--gap);
+    bottom: 0px;
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-45vw); }
+}
