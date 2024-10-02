@@ -5,7 +5,7 @@
 
 body{
     background-image: url("sources/shelves.png");
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     background-position: 50% 15%;
     background-size: 100%;
     background-repeat: no-repeat;
