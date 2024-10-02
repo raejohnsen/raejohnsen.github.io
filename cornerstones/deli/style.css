@@ -10,7 +10,7 @@ body{
     background-repeat: no-repeat;
     margin: 0px;
     font-family: "OffBit", sans-serif;
-    overflow: hidden;
+    overflow-y: hidden;
 }
 
 .folioBg{
@@ -18,22 +18,8 @@ body{
     height: 7%;
     background-color: black;
     z-index: 2;
-    position: absolute;
+    position: fixed;
     top: 0px;
-}
-
-.navBg{
-    width: 100%;
-    height: 7%;
-    background-color: black;
-    z-index: 2;
-    position: absolute;
-    bottom: 0px;
-}
-
-span{
-    font-size: 50px;
-    margin-top: 9px;
 }
 
 .folioMarquee{
@@ -43,13 +29,98 @@ span{
     color: rgb(184, 0, 0);
     z-index: 9999;
     --gap: 1rem;
-    position: absolute;
+    position: fixed;
     display: flex;
     overflow: hidden;
     user-select: none;
     gap: var(--gap);
     top: 0px;
     animation: marquee 10s linear infinite;
+    -webkit-text-stroke: 1.5px rgb(255, 255, 255);
+    paint-order: stroke fill;
+}
+
+span{
+    font-size: 50px;
+    margin-top: 9px;
+}
+
+#deli{
+    width: 100vw;
+}
+
+#title{
+    height: 80vh;
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    z-index: 10000;
+}
+
+#all{
+    display: flex;
+    flex-flow: row nowrap;
+    /* justify-content: space-evenly; */
+    align-items: flex-start;
+    width: 250vw;
+}
+
+p{
+    font-family: arial narrow, helvetica, sans-serif;
+    font-size: 16px;
+    width: 400px;
+    text-align: justify;
+    line-height: 120%;
+}
+
+#hiJake{
+    position: absolute;
+    top: 100px;
+    left: 1800px;
+}
+
+#dearCurious{
+    position: absolute;
+    top: 100px;
+    left: 2350px;
+    color: rgb(184, 0, 0);
+}
+
+#dearCurious2{
+    position: absolute;
+    top: 100px;
+    left: 2850px;
+    color: rgb(184, 0, 0);
+}
+
+#dearCurious3{
+    position: absolute;
+    top: 100px;
+    left: 3350px;
+    color: rgb(184, 0, 0);
+}
+
+.emph{
+    font-size: 25px;
+    font-family: Cooper-Black-std, serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+#endImg{
+    height: 100vh;
+    position: absolute;
+    right: -3000px;
+    top: 50px;
+}
+
+.navBg{
+    width: 100%;
+    height: 7%;
+    background-color: black;
+    z-index: 2;
+    position: fixed;
+    bottom: 0px;
 }
 
 .navMarquee{
@@ -59,7 +130,7 @@ span{
     color: white;
     z-index: 9999;
     --gap: 1rem;
-    position: absolute;
+    position: fixed;
     display: flex;
     overflow: hidden;
     user-select: none;
