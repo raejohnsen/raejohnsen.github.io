@@ -83,7 +83,7 @@ p{
     position: absolute;
     top: 100px;
     left: 2350px;
-    color: rgb(184, 0, 0);
+    color: rgb(184, 0, 0);;
 }
 
 #dearCurious2{
@@ -117,7 +117,30 @@ p{
     width: 400px;
     position: absolute;
     margin-top: -15px;
+}
 
+#bodega{
+    width: 130px;
+    z-index: 0;
+    position: absolute;
+    top: 205px;
+    left: -17px;
+}
+
+#delibubble{
+    width: 75px;
+    z-index: 0;
+    position: absolute;
+    top: 10px;
+    left: -10px;
+}
+
+#cornergrocery{
+    width: 230px;
+    z-index: 0;
+    position: absolute;
+    top: 13px;
+    left: -10px;
 }
 
 #endImg{
