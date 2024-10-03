@@ -14,6 +14,48 @@ body{
     overflow-x: hidden;
 }
 
+img{
+    width: 15vw;
+}
+
+#sam{
+    left: 350px;
+    top: 382px;
+    position: absolute;
+    z-index: 3;
+}
+
+#d396{
+    left: 50px;
+    top: 800px;
+    position: absolute;
+}
+
+#ahmed{
+    left: 200px;
+    top: 1400px;
+    position: absolute;
+}
+
+#bueno{
+    top: 20px;
+    position: absolute;
+    z-index: 3;
+}
+
+#manayeyo{
+    right: 30px;
+    top: 500px;
+    position: absolute;
+    z-index: 3;
+}
+
+#aguila{
+    right: 220px;
+    top: 1200px;
+    position: absolute;
+}
+
 span{
     font-size: 50px;
     margin-top: 9px;
@@ -23,7 +65,7 @@ span{
     width: 100%;
     height: 7%;
     background-color: black;
-    z-index: 2;
+    z-index: 9998;
     position: fixed;
     top: 0px;
 }
@@ -128,7 +170,7 @@ p{
     width: 100%;
     height: 7%;
     background-color: black;
-    z-index: 2;
+    z-index: 9998;
     position: fixed;
     bottom: 0px;
 }

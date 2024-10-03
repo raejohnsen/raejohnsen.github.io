@@ -102,9 +102,22 @@ p{
 
 .emph{
     font-size: 25px;
-    font-family: Cooper-Black-std, serif;
+    font-family: "cooper-black-std";
     font-weight: 400;
     font-style: italic;
+}
+
+#img1{
+    width: 400px;
+    position: absolute;
+    margin-top: -15px;
+}
+
+#img2{
+    width: 400px;
+    position: absolute;
+    margin-top: -15px;
+
 }
 
 #endImg{
