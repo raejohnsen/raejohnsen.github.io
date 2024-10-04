@@ -191,6 +191,13 @@ p{
     animation: marquee 10s linear infinite;
 }
 
+.navMarquee:hover{
+    color: #2b42ba;
+    -webkit-text-stroke: 1.5px rgb(255, 255, 255);
+    paint-order: stroke fill;
+    transition: .25s ease;
+}
+
 @keyframes marquee {
     0% { transform: translateX(0%); }
     100% { transform: translateX(-45vw); }

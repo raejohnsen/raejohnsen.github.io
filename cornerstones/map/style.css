@@ -91,6 +91,12 @@ span{
     animation: marquee 5s linear infinite;
 }
 
+.navMarquee:hover{
+    -webkit-text-stroke: 1.5px rgb(255, 255, 255);
+    paint-order: stroke fill;
+    transition: .25s ease;
+}
+
 @keyframes marquee {
     0% { transform: translateX(0%); }
     100% { transform: translateX(-40vw); }
