@@ -1,92 +1,172 @@
-@font-face{
+@font-face {
     font-family: "OffBit";
     src: url('sources/offbit-dot-bold-webfont-full/webfonts/offbit-dot-bold.woff2') format('woff2');
 }
 
-body{
-    background-image: url("sources/shelves.png");
-    background-position: 50% 15%;
+body {
+    background-image: url("sources/delicutouts.png");
+    background-position: 50% -1%;
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 0px;
     font-family: "OffBit", sans-serif;
     overflow: hidden;
+    cursor: pointer;
 }
 
-.link{
-    color: white;
-    font-size: 50px;
+a{
+    position: absolute;
 }
 
 #deli{
-    z-index: 100;
-    position: absolute;
-    top: 200px;
+    width: 7.5vw;
+    left: 550px;
+    top: 286px;
+    color: #b80000;
+    font-family: "cooper-black-std";
+    font-size: 35px;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    line-height: 100%;
 }
 
 #love{
-    z-index: 100;
-    position: absolute;
-    top: 400px;
+    width: 7vw;
+    left: 319px;
+    top: 465px;
+    color: #2b42ba;
+    font-family: brush-script-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 90%;
 }
 
 #map{
-    z-index: 100;
-    position: absolute;
-    top: 600px;
+    width: 6.5vw;
+    left: 1115px;
+    top: 740px;
+    color: #ffffff;
+    font-size: 40px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 90%;
 }
 
-.folioBg{
+#deli:hover{
+    transition: 90ms ease;
+    text-shadow:
+    0 0 5px #ffdcdc,
+    0 0 10px #ff9797,
+    0 0 15px #e04444,
+    0 0 20px #cd1313;
+}
+
+#love:hover{
+    transition: 90ms ease;
+    text-shadow:
+    0 0 5px #cfdeff,
+    0 0 10px #9bb5ee,
+    0 0 15px #517edf,
+    0 0 20px #255fda;
+}
+
+#map:hover{
+    transition: 90ms ease;
+    text-shadow:
+    0 0 5px #e1e1e1,
+    0 0 10px #9f9f9f,
+    0 0 15px #757575,
+    0 0 20px #424242;
+}
+
+#red, #blue, #black {
+    position: absolute;
+    cursor: move;
+    user-select: none;
+}
+
+#red {
+    width: 7.5vw;
+    left: 552px;
+    top: 216px;
+}
+
+#red:hover {
+    width: 7.75vw;
+    transition: .25s ease;
+    left: 548px;
+    top: 211px;
+}
+
+#blue {
+    width: 8vw;
+    left: 306px;
+    top: 446px;
+}
+
+#blue:hover {
+    width: 8.25vw;
+    left: 300px;
+    top: 441px;
+    transition: .25s ease-in-out;
+}
+
+#black {
+    width: 7vw;
+    left: 1109px;
+    top: 677px;
+}
+
+#black:hover {
+    width: 7.25vw;
+    transition: .25s ease;
+}
+
+.folioBg, .navBg {
     width: 100%;
     height: 7%;
     background-color: black;
-    z-index: 2;
     position: absolute;
+}
+
+.folioBg {
     top: 0px;
-}
-
-.navBg{
-    width: 100%;
-    height: 7%;
-    background-color: black;
     z-index: 2;
-    position: absolute;
-    bottom: 0px;
 }
 
-span{
+.navBg {
+    bottom: 0px;
+    z-index: 2;
+}
+
+span {
     font-size: 50px;
     margin-top: 9px;
 }
 
-.folioMarquee{
+.folioMarquee, .navMarquee {
     width: 200vw;
     height: 7%;
     display: block;
     color: white;
     z-index: 9999;
-    --gap: 1rem;
     position: absolute;
     display: flex;
     overflow: hidden;
     user-select: none;
-    gap: var(--gap);
+}
+
+.folioMarquee {
     top: 0px;
     animation: marquee 10s linear infinite;
 }
 
-.navMarquee{
-    width: 200vw;
-    height: 7%;
-    display: block;
-    color: white;
-    z-index: 9999;
-    --gap: 1rem;
-    position: absolute;
-    display: flex;
-    overflow: hidden;
-    user-select: none;
-    gap: var(--gap);
+.navMarquee {
     bottom: 0px;
     animation: marquee 10s linear infinite;
 }

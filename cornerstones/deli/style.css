@@ -26,7 +26,7 @@ body{
     width: 200vw;
     height: 7%;
     display: block;
-    color: rgb(184, 0, 0);
+    color: #b80000;
     z-index: 9999;
     --gap: 1rem;
     position: fixed;
