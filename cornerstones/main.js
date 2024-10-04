@@ -137,7 +137,7 @@ redLink.onmouseover = function(){
 }
 
 redLink.onmouseout = function(){
-  document.body.style.backgroundImage = "url('sources/delicutouts.png')";
+  document.body.style.backgroundImage = "url('sources/blackshelves.png')";
   redLink.style.color = "#b80000";
 }
 
@@ -147,14 +147,16 @@ blueLink.onmouseover = function(){
 }
 
 blueLink.onmouseout = function(){
-  document.body.style.backgroundImage = "url('sources/delicutouts.png')";
+  document.body.style.backgroundImage = "url('sources/blackshelves.png')";
   blueLink.style.color = "#2b42ba";
 }
 
 blackLink.onmouseover = function(){
-  document.body.style.backgroundImage = "url('sources/blackshelves.png')";
+  document.body.style.backgroundImage = "url('sources/delicutouts3.png')";
+  blackLink.style.color = "#black";
 }
 
 blackLink.onmouseout = function(){
-  document.body.style.backgroundImage = "url('sources/delicutouts.png')";
+  document.body.style.backgroundImage = "url('sources/blackshelves.png')";
+  blackLink.style.color = "white";
 }
