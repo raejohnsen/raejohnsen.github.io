@@ -173,13 +173,13 @@ p{
     gap: var(--gap);
     bottom: 0px;
     animation: marquee 10s linear infinite;
+    transition: .25s ease-in-out;
 }
 
 .navMarquee:hover{
     color: rgb(184, 0, 0);
     -webkit-text-stroke: 1.5px rgb(255, 255, 255);
     paint-order: stroke fill;
-    transition: .25s ease;
 }
 
 @keyframes marquee {

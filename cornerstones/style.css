@@ -30,6 +30,7 @@ a{
     text-decoration: none;
     text-align: center;
     line-height: 100%;
+    transition: .25s ease-in-out;
 }
 
 #love{
@@ -44,6 +45,7 @@ a{
     text-decoration: none;
     text-align: center;
     line-height: 90%;
+    transition: .25s ease-in-out;
 }
 
 #map{
@@ -55,10 +57,10 @@ a{
     text-decoration: none;
     text-align: center;
     line-height: 90%;
+    transition: .25s ease-in-out;
 }
 
 #deli:hover{
-    transition: 90ms ease;
     text-shadow:
     0 0 5px #ffdcdc,
     0 0 10px #ff9797,
@@ -94,19 +96,21 @@ a{
     width: 7.5vw;
     left: 552px;
     top: 216px;
+    /* transition: .25s ease-out; */
 }
 
 #red:hover {
     width: 7.75vw;
-    transition: .25s ease;
     left: 548px;
     top: 211px;
+    transition: .25s ease-in;
 }
 
 #blue {
     width: 8vw;
     left: 306px;
     top: 446px;
+    /* transition: .25s ease-out; */
 }
 
 #blue:hover {
@@ -120,11 +124,13 @@ a{
     width: 7vw;
     left: 1109px;
     top: 677px;
+    /* transition: .25s ease-out; */
 }
 
 #black:hover {
     width: 7.25vw;
-    transition: .25s ease;
+    top: 672px;    
+    transition: .25s ease-in-out;
 }
 
 .folioBg, .navBg {

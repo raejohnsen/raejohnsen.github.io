@@ -15,25 +15,34 @@ body{
 }
 
 img{
-    width: 15vw;
+    width: 20vw;
+    opacity: 0;
+    transition: 1s ease-in-out;
+    z-index: 9997;
+    display: block;
+}
+
+img:hover{
+    opacity: 1;
 }
 
 #sam{
-    left: 350px;
-    top: 382px;
+    left: 270px;
+    top: 322px;
     position: absolute;
     z-index: 3;
 }
 
 #d396{
     left: 50px;
-    top: 800px;
+    top: 880px;
     position: absolute;
+    width: 17vw;
 }
 
 #ahmed{
     left: 200px;
-    top: 1400px;
+    top: 1330px;
     position: absolute;
 }
 
@@ -45,14 +54,15 @@ img{
 
 #manayeyo{
     right: 30px;
-    top: 500px;
+    top: 520px;
     position: absolute;
     z-index: 3;
+    width: 23vw;
 }
 
 #aguila{
     right: 220px;
-    top: 1200px;
+    top: 1100px;
     position: absolute;
 }
 
@@ -62,6 +72,7 @@ span{
 }
 
 .folioBg{
+    display: block;
     width: 100%;
     height: 7%;
     background-color: black;
@@ -93,6 +104,8 @@ span{
     position: absolute;
     top: -790px;
     z-index: 1;
+    display: block;
+    opacity: 1;
 }
 
 #theDeath{
@@ -101,6 +114,7 @@ span{
     top: 7px;
     left: -7px;
     z-index: 10000;
+    opacity: 1;
 }
 
 #jane{
@@ -109,6 +123,7 @@ span{
     top: 700px;
     left: 666px;
     z-index: 10000;
+    opacity: 1;
 }
 
 #greatAmerican{
@@ -117,6 +132,7 @@ span{
     top: 640px;
     left: 0px;
     z-index: 10000;
+    opacity: 1;
 }
 
 .outer{
@@ -133,7 +149,6 @@ p{
     font-size: 18px;
     text-align: justify;
     line-height: 125%;
-    text-indent: 20px;
     color: #2b42ba;
     width: 26vw;
     font-family: arial narrow, helvetica, sans-serif;
@@ -144,6 +159,15 @@ p{
     font-weight: 400;
     font-style: normal;
     font-size: 45px;
+    line-height: 70%;
+    text-align: left;
+}
+
+#pull2{
+    font-family: "brush-script-std", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 59px;
     line-height: 70%;
     text-align: left;
 }
@@ -189,13 +213,13 @@ p{
     gap: var(--gap);
     bottom: 0px;
     animation: marquee 10s linear infinite;
+    transition: .25s ease-in-out;
 }
 
 .navMarquee:hover{
     color: #2b42ba;
     -webkit-text-stroke: 1.5px rgb(255, 255, 255);
     paint-order: stroke fill;
-    transition: .25s ease;
 }
 
 @keyframes marquee {
