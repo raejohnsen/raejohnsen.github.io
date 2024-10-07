@@ -112,7 +112,7 @@ span{
     width: 103.5vw;
     position: absolute;
     top: 7px;
-    left: -7px;
+    left: -27px;
     z-index: 10000;
     opacity: 1;
 }
@@ -121,7 +121,7 @@ span{
     width: 8vw;
     position: absolute;
     top: 700px;
-    left: 666px;
+    left: 646px;
     z-index: 10000;
     opacity: 1;
 }
@@ -130,7 +130,7 @@ span{
     width: 102vw;
     position: absolute;
     top: 640px;
-    left: 0px;
+    left: -20px;
     z-index: 10000;
     opacity: 1;
 }

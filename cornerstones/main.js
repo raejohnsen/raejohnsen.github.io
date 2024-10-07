@@ -132,31 +132,31 @@ let blueLink = document.getElementById("love");
 let blackLink = document.getElementById("map");
 
 redLink.onmouseover = function(){
-  document.body.style.backgroundImage = "url('sources/redshelves.png')";
+  document.body.style.backgroundImage = "url('sources/redshelves.jpeg')";
   redLink.style.color = "white";
 }
 
 redLink.onmouseout = function(){
-  document.body.style.backgroundImage = "url('sources/blackshelves.png')";
+  document.body.style.backgroundImage = "url('sources/blackshelves.jpeg')";
   redLink.style.color = "#b80000";
 }
 
 blueLink.onmouseover = function(){
-  document.body.style.backgroundImage = "url('sources/blueshelves.png')";
+  document.body.style.backgroundImage = "url('sources/blueshelves.jpeg')";
   blueLink.style.color = "white";
 }
 
 blueLink.onmouseout = function(){
-  document.body.style.backgroundImage = "url('sources/blackshelves.png')";
+  document.body.style.backgroundImage = "url('sources/blackshelves.jpeg')";
   blueLink.style.color = "#2b42ba";
 }
 
 blackLink.onmouseover = function(){
-  document.body.style.backgroundImage = "url('sources/delicutouts3.png')";
+  document.body.style.backgroundImage = "url('sources/delicutouts3.jpeg')";
   blackLink.style.color = "#black";
 }
 
 blackLink.onmouseout = function(){
-  document.body.style.backgroundImage = "url('sources/blackshelves.png')";
+  document.body.style.backgroundImage = "url('sources/blackshelves.jpeg')";
   blackLink.style.color = "white";
 }
