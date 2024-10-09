@@ -160,3 +160,35 @@ blackLink.onmouseout = function(){
   document.body.style.backgroundImage = "url('sources/blackshelves.jpeg')";
   blackLink.style.color = "white";
 }
+
+let checkout = document.getElementById("button");
+let clear = document.getElementById("clear");
+let bigDeli = document.getElementById("bigdeli");
+let bigLove = document.getElementById("biglove");
+let bigMap = document.getElementById("bigmap");
+
+checkout.onclick = function() {
+  if (clear.style.display === "block") {
+    clear.style.display = "none";
+    bigDeli.style.display = "none";
+    bigLove.style.display = "none";
+    bigMap.style.display = "none";
+    red.style.display = "block";
+    redLink.style.display = "block";
+    blue.style.display = "block";
+    blueLink.style.display = "block";
+    black.style.display = "block";
+    blackLink.style.display = "block";
+  } else {
+    clear.style.display = "block";
+    bigDeli.style.display = "block";
+    bigLove.style.display = "block";
+    bigMap.style.display = "block";
+    red.style.display = "none";
+    redLink.style.display = "none";
+    blue.style.display = "none";
+    blueLink.style.display = "none";
+    black.style.display = "none";
+    blackLink.style.display = "none";
+  }
+};
