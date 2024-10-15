@@ -210,6 +210,7 @@ bigDeli.onmouseout = function(){
   bigMap.style.filter = "invert()";
   checkout.style.mixBlendMode = "";
   bigLove.style.opacity = "1";
+  bigLove.style.filter = "saturate(175%)";
 }
 
 bigLove.onmouseover = function(){
@@ -229,6 +230,8 @@ bigLove.onmouseout = function(){
   bigMap.style.filter = "invert()";
   checkout.style.mixBlendMode = "";
   bigDeli.style.opacity = "1";
+  bigLove.style.filter = "saturate(175%)";
+  bigLove.style.mixBlendMode = "";
 }
 
 bigMap.onmouseover = function(){
@@ -247,4 +250,5 @@ bigMap.onmouseout = function(){
   checkout.style.mixBlendMode = "";
   bigLove.style.opacity = "1";
   bigDeli.style.opacity = "1";
+  bigLove.style.filter = "saturate(175%)";
 }
