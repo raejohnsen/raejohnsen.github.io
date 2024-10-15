@@ -168,18 +168,7 @@ let bigLove = document.getElementById("biglove");
 let bigMap = document.getElementById("bigmap");
 
 checkout.onclick = function() {
-  if (clear.style.display === "block") {
-    clear.style.display = "none";
-    bigDeli.style.display = "none";
-    bigLove.style.display = "none";
-    bigMap.style.display = "none";
-    red.style.display = "block";
-    redLink.style.display = "block";
-    blue.style.display = "block";
-    blueLink.style.display = "block";
-    black.style.display = "block";
-    blackLink.style.display = "block";
-  } else {
+  if (clear.style.display === "none") {
     clear.style.display = "block";
     bigDeli.style.display = "block";
     bigLove.style.display = "block";
@@ -190,5 +179,72 @@ checkout.onclick = function() {
     blueLink.style.display = "none";
     black.style.display = "none";
     blackLink.style.display = "none";
+  } else {
+    clear.style.display = "none";
+    bigDeli.style.display = "none";
+    bigLove.style.display = "none";
+    bigMap.style.display = "none";
+    red.style.display = "block";
+    redLink.style.display = "block";
+    blue.style.display = "block";
+    blueLink.style.display = "block";
+    black.style.display = "block";
+    blackLink.style.display = "block";
   }
 };
+
+bigDeli.onmouseover = function(){
+  clear.style.backgroundColor = "#b80000";
+  bigDeli.style.filter = "brightness(1000%)";
+  bigLove.style.mixBlendMode = "color-dodge";
+  bigLove.style.opacity = "0.5";
+  bigMap.style.opacity = "0.5";
+  checkout.style.mixBlendMode = "color-dodge";
+}
+
+bigDeli.onmouseout = function(){
+  clear.style.backgroundColor = "black";
+  bigDeli.style.filter = "brightness(100%)";
+  bigLove.style.mixBlendMode = "";
+  bigMap.style.opacity = "1";
+  bigMap.style.filter = "invert()";
+  checkout.style.mixBlendMode = "";
+  bigLove.style.opacity = "1";
+}
+
+bigLove.onmouseover = function(){
+  clear.style.backgroundColor = "#2b42ba";
+  bigLove.style.filter = "brightness(1000%)";
+  bigDeli.style.mixBlendMode = "color-dodge";
+  bigMap.style.opacity = "0.5";
+  bigDeli.style.opacity = "0.5";
+  checkout.style.mixBlendMode = "color-dodge";
+}
+
+bigLove.onmouseout = function(){
+  clear.style.backgroundColor = "black";
+  bigLove.style.filter = "brightness(100%)";
+  bigDeli.style.mixBlendMode = "";
+  bigMap.style.opacity = "1";
+  bigMap.style.filter = "invert()";
+  checkout.style.mixBlendMode = "";
+  bigDeli.style.opacity = "1";
+}
+
+bigMap.onmouseover = function(){
+  clear.style.backgroundColor = "grey";
+  bigDeli.style.mixBlendMode = "color-dodge";
+  bigLove.style.mixBlendMode = "color-dodge";
+  checkout.style.mixBlendMode = "color-dodge";
+  bigLove.style.opacity = "0.5";
+  bigDeli.style.opacity = "0.5";
+}
+
+bigMap.onmouseout = function(){
+  clear.style.backgroundColor = "black";
+  bigDeli.style.mixBlendMode = "";
+  bigLove.style.mixBlendMode = "";
+  checkout.style.mixBlendMode = "";
+  bigLove.style.opacity = "1";
+  bigDeli.style.opacity = "1";
+}

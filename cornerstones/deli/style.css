@@ -107,6 +107,16 @@ p{
     font-style: italic;
 }
 
+img{
+    opacity: 1;
+    transition: 1s ease-in-out;
+    display: block;
+}
+
+img.fade-out {
+    opacity: 0; /* This will trigger the fading effect */
+}
+
 #img1{
     width: 400px;
     position: absolute;
