@@ -14,7 +14,24 @@ h1{
     text-align: center;
     font-size: 120px;
     margin: 0px;
+    background-color: #fffbf5;
+    position: fixed;
+    z-index: 9999;
+    width: 100vw;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
 
+#next{
+    width: 80px;
+    position: fixed;
+    right: 40px;
+    top: 47px;
+    z-index: 9999;
 }
 
 h2{
@@ -44,10 +61,13 @@ h3{
     width: fit-content;
     margin: 0px;
     padding: 0px;
+    position: absolute;
+    top: 156px
 }
 
 #text{
     background-color: #f6c4c3;
+    margin-top: 100px;
     width: 33%;
     margin: 0px;
     font-size: 20px;
@@ -64,8 +84,17 @@ h3{
     text-align: justify;
 }
 
+.image{
+    width: 68vw;
+}
+
 #images{
     background-color: #fffbf5;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-right: none;
+    border-left: none;
     width: 67vw;
     margin: 0px;
 }

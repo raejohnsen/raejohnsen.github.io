@@ -13,6 +13,11 @@ body{
     margin: 0px
 }
 
+img{
+    width: 60vw;
+    margin-bottom: 50px;
+}
+
 h1{
     font-family: "PP Neue Montreal Medium";
     color: black;
@@ -20,6 +25,24 @@ h1{
     font-size: 120px;
     margin: 0px;
     letter-spacing: -2px;
+    background-color: #fffbf5;
+    position: fixed;
+    z-index: 9999;
+    width: 100vw;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+#back{
+    width: 80px;
+    position: fixed;
+    left: 40px;
+    top: 38px;
+    z-index: 10000;
 }
 
 h2{
@@ -56,12 +79,20 @@ h3{
     background-color: #fffbf5;
     width: 67vw;
     margin: 0px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #000000;
+    border-left: none;
+    border-right: none;
+    margin-top: 144px;
+    margin-left: 20px
 }
 
 #text{
     background-color: #b51718;
     width: 33%;
     margin: 0px;
+    margin-top: 144px;
     color: #fffbf5;
     font-size: 20px;
     padding-right: 60px;
