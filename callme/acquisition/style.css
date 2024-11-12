@@ -1,0 +1,80 @@
+@font-face{
+    font-family: "PP Editorial New Bold Italic";
+    src: url('sources/PPEditorialNew-BoldItalic.otf') format('otf');
+}
+
+body{
+    background-color: #fffbf5;
+    margin: 0px;
+}
+
+h1{
+    font-family: "PP Editorial New Bold Italic";
+    color: black;
+    text-align: center;
+    font-size: 120px;
+    margin: 0px;
+    margin-left: 30px;
+    font-style: italic;
+    letter-spacing: -4px;
+}
+
+h2{
+    font-family: "PP Editorial New Bold Italic";
+    font-style: italic;
+    font-size: 70px;
+    line-height: 85%;
+    letter-spacing: -4px;
+    text-align: left;
+    color: #fffbf5;
+    -webkit-text-stroke: 6px black;
+    paint-order: stroke fill;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+h3{
+    font-family: clarendon-urw, serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 50px;
+    text-align: right;
+    margin-top: 0px;
+}
+
+#whole{
+    display: flex;
+    flex-flow: row nowrap;
+    width: fit-content;
+    margin: 0px;
+    padding: 0px;
+}
+
+#image1{
+    width: 31%;
+    background-color: #fffbf5;
+    margin: 0px;
+}
+
+#text{
+    background-color: #ed5c63;
+    width: 33.33%;
+    margin: 0px;
+    font-size: 20px;
+    padding-right: 60px;
+    padding-left: 25px;
+    font-family: clarendon-urw, serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 120%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    text-align: justify;
+}
+
+#images{
+    background-color: #fffbf5;
+    width: 33.33%;
+    margin: 0px;
+}
