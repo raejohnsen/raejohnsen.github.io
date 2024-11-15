@@ -1,0 +1,78 @@
+@font-face{
+    font-family: "ED Medimont";
+    src: url('sources/ED\ Medimont-Regular.otf') format('otf');
+}
+
+@font-face{
+    font-family: "PP Neue Montreal Medium";
+    src: url('sources/PPNeueMontreal-Medium.woff2') format('woff2');
+}
+
+@font-face{
+    font-family: "PP Editorial New Bold Italic";
+    src: url('sources/PPEditorialNew-BoldItalic.otf') format('otf');
+}
+
+body{
+    background-color: #fffbf5;
+    margin-top: 0px;
+    overflow: hidden;
+}
+
+a{
+    font-size: 50px;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 120px;
+    margin: 0px;
+    text-align: center;
+}
+
+#drop1{
+    color: pink;
+}
+
+#drop2{
+    color: pink;
+}
+
+#window{
+    background-color: black;
+    height: 77vh;
+    width: 99vw;
+}
+
+#nav{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#collection{
+    color: #f6c4c3;
+    font-family: "ED Medimont";
+    font-size: 60px;
+}
+
+#acquisition{
+    color: #ed5c63;
+    font-family: "PP Editorial New Bold Italic";
+}
+
+#immortalization{
+    color: #b51718;
+    font-family: "PP Neue Montreal Medium";
+}
+
+#gallery{
+    color: black;
+    font-family: clarendon-urw, serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px;
+    position: absolute;
+    top: 35px;
+}
