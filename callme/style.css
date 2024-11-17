@@ -1,6 +1,6 @@
 @font-face{
     font-family: "ED Medimont";
-    src: url('sources/ED Medimont-Regular.otf') format('otf');
+    src: url('sources/ED Medimont-Regular.otf');
 }
 
 @font-face{
@@ -10,13 +10,12 @@
 
 @font-face{
     font-family: "PP Editorial New Bold Italic";
-    src: url('sources/PPEditorialNew-BoldItalic.otf') format('otf');
+    src: url('sources/PPEditorialNew-BoldItalic.otf');
 }
 
 body{
     background-color: #fffbf5;
     margin-top: 0px;
-    overflow: hidden;
 }
 
 a{
@@ -28,20 +27,56 @@ h1{
     font-size: 120px;
     margin: 0px;
     text-align: center;
+    font-family: clarendon-urw-extra-narrow, serif;
+    font-weight: 800;
+    font-style: italic;
+    -webkit-text-stroke: 6px black;
+    paint-order: stroke fill;
+    letter-spacing: -1px;
+    rotate: -8deg;
+    animation: strokeColorChange 10s infinite;
+}
+
+@keyframes strokeColorChange {
+    0% {
+        -webkit-text-stroke: 6px #f6c4c3;
+    }
+    33% {
+        -webkit-text-stroke: 6px #ed5c63;
+    }
+    66% {
+        -webkit-text-stroke: 6px #b51718;
+    }
+    100% {
+        -webkit-text-stroke: 6px #f6c4c3;
+    }
 }
 
 #drop1{
-    color: pink;
+    font-family: "r41-alfabeta-16", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #drop2{
-    color: pink;
+    font-family: "r41-alfabeta-16", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #window{
-    background-color: black;
-    height: 77vh;
+    /* background-color: black; */
+    height: 70vh;
     width: 99vw;
+    position: absolute;
+    top: 180px;
+}
+
+#hero{
+    display: block;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #nav{
@@ -49,22 +84,55 @@ h1{
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: baseline;
+    bottom: 13px;
+    margin-top: 38vw;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 #collection{
     color: #f6c4c3;
     font-family: "ED Medimont";
     font-size: 60px;
+    -webkit-text-stroke: 1.5px #fffbf5;
+    paint-order: stroke fill;
+    transition: .5s ease-in-out;
+}
+
+#collection:hover{
+    color: #fffbf5;
+    -webkit-text-stroke: 1.5px black;
+    paint-order: stroke fill;
 }
 
 #acquisition{
     color: #ed5c63;
-    font-family: "PP Editorial New Bold Italic";
+    font-family: PP Editorial New Bold Italic;
+    letter-spacing: -1px;
+    -webkit-text-stroke: 1.5px #fffbf5;
+    paint-order: stroke fill;
+    transition: .5s ease-in-out;
+}
+
+#acquisition:hover{
+    color: #fffbf5;
+    -webkit-text-stroke: 1.5px black;
+    paint-order: stroke fill;
 }
 
 #immortalization{
     color: #b51718;
     font-family: "PP Neue Montreal Medium";
+    letter-spacing: -2px;
+    -webkit-text-stroke: 1.5px #fffbf5;
+    paint-order: stroke fill;
+    transition: .5s ease-in-out;
+}
+
+#immortalization:hover{
+    color: #fffbf5;
+    -webkit-text-stroke: 1.5px black;
+    paint-order: stroke fill;
 }
 
 #gallery{
@@ -75,4 +143,5 @@ h1{
     margin: 0px;
     position: absolute;
     top: 35px;
+    margin-left: 25px;
 }
