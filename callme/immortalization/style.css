@@ -22,7 +22,7 @@ h1{
     font-family: "PP Neue Montreal Medium";
     color: black;
     text-align: center;
-    font-size: 120px;
+    font-size: 116px;
     margin: 0px;
     letter-spacing: -2px;
     background-color: #fffbf5;
@@ -82,7 +82,7 @@ h3{
     margin: 0px;
     padding: 0px;
     display: absolute;
-    top: 138px;
+    top: 130px;
 }
 
 #images{
@@ -95,7 +95,8 @@ h3{
     border-left: none;
     border-right: none;
     margin-top: 144px;
-    margin-left: 20px
+    margin-left: 20px;
+    border-top: none;
 }
 
 #text{
@@ -115,5 +116,6 @@ h3{
     border-width: 5px;
     border-color: #000000;
     border-right: none;
+    border-top: none;
     text-align: justify;
 }
