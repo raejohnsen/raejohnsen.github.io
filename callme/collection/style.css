@@ -12,7 +12,7 @@ h1{
     font-family: "ED Medimont";
     color: black;
     text-align: center;
-    font-size: 120px;
+    font-size: 106px;
     margin: 0px;
     background-color: #fffbf5;
     position: fixed;
@@ -26,8 +26,16 @@ h1{
     border-right: none;
 }
 
+#back{
+    width: 60px;
+    position: fixed;
+    left: 40px;
+    top: 47px;
+    z-index: 10000;
+}
+
 #next{
-    width: 80px;
+    width: 60px;
     position: fixed;
     right: 40px;
     top: 47px;
