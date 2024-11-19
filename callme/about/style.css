@@ -1,0 +1,44 @@
+body{
+    background-color: #fffbf5;
+    margin: 30px;
+    background-image: url("sources/about.jpg");
+    background-position: left top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1{
+    font-size: 120px;
+    text-align: left;
+    font-family: clarendon-urw-extra-narrow, serif;
+    font-weight: 800;
+    font-style: italic;
+    -webkit-text-stroke: 6px rgb(176, 0, 0);
+    paint-order: stroke fill;
+    letter-spacing: -2px;
+    margin-top: 130px;
+}
+
+#drop1{
+    font-family: "r41-alfabeta-16", sans-serif;
+    font-weight: 400;
+    letter-spacing: 15px;
+}
+
+#text{
+    position: absolute;
+    top: 1000px;
+    font-family: clarendon-urw, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    width: 35%;
+}
+
+#back{
+    width: 80px;
+    position: fixed;
+    left: 40px;
+    top: 38px;
+    z-index: 10000;
+}

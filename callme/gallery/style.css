@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+  }
+  .photo {
+    position: absolute;
+    transition: transform 0.3s ease;
+  }
+  .photo:hover {
+    transform: scale(1.1);
+  }

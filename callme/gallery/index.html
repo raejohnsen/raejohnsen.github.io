@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="https://use.typekit.net/jmh8uhi.css">
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+      overflow: hidden;
+      position: relative;
+      background-color: black;
+    }
+
+    .photo {
+      position: absolute;
+      cursor: grab;
+      transition: transform 0.2s ease;
+    }
+
+    .photo:active {
+      cursor: grab;
+      transition: none;
+    }
+
+    .dragme {
+      position: absolute;
+      cursor: grab;
+      z-index: 9999;
+    }
+
+    .dragme:hover{
+        transform: scale(1.3);
+    }
+
+    #gallery{
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+        top: 300px;
+        left: 525px;
+        z-index: 0;
+    }
+
+    h1{
+        font-size: 220px;
+        margin: 0px;
+        text-align: center;
+        font-family: clarendon-urw-extra-narrow, serif;
+        font-weight: 800;
+        font-style: italic;
+        -webkit-text-stroke: 6px rgb(255, 187, 187);
+        paint-order: stroke fill;
+        letter-spacing: -9px;
+        color: #fffbf5;
+    }
+
+    #drop1{
+    font-family: "r41-alfabeta-16", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 4px;
+    color: #fffbf5;
+    }
+
+    #back{
+    width: 60px;
+    position: fixed;
+    left: 40px;
+    top: 38px;
+    z-index: 10000;
+    }
+
+  </style>
+</head>
+<body>
+    <a id="backarrow" href="https://raejohnsen.github.io/callme/index.html">
+        <img id="back" src="sources/left.png">
+    </a>
+  <!-- Container to hold the photos -->
+  <div class="map" style="width: 100vw; height: 100vh; position: relative; overflow: hidden;">
+    <!-- The draggable images will be appended here dynamically -->
+  </div>
+  <div id="gallery">
+    <h1><span id="drop1">G</span>allery</h1>
+  </div>
+  <script>
+    let maxLeft;
+    let maxTop;
+    const minLeft = 0;
+    const minTop = 0;
+    let timeDelta;
+    let imgs = [
+        'sources/acme.png',
+        'sources/yellowswatch.png',
+        'sources/keychain.png',
+        'sources/aftersun.png',
+        'sources/snoopy.png',
+        'sources/alberts.png',
+        'sources/amplehills.png',
+        'sources/amplehills1.png',
+        'sources/antons.png',
+        'sources/asteroid1.png',
+        'sources/asteroid2.png',
+        'sources/asteroid3.png',
+        'sources/asteroid4.png',
+        'sources/barneys.png',
+        'sources/bayou.png',
+        'sources/bayou2.png',
+        'sources/bestyet.png',
+        'sources/bigbar.png',
+        'sources/bilbo.png',
+        'sources/bisqueswatch.png',
+        'sources/bkbrewery.png',
+        'sources/blackswatch.png',
+        'sources/blazes.png',
+        'sources/broom.png',
+        'sources/broomest.png',
+        'sources/bubblegumswatch.png',
+        'sources/cat.png',
+        'sources/clasicos.png',
+        'sources/coffee.png',
+        'sources/confetti.png',
+        'sources/conti.png',
+        'sources/crab.png',
+        'sources/crazyhorse.png',
+        'sources/dantanas.png',
+        'sources/dba.png',
+        'sources/dressler.png',
+        'sources/erech.png',
+        'sources/estrus.png',
+        'sources/fez.png',
+        'sources/fightergroup.png',
+        'sources/flamingo.png',
+        'sources/fluoorangeswatch.png',
+        'sources/fonda.png',
+        'sources/fortune.png',
+        'sources/freemans.png',
+        'sources/gage.png',
+        'sources/gallaghers.png',
+        'sources/glossier.png',
+        'sources/goodles.png',
+        'sources/governors.png',
+        'sources/gramercy.png',
+        'sources/greenswatch.png',
+        'sources/gueros.png',
+        'sources/hala.png',
+        'sources/howitzer.png',
+        'sources/indochine.png',
+        'sources/k.png',
+        'sources/kellygreenswatch.png',
+        'sources/keychain.png',
+        'sources/koolhaasfront.png',
+        'sources/lafittes.png',
+        'sources/lamb.png',
+        'sources/landmark.png',
+        'sources/limeswatch.png',
+        'sources/lindas.png',
+        'sources/lottery.png',
+        'sources/maikai.png',
+        'sources/mcgoverns.png',
+        'sources/midcitylanes.png',
+        'sources/mintswatch.png',
+        'sources/MR.png',
+        'sources/nadines.png',
+        'sources/orchestra.png',
+        'sources/pao.png',
+        'sources/pousadas.png',
+        'sources/pulitzer.png',
+        'sources/qatar.png',
+        'sources/redhooktav.png',
+        'sources/ribbon.png',
+        'sources/screeningroom.png',
+        'sources/sealscove.png',
+        'sources/shell.png',
+        'sources/sisters.png',
+        'sources/skull.png',
+        'sources/sticker.png',
+        'sources/studs.png',
+        'sources/sue.png',
+        'sources/sumi.png',
+        'sources/sunkenharbor.png',
+        'sources/tape.png',
+        'sources/tattoo.png',
+        'sources/tomato.png',
+        'sources/trattoria.png',
+        'sources/trophy.png',
+        'sources/tube.png',
+        'sources/turks.png',
+        'sources/twoboots.png',
+        'sources/uno.png',
+        'sources/valentine2.png',
+        'sources/wrigley.png',
+        'sources/wristband.png',
+        'sources/wristband2.png',
+        'sources/wristband3.png',
+        'sources/yellowswatch.png'
+    ];
+
+    // Set a random width range for images
+    const minWidth = 150; // Minimum width of images in pixels
+    const maxWidth = 250; // Maximum width of images in pixels
+
+    let drag = false; // Track if an element is being dragged
+    let targ, offsetX, offsetY, coordX, coordY, originalX, originalY;
+
+    // Load images into the map when the page loads
+    window.onload = function () {
+      initializeMap();
+      document.onmousedown = startDrag;
+      document.onmouseup = stopDrag;
+    };
+
+    // Place images randomly in the container with a random width
+    function initializeMap() {
+      const map = document.querySelector('.map');
+      maxLeft = map.offsetWidth - 0; // Adjust for image size
+      maxTop = map.offsetHeight - 0;
+
+      for (let i = 0; i < imgs.length; i++) {
+        const img = document.createElement('img');
+        img.src = imgs[i];
+        img.alt = `Image ${i}`;
+        img.id = `photo-${i}`;
+        img.className = 'dragme photo';
+
+        // Set random width within the specified range
+        const randomWidth = Math.floor(Math.random() * (maxWidth - minWidth + 1)) + minWidth;
+        img.style.width = `${randomWidth}px`;
+
+        // Set random position for the image within the boundaries of the map
+        img.style.left = `${Math.floor(Math.random() * maxLeft)}px`;
+        img.style.top = `${Math.floor(Math.random() * maxTop)}px`;
+
+        map.appendChild(img);
+      }
+    }
+
+    // Handle the start of a drag event
+    function startDrag(e) {
+      timeDelta = Date.now(); // Record the time the drag started
+
+      if (!e) e = window.event;
+      targ = e.target || e.srcElement;
+
+      if (!targ.classList.contains('dragme')) return; // Only allow dragging for the .dragme class
+
+      offsetX = e.clientX;
+      offsetY = e.clientY;
+
+      coordX = parseInt(targ.style.left);
+      coordY = parseInt(targ.style.top);
+
+      originalX = targ.style.left;
+      originalY = targ.style.top;
+
+      drag = true;
+
+      document.onmousemove = dragDiv; // Attach the drag function
+      e.preventDefault(); // Prevent text selection or other default actions
+    }
+
+    // Handle dragging
+    function dragDiv(e) {
+      if (!drag) return;
+
+      if (!e) e = window.event;
+
+      // Calculate new position
+      let newLeft = coordX + e.clientX - offsetX;
+      let newTop = coordY + e.clientY - offsetY;
+
+      // Enforce boundaries
+      if (newLeft >= minLeft && newLeft <= maxLeft) targ.style.left = newLeft + 'px';
+      if (newTop >= minTop && newTop <= maxTop) targ.style.top = newTop + 'px';
+
+      e.preventDefault();
+    }
+
+    // Handle the end of a drag event
+    function stopDrag() {
+      if (!drag) return;
+
+      drag = false; // Reset the drag state
+      document.onmousemove = null; // Detach the drag function
+    }
+  </script>
+</body>
+</html>
