@@ -102,7 +102,8 @@ let images = [
     'sources/wristband.png',
     'sources/wristband2.png',
     'sources/wristband3.png',
-    'sources/yellowswatch.png'
+    'sources/yellowswatch.png',
+    'sources/activator.png'
 ];
 
 let image = document.getElementById("hero");

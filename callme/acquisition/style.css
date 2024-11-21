@@ -3,121 +3,127 @@
     src: url('sources/PPEditorialNew-BoldItalic.otf') format('otf');
 }
 
-body{
-    background-color: #fffbf5;
-    margin: 0px;
+@media all and (min-width: 501px) {
+    body{
+        background-color: #fffbf5;
+        margin: 0px;
+    }
+
+    img{
+        width: 31vw;
+        margin-bottom: 100px;
+    }
+
+    h1{
+        font-family: "PP Editorial New Bold Italic";
+        color: black;
+        text-align: center;
+        font-size: 120px;
+        margin: 0px;
+        font-style: italic;
+        letter-spacing: -4px;
+        background-color: #fffbf5;
+        position: fixed;
+        z-index: 9999;
+        width: 100vw;
+        border-style: solid;
+        border-width: 5px;
+        border-color: black;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+
+    #back{
+        width: 60px;
+        position: fixed;
+        left: 40px;
+        top: 47px;
+        z-index: 10000;
+    }
+
+    #next{
+        width: 60px;
+        position: fixed;
+        right: 40px;
+        top: 47px;
+        z-index: 9999;
+    }
+
+    h2{
+        font-family: "PP Editorial New Bold Italic";
+        font-style: italic;
+        font-size: 70px;
+        line-height: 85%;
+        letter-spacing: -4px;
+        text-align: left;
+        color: #fffbf5;
+        -webkit-text-stroke: 6px black;
+        paint-order: stroke fill;
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+
+    h3{
+        font-family: clarendon-urw, serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-bottom: 50px;
+        text-align: right;
+        margin-top: 0px;
+    }
+
+    #whole{
+        display: flex;
+        flex-flow: row nowrap;
+        width: fit-content;
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        top: 138px
+    }
+
+    #image1{
+        width: 31%;
+        background-color: #fffbf5;
+        margin: 0px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: black;
+        border-right: none;
+        border-left: none;
+    }
+
+    #image2{
+        width: 31%;
+        background-color: #fffbf5;
+        margin: 0px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: black;
+        border-left: none;
+        border-right: none;
+        padding-top: 400px;
+    }
+
+    #text{
+        background-color: #ed5c63;
+        width: 33.33%;
+        margin: 0px;
+        font-size: 20px;
+        padding-right: 60px;
+        padding-left: 25px;
+        font-family: clarendon-urw, serif;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 120%;
+        border-style: solid;
+        border-width: 5px;
+        border-color: black;
+        text-align: justify;
+    }
 }
 
-img{
-    width: 31vw;
-    margin-bottom: 100px;
-}
+@media all and (max-width: 500px) {
 
-h1{
-    font-family: "PP Editorial New Bold Italic";
-    color: black;
-    text-align: center;
-    font-size: 120px;
-    margin: 0px;
-    font-style: italic;
-    letter-spacing: -4px;
-    background-color: #fffbf5;
-    position: fixed;
-    z-index: 9999;
-    width: 100vw;
-    border-style: solid;
-    border-width: 5px;
-    border-color: black;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-}
-
-#back{
-    width: 60px;
-    position: fixed;
-    left: 40px;
-    top: 47px;
-    z-index: 10000;
-}
-
-#next{
-    width: 60px;
-    position: fixed;
-    right: 40px;
-    top: 47px;
-    z-index: 9999;
-}
-
-h2{
-    font-family: "PP Editorial New Bold Italic";
-    font-style: italic;
-    font-size: 70px;
-    line-height: 85%;
-    letter-spacing: -4px;
-    text-align: left;
-    color: #fffbf5;
-    -webkit-text-stroke: 6px black;
-    paint-order: stroke fill;
-    margin-top: 30px;
-    margin-bottom: 0px;
-}
-
-h3{
-    font-family: clarendon-urw, serif;
-    font-weight: 400;
-    font-style: normal;
-    margin-bottom: 50px;
-    text-align: right;
-    margin-top: 0px;
-}
-
-#whole{
-    display: flex;
-    flex-flow: row nowrap;
-    width: fit-content;
-    margin: 0px;
-    padding: 0px;
-    position: absolute;
-    top: 138px
-}
-
-#image1{
-    width: 31%;
-    background-color: #fffbf5;
-    margin: 0px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: black;
-    border-right: none;
-    border-left: none;
-}
-
-#image2{
-    width: 31%;
-    background-color: #fffbf5;
-    margin: 0px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: black;
-    border-left: none;
-    border-right: none;
-    padding-top: 400px;
-}
-
-#text{
-    background-color: #ed5c63;
-    width: 33.33%;
-    margin: 0px;
-    font-size: 20px;
-    padding-right: 60px;
-    padding-left: 25px;
-    font-family: clarendon-urw, serif;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 120%;
-    border-style: solid;
-    border-width: 5px;
-    border-color: black;
-    text-align: justify;
 }

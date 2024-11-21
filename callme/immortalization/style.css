@@ -8,114 +8,120 @@
     src: url('sources/PPNeueMontreal-BoldItalic.otf') format('otf');
 } */
 
-body{
-    background-color: #fffbf5;
-    margin: 0px
+@media all and (min-width: 501px) {
+    body{
+        background-color: #fffbf5;
+        margin: 0px
+    }
+
+    img{
+        width: 60vw;
+        margin-bottom: 50px;
+    }
+
+    h1{
+        font-family: "PP Neue Montreal Medium";
+        color: black;
+        text-align: center;
+        font-size: 116px;
+        margin: 0px;
+        letter-spacing: -2px;
+        background-color: #fffbf5;
+        position: fixed;
+        z-index: 9999;
+        width: 100vw;
+        border-style: solid;
+        border-width: 5px;
+        border-color: black;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+
+    #back{
+        width: 60px;
+        position: fixed;
+        left: 40px;
+        top: 47px;
+        z-index: 10000;
+    }
+
+    #next{
+        width: 60px;
+        position: fixed;
+        right: 40px;
+        top: 47px;
+        z-index: 9999;
+    }
+
+    h2{
+        font-family: "PP Neue Montreal Medium";
+        font-size: 70px;
+        font-style: italic;
+        line-height: 90%;
+        text-align: right;
+        color: #fffbf5;
+        -webkit-text-stroke: 6px black;
+        paint-order: stroke fill;
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+
+    h3{
+        font-family: clarendon-urw, serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-bottom: 50px;
+        text-align: left;
+        margin-top: 0px;
+    }
+
+    #whole{
+        display: flex;
+        flex-flow: row nowrap;
+        width: fit-content;
+        margin: 0px;
+        padding: 0px;
+        display: absolute;
+        top: 130px;
+    }
+
+    #images{
+        background-color: #fffbf5;
+        width: 67vw;
+        margin: 0px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: #000000;
+        border-left: none;
+        border-right: none;
+        margin-top: 144px;
+        margin-left: 20px;
+        border-top: none;
+    }
+
+    #text{
+        background-color: #b51718;
+        width: 33%;
+        margin: 0px;
+        margin-top: 144px;
+        color: #fffbf5;
+        font-size: 20px;
+        padding-right: 60px;
+        padding-left: 25px;
+        font-family: clarendon-urw, serif;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 120%;
+        border-style: solid;
+        border-width: 5px;
+        border-color: #000000;
+        border-right: none;
+        border-top: none;
+        text-align: justify;
+    }
 }
 
-img{
-    width: 60vw;
-    margin-bottom: 50px;
-}
+@media all and (max-width: 500px) {
 
-h1{
-    font-family: "PP Neue Montreal Medium";
-    color: black;
-    text-align: center;
-    font-size: 116px;
-    margin: 0px;
-    letter-spacing: -2px;
-    background-color: #fffbf5;
-    position: fixed;
-    z-index: 9999;
-    width: 100vw;
-    border-style: solid;
-    border-width: 5px;
-    border-color: black;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-}
-
-#back{
-    width: 60px;
-    position: fixed;
-    left: 40px;
-    top: 47px;
-    z-index: 10000;
-}
-
-#next{
-    width: 60px;
-    position: fixed;
-    right: 40px;
-    top: 47px;
-    z-index: 9999;
-}
-
-h2{
-    font-family: "PP Neue Montreal Medium";
-    font-size: 70px;
-    font-style: italic;
-    line-height: 90%;
-    text-align: right;
-    color: #fffbf5;
-    -webkit-text-stroke: 6px black;
-    paint-order: stroke fill;
-    margin-top: 30px;
-    margin-bottom: 0px;
-}
-
-h3{
-    font-family: clarendon-urw, serif;
-    font-weight: 400;
-    font-style: normal;
-    margin-bottom: 50px;
-    text-align: left;
-    margin-top: 0px;
-}
-
-#whole{
-    display: flex;
-    flex-flow: row nowrap;
-    width: fit-content;
-    margin: 0px;
-    padding: 0px;
-    display: absolute;
-    top: 130px;
-}
-
-#images{
-    background-color: #fffbf5;
-    width: 67vw;
-    margin: 0px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: #000000;
-    border-left: none;
-    border-right: none;
-    margin-top: 144px;
-    margin-left: 20px;
-    border-top: none;
-}
-
-#text{
-    background-color: #b51718;
-    width: 33%;
-    margin: 0px;
-    margin-top: 144px;
-    color: #fffbf5;
-    font-size: 20px;
-    padding-right: 60px;
-    padding-left: 25px;
-    font-family: clarendon-urw, serif;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 120%;
-    border-style: solid;
-    border-width: 5px;
-    border-color: #000000;
-    border-right: none;
-    border-top: none;
-    text-align: justify;
 }
