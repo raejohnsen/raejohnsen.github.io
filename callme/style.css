@@ -177,5 +177,167 @@
 }
 
 @media all and (max-width: 500px) {
+    body{
+        background-color: #fffbf5;
+        margin-top: 10px;
+    }
 
+    a{
+        font-size: 50px;
+        text-decoration: none;
+    }
+
+    h1{
+        font-size: 60px;
+        margin: 0px;
+        text-align: center;
+        font-family: clarendon-urw-extra-narrow, serif;
+        font-weight: 800;
+        font-style: italic;
+        -webkit-text-stroke: 6px black;
+        paint-order: stroke fill;
+        letter-spacing: -1px;
+        rotate: -8deg;
+        animation: strokeColorChange 10s infinite;
+    }
+
+    @keyframes strokeColorChange {
+        0% {
+            -webkit-text-stroke: 6px #f6c4c3;
+        }
+        33% {
+            -webkit-text-stroke: 6px #ed5c63;
+        }
+        66% {
+            -webkit-text-stroke: 6px #b51718;
+        }
+        100% {
+            -webkit-text-stroke: 6px #f6c4c3;
+        }
+    }
+
+    #drop1{
+        font-family: "r41-alfabeta-16", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    #drop2{
+        font-family: "r41-alfabeta-16", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    #window{
+        /* background-color: rgb(255, 255, 255); */
+        height: 70vh;
+        width: 99vw;
+        position: absolute;
+        top: 120px;
+    }
+
+    #hero{
+        display: block;
+        max-height: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        transform-origin: center center;
+        filter: drop-shadow(#3e3e3e 1rem 0.5rem 10px);
+    }
+
+    #nav{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-items: center;
+        bottom: 3px;
+        margin-top: 118vw;
+    }
+
+    #collection{
+        color: #f6c4c3;
+        font-family: "ED Medimont";
+        font-size: 60px;
+        -webkit-text-stroke: 6px #fffbf5;
+        paint-order: stroke fill;
+        transition: .5s ease-in-out;
+    }
+
+    #collection:hover{
+        -webkit-text-stroke: 6px black;
+        paint-order: stroke fill;
+    }
+
+    #acquisition{
+        color: #ed5c63;
+        font-family: PP Editorial New Bold Italic;
+        letter-spacing: -1px;
+        -webkit-text-stroke: 6px #fffbf5;
+        paint-order: stroke fill;
+        transition: .5s ease-in-out;
+    }
+
+    #acquisition:hover{
+        -webkit-text-stroke: 6px black;
+        paint-order: stroke fill;
+    }
+
+    #immortalization{
+        color: #b51718;
+        font-family: "PP Neue Montreal Medium";
+        letter-spacing: -2px;
+        -webkit-text-stroke: 6px #fffbf5;
+        paint-order: stroke fill;
+        transition: .5s ease-in-out;
+    }
+
+    #immortalization:hover{
+        -webkit-text-stroke: 6px black;
+        paint-order: stroke fill;
+    }
+
+    #gallery{
+        color: black;
+        font-family: clarendon-urw, serif;
+        font-size: 30px;
+        letter-spacing: -1px;
+        font-weight: 400;
+        font-style: normal;
+        margin: 0px;
+        position: absolute;
+        top: 30px;
+        left: 10px;
+        transition: .5s ease-in-out;
+    }
+
+    #gallery:hover{
+        -webkit-text-stroke: 1.5px black;
+        paint-order: stroke fill;
+        text-decoration: underline;
+    }
+
+    #about{
+        color: black;
+        font-family: clarendon-urw, serif;
+        font-size: 30px;
+        letter-spacing: -1px;
+        font-weight: 400;
+        font-style: normal;
+        margin: 0px;
+        position: absolute;
+        top: 30px;
+        right: 10px;
+        transition: .5s ease-in-out;
+    }
+
+    #about:hover{
+        -webkit-text-stroke: 1.5px black;
+        paint-order: stroke fill;
+        text-decoration: underline;
+    }
+
+    img{
+        width: 60vw;
+        max-height: 100%;
+    }
 }

@@ -6,7 +6,7 @@
 @media all and (min-width: 501px) {
     body{
         background-color: #fffbf5;
-        margin: 0px
+        margin: 0px;
     }
 
     h1{
@@ -110,5 +110,112 @@
 }
 
 @media all and (max-width: 500px) {
+    body{
+        background-color: #fffbf5;
+        margin: 0px;
+        overflow-x: hidden;
+    }
 
+    h1{
+        font-family: "ED Medimont";
+        color: black;
+        text-align: center;
+        font-size: 56px;
+        margin: 0px;
+        background-color: #fffbf5;
+        position: fixed;
+        z-index: 9999;
+        width: 100vw;
+        border-style: solid;
+        border-width: 5px;
+        border-color: black;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        top: 0px;
+    }
+
+    h2{
+        font-family: clarendon-urw-extra-narrow, serif;
+        font-weight: 800;
+        font-style: italic;
+        line-height: 90%;
+        text-align: left;
+        font-size: 50px;
+        color: #fffbf5;
+        -webkit-text-stroke: 7px black;
+        paint-order: stroke fill;
+        margin-top: 30px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+
+    .dropcap{
+        font-family: "r41-alfabeta-16", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    h3{
+        font-family: clarendon-urw, serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-bottom: 50px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    #back{
+        width: 7vw;
+        position: fixed;
+        left: 20px;
+        top: 23px;
+        z-index: 10000;
+    }
+
+    #next{
+        width: 7vw;
+        position: fixed;
+        right: 20px;
+        top: 23px;
+        z-index: 9999;
+    }
+
+    #whole{
+        display: flex;
+        flex-flow: row wrap;
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+    }
+
+    #text{
+        background-color: #f6c4c3;
+        margin-top: 100px;
+        margin: 0px;
+        font-size: 20px;
+        padding-right: 60px;
+        padding-left: 25px;
+        font-family: clarendon-urw, serif;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 120%;
+        text-align: left;
+        top: 72px;
+        position: absolute;
+        width: 85vw;
+    }
+
+    p{
+        line-height: 130%;
+    }
+
+    #images{
+        background-color: #fffbf5;
+        margin: 0px;
+    }
+
+    img{
+        width: 68vw;
+    }
 }
