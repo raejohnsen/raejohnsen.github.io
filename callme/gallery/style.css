@@ -15,5 +15,19 @@
 }
 
 @media all and (max-width: 500px) {
-
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    width: 500vw;
+    background-color: white;
+  }
+  .photo {
+    position: absolute;
+    transition: transform 0.3s ease;
+  }
+  .photo:hover {
+    transform: scale(1.1);
+  }
 }
