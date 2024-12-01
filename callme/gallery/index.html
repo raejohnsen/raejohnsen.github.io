@@ -1,154 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gallery</title>
-  <link rel="stylesheet" href="https://use.typekit.net/jmh8uhi.css">
-  <style>
-    @media all and (min-width: 501px) {
-      body {
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        position: relative;
-        background-color: black;
-      }
-
-      .photo {
-        position: absolute;
-        cursor: grab;
-        transition: transform 0.2s ease;
-      }
-
-      .photo:active {
-        cursor: grab;
-        transition: none;
-      }
-
-      .dragme {
-        position: absolute;
-        cursor: grab;
-        z-index: 9999;
-      }
-
-      .dragme:hover {
-        transform: scale(1.3);
-      }
-
-      #gallery {
-        width: 40%;
-        margin-left: auto;
-        margin-right: auto;
-        position: absolute;
-        top: 300px;
-        left: 525px;
-        z-index: 0;
-      }
-
-      h1 {
-        font-size: 220px;
-        margin: 0px;
-        text-align: center;
-        font-family: clarendon-urw-extra-narrow, serif;
-        font-weight: 800;
-        font-style: italic;
-        -webkit-text-stroke: 6px rgb(255, 187, 187);
-        paint-order: stroke fill;
-        letter-spacing: -9px;
-        color: #fffbf5;
-      }
-
-      #back {
-        width: 60px;
-        position: fixed;
-        left: 40px;
-        top: 38px;
-        z-index: 10000;
-      }
-    }
-
-    @media all and (max-width: 500px) {
-      body {
-        margin: 0;
-        padding: 0;
-        overflow-x: scroll;
-        overflow-y: hidden;
-        position: relative;
-        width: 500vw; /* Horizontal scroll area */
-        height: 100vh; /* Full viewport height */
-        background-color: black;
-      }
-
-      .map {
-        width: 500vw; /* Match body width for horizontal scroll */
-        height: 100vh; /* Full height of viewport */
-        position: relative;
-      }
-
-      .photo {
-        position: absolute;
-        cursor: grab;
-        transition: transform 0.2s ease;
-      }
-
-      .photo:active {
-        cursor: grab;
-        transition: none;
-      }
-
-      .dragme {
-        position: absolute;
-        cursor: grab;
-        z-index: 9999;
-      }
-
-      .dragme:hover {
-        transform: scale(1.3);
-      }
-
-      #gallery {
-        width: 100vw; /* Center gallery header in viewport */
-        position: fixed;
-        top: 350px;
-        left: 0;
-        z-index: 10;
-        text-align: center;
-      }
-
-      h1 {
-        font-size: 120px;
-        margin: 0px;
-        font-family: clarendon-urw-extra-narrow, serif;
-        font-weight: 800;
-        font-style: italic;
-        -webkit-text-stroke: 3px rgb(255, 187, 187);
-        color: #fffbf5;
-        letter-spacing: -5px;
-      }
-
-      #back {
-        width: 40px;
-        position: fixed;
-        left: 30px;
-        top: 30px;
-        z-index: 10000;
-      }
-    }
-  </style>
-</head>
-<body>
-  <a id="backarrow" href="https://raejohnsen.github.io/callme/index.html">
-    <img id="back" src="sources/left.png" alt="Back">
-  </a>
-  <!-- Container to hold the photos -->
-  <div class="map"></div>
-  <div id="gallery">
-    <h1><span id="drop1">G</span>allery</h1>
-  </div>
-  <script>
-    const imgs = [
-    'sources/acme.png',
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Gallery</title>
+   <link rel="stylesheet" href="https://use.typekit.net/jmh8uhi.css">
+   <style>
+     /* For Desktop View */
+     @media all and (min-width: 501px) {
+       body {
+         margin: 0;
+         padding: 0;
+         overflow: hidden;
+         position: relative;
+         background-color: black;
+       }
+ 
+       .photo {
+         position: absolute;
+         cursor: grab;
+         transition: transform 0.2s ease;
+       }
+ 
+       .photo:active {
+         cursor: grabbing;
+         transition: none;
+       }
+ 
+       .dragme {
+         position: absolute;
+         cursor: grab;
+         z-index: 9999;
+       }
+ 
+       .dragme:hover {
+         transform: scale(1.3);
+       }
+ 
+       #gallery {
+         width: 40%;
+         margin-left: auto;
+         margin-right: auto;
+         position: absolute;
+         top: 300px;
+         left: 525px;
+         z-index: 0;
+       }
+ 
+       h1 {
+         font-size: 220px;
+         margin: 0px;
+         text-align: center;
+         font-family: clarendon-urw-extra-narrow, serif;
+         font-weight: 800;
+         font-style: italic;
+         -webkit-text-stroke: 6px rgb(255, 187, 187);
+         paint-order: stroke fill;
+         letter-spacing: -9px;
+         color: #fffbf5;
+       }
+ 
+       #back {
+         width: 60px;
+         position: fixed;
+         left: 40px;
+         top: 38px;
+         z-index: 10000;
+       }
+     }
+ 
+     /* For Mobile View */
+     @media all and (max-width: 500px) {
+       body {
+         margin: 0;
+         padding: 0;
+         position: relative;
+         background-color: black;
+         overflow-x: auto; /* Allow horizontal scrolling */
+         overflow-y: hidden; /* Allow vertical scrolling */
+         width: 100vw;
+         height: 100vh;
+       }
+ 
+       /* Map container to take twice the viewport width */
+       .map {
+         display: block;
+         width: 200vw; /* 2 times the viewport width to enable horizontal scrolling */
+         height: 100vh;
+         position: relative;
+       }
+ 
+       .photo {
+         position: absolute;
+         cursor: grab;
+         transition: transform 0.2s ease;
+       }
+ 
+       .photo:active {
+         cursor: grabbing;
+         transition: none;
+       }
+ 
+       .dragme {
+         position: absolute;
+         cursor: grab;
+         z-index: 9999;
+       }
+ 
+       .dragme:hover {
+         transform: scale(1.3);
+       }
+ 
+       #gallery {
+         width: 100vw; /* Center gallery header */
+         position: fixed;
+         top: 350px;
+         left: 0;
+         z-index: 10;
+         text-align: center;
+       }
+ 
+       h1 {
+         font-size: 120px;
+         margin: 0px;
+         font-family: clarendon-urw-extra-narrow, serif;
+         font-weight: 800;
+         font-style: italic;
+         -webkit-text-stroke: 3px rgb(255, 187, 187);
+         color: #fffbf5;
+         letter-spacing: -5px;
+       }
+ 
+       #back {
+         width: 40px;
+         position: fixed;
+         left: 30px;
+         top: 30px;
+         z-index: 10000;
+       }
+     }
+   </style>
+ </head>
+ <body>
+   <a id="backarrow" href="https://raejohnsen.github.io/callme/index.html">
+     <img id="back" src="sources/left.png" />
+   </a>
+ 
+   <!-- Container to hold the photos -->
+   <div class="map">
+     <!-- The draggable images will be appended here dynamically -->
+   </div>
+ 
+   <div id="gallery">
+     <h1><span id="drop1">G</span>allery</h1>
+   </div>
+ 
+   <script>
+     let maxLeft;
+     let maxTop;
+     const minLeft = 0;
+     const minTop = 0;
+     let timeDelta;
+     const imgs = [
+     'sources/acme.png',
         'sources/yellowswatch.png',
         'sources/keychain.png',
         'sources/aftersun.png',
@@ -251,72 +265,119 @@
         'sources/wristband.png',
         'sources/wristband2.png',
         'sources/wristband3.png',
-        'sources/yellowswatch.png',
-        'sources/activator.png'
-    ];
+        'sources/yellowswatch.png'
+     ];
+ 
+     const minWidth = 150; // Minimum width of images in pixels
+     const maxWidth = 250; // Maximum width of images in pixels
+ 
+     let drag = false; // Track if an element is being dragged
+     let targ, offsetX, offsetY, coordX, coordY, originalX, originalY;
+ 
+     window.onload = function () {
+       initializeMap();
+       document.onmousedown = startDrag;
+       document.onmouseup = stopDrag;
+     };
+ 
+     function initializeMap() {
+       const map = document.querySelector('.map');
+       const bodyWidth = document.body.offsetWidth; // Full width of the horizontal scroll area
+       const viewportHeight = window.innerHeight;  // Full height of the viewport
+ 
+       maxLeft = bodyWidth - minWidth;  // Calculate maxLeft boundary
+       maxTop = viewportHeight - minWidth;  // Calculate maxTop boundary
 
-    const minWidth = 150; // Minimum width of images in pixels
-    const maxWidth = 250; // Maximum width of images in pixels
-
-    window.onload = function () {
-      initializeMap();
-    };
-
-    function initializeMap() {
-      const map = document.querySelector('.map');
-      const bodyWidth = document.body.offsetWidth; // Full width of the horizontal scroll area
-      const viewportHeight = window.innerHeight;  // Full height of the visible viewport
-
-      // Place images randomly across the entire scroll area
-      for (let i = 0; i < imgs.length; i++) {
-        const img = document.createElement('img');
-        img.src = imgs[i];
-        img.alt = `Image ${i}`;
-        img.id = `photo-${i}`;
-        img.className = 'dragme photo';
-
-        // Set random width for the image
-        const randomWidth = Math.floor(Math.random() * (maxWidth - minWidth + 1)) + minWidth;
-        img.style.width = `${randomWidth}px`;
-
-        // Position images randomly across the horizontal and vertical dimensions
-        img.style.left = `${Math.random() * bodyWidth}px`; // Random position in horizontal scroll area
-        img.style.top = `${Math.random() * viewportHeight}px`; // Random position within visible viewport height
-
-        map.appendChild(img);
-
-        // Add click event for pop-up
-        img.addEventListener('click', () => popUpImage(img));
-      }
-    }
-
-    // Pop-up an image to fill the viewport
-    function popUpImage(img) {
-      const popUp = document.createElement('div');
-      popUp.style.position = 'fixed';
-      popUp.style.top = 0;
-      popUp.style.left = 0;
-      popUp.style.width = '100vw';
-      popUp.style.height = '100vh';
-      popUp.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
-      popUp.style.display = 'flex';
-      popUp.style.justifyContent = 'center';
-      popUp.style.alignItems = 'center';
-      popUp.style.zIndex = 10000;
-
-      const popUpImg = document.createElement('img');
-      popUpImg.src = img.src;
-      popUpImg.style.maxWidth = '90vw';
-      popUpImg.style.maxHeight = '90vh';
-
-      popUp.appendChild(popUpImg);
-      document.body.appendChild(popUp);
-
-      // Close the pop-up when clicked
-      popUp.addEventListener('click', () => {
-        document.body.removeChild(popUp);
-      });
-    }
-  </script>
-</body>
-</html>
+       const offsetRange = 0;  // This controls how far beyond the viewport images can appear
+ 
+       for (let i = 0; i < imgs.length; i++) {
+         const img = document.createElement('img');
+         img.src = imgs[i];
+         img.alt = `Image ${i}`;
+         img.id = `photo-${i}`;
+         img.className = 'dragme photo';
+ 
+         // Set random width for the image within the defined range
+         const randomWidth = Math.floor(Math.random() * (maxWidth - minWidth + 1)) + minWidth;
+         img.style.width = `${randomWidth}px`;
+ 
+         // Position images randomly across the horizontal scrollable area
+         img.style.left = `${Math.random() * bodyWidth}px`; // Random horizontal position
+         img.style.top = `${Math.random() * viewportHeight}px`; // Random vertical position
+         img.addEventListener('dblclick', () => popUpImage(img));  // Add double-click event for pop-up
+         map.appendChild(img);
+       }
+     }
+ 
+     function startDrag(e) {
+       timeDelta = Date.now();
+       if (!e) e = window.event;
+       targ = e.target || e.srcElement;
+ 
+       if (!targ.classList.contains('dragme')) return;
+ 
+       offsetX = e.clientX;
+       offsetY = e.clientY;
+ 
+       coordX = parseInt(targ.style.left);
+       coordY = parseInt(targ.style.top);
+ 
+       originalX = targ.style.left;
+       originalY = targ.style.top;
+ 
+       drag = true;
+ 
+       document.onmousemove = dragDiv;
+       e.preventDefault();
+     }
+ 
+     function dragDiv(e) {
+       if (!drag) return;
+ 
+       if (!e) e = window.event;
+ 
+       let newLeft = coordX + e.clientX - offsetX;
+       let newTop = coordY + e.clientY - offsetY;
+ 
+       // Enforce boundaries for dragging
+       if (newLeft >= minLeft && newLeft <= maxLeft) targ.style.left = newLeft + 'px';
+       if (newTop >= minTop && newTop <= maxTop) targ.style.top = newTop + 'px';
+ 
+       e.preventDefault();
+     }
+ 
+     function stopDrag() {
+       if (!drag) return;
+       drag = false;
+       document.onmousemove = null;
+     }
+ 
+     function popUpImage(img) {
+       const popUp = document.createElement('div');
+       popUp.style.position = 'fixed';
+       popUp.style.top = 0;
+       popUp.style.left = 0;
+       popUp.style.width = '100vw';
+       popUp.style.height = '100vh';
+       popUp.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+       popUp.style.display = 'flex';
+       popUp.style.justifyContent = 'center';
+       popUp.style.alignItems = 'center';
+       popUp.style.zIndex = 10000;
+ 
+       const popUpImg = document.createElement('img');
+       popUpImg.src = img.src;
+       popUpImg.style.maxWidth = '90%';
+       popUpImg.style.maxHeight = '90%';
+       popUp.appendChild(popUpImg);
+ 
+       popUp.addEventListener('click', () => {
+         popUp.style.display = 'none';
+       });
+ 
+       document.body.appendChild(popUp);
+     }
+   </script>
+ </body>
+ </html>
+ 
