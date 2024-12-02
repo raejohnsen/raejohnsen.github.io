@@ -150,8 +150,6 @@
     }
 
     #gallery:hover{
-        -webkit-text-stroke: 1.5px black;
-        paint-order: stroke fill;
         text-decoration: underline;
     }
 
@@ -170,8 +168,6 @@
     }
 
     #about:hover{
-        -webkit-text-stroke: 1.5px black;
-        paint-order: stroke fill;
         text-decoration: underline;
     }
 }
@@ -311,8 +307,6 @@
     }
 
     #gallery:hover{
-        -webkit-text-stroke: 1.5px black;
-        paint-order: stroke fill;
         text-decoration: underline;
     }
 
@@ -331,8 +325,6 @@
     }
 
     #about:hover{
-        -webkit-text-stroke: 1.5px black;
-        paint-order: stroke fill;
         text-decoration: underline;
     }
 

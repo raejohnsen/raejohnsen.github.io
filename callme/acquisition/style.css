@@ -40,6 +40,13 @@
         left: 40px;
         top: 47px;
         z-index: 10000;
+        transition: 0.25s ease-in-out;
+    }
+
+    #back:hover{
+        width: 70px;
+        top: 43px;
+        left: 37px;
     }
 
     #next{
@@ -47,7 +54,14 @@
         position: fixed;
         right: 40px;
         top: 47px;
-        z-index: 9999;
+        z-index: 10000;
+        transition: 0.25s ease-in-out;
+    }
+
+    #next:hover{
+        width: 70px;
+        top: 43px;
+        right: 37px;
     }
 
     h2{
@@ -232,17 +246,31 @@
     #back{
         width: 7vw;
         position: fixed;
-        left: 20px;
+        left: 19px;
         top: 23px;
         z-index: 10000;
+        transition: 0.25s ease-in-out;
+    }
+
+    #back:hover{
+        width: 8vw;
+        top: 21px;
+        left: 19px;
     }
 
     #next{
         width: 7vw;
         position: fixed;
-        right: 20px;
+        right: 21px;
         top: 23px;
         z-index: 9999;
+        transition: 0.25s ease-in-out;
+    }
+    
+    #next:hover{
+        width: 8vw;
+        top: 21px;
+        right: 19px;
     }
 
     #whole{

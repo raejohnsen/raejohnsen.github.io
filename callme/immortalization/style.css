@@ -46,12 +46,24 @@
         z-index: 10000;
     }
 
+    #back:hover{
+        width: 70px;
+        top: 43px;
+        left: 37px;
+    }
+
     #next{
         width: 60px;
         position: fixed;
         right: 40px;
         top: 47px;
         z-index: 9999;
+    }
+
+    #next:hover{
+        width: 70px;
+        top: 43px;
+        right: 37px;
     }
 
     h2{
@@ -210,12 +222,24 @@
         z-index: 10000;
     }
 
+    #back:hover{
+        width: 8vw;
+        top: 21px;
+        left: 19px;
+    }
+
     #next{
         width: 7vw;
         position: fixed;
         right: 10px;
         top: 23px;
         z-index: 9999;
+    }
+
+    #next:hover{
+        width: 8vw;
+        top: 21px;
+        right: 19px;
     }
 
     #whole{
