@@ -122,6 +122,54 @@
         border-color: black;
         text-align: justify;
     }
+
+    #window1{
+        position: fixed;
+        top: 73px;
+        height: 100%;
+        width: 30.8vw;
+        margin-left: 0px;
+        overflow: hidden;
+        z-index: 9999;
+        display: flex; /* Enable Flexbox */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+    }
+
+    #window2{
+        position: fixed;
+        top: 73px;
+        height: 100%;
+        width: 31vw;
+        margin-left: 0px;
+        overflow: hidden;
+        z-index: 9999;
+        display: flex; /* Enable Flexbox */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+    }
+
+    .image1{
+        position: absolute; /* Stacks the images on top of each other */
+        max-height: 100%; /* Stretch images to fit the container */
+        max-width: 100%; /* Maintain aspect ratio */
+        opacity: 0; /* Start with images hidden */
+        transition: .5s ease-in-out; /* Smooth fade transition */
+        margin: auto;
+        object-fit: contain;
+        display: block;
+    }
+
+    .image2{
+        position: absolute; /* Stacks the images on top of each other */
+        max-height: 100%; /* Stretch images to fit the container */
+        max-width: 100%; /* Maintain aspect ratio */
+        opacity: 0; /* Start with images hidden */
+        transition: .5s ease-in-out; /* Smooth fade transition */
+        margin: auto;
+        object-fit: contain;
+        display: block;
+    }
 }
 
 @media all and (max-width: 500px) {
