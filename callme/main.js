@@ -106,11 +106,73 @@ let images = [
     'sources/activator.png'
 ];
 
-let image = document.getElementById("hero");
+let idleTime = 0;
+let afkInterval = null;
 
-function changeImage() {
-    let randomIndex = Math.floor(Math.random() * images.length);
-    image.src = images[randomIndex];
+// Update #hero image every second
+function updateHeroImage() {
+    const hero = document.getElementById("hero");
+    if (!hero) return;
+    const randomIndex = Math.floor(Math.random() * images.length);
+    hero.src = images[randomIndex];
 }
 
-setInterval(changeImage, 1000);
+// Function to create a random image element and append it to the body
+function createRandomImage() {
+    const img = document.createElement("img");
+    img.src = images[Math.floor(Math.random() * images.length)];
+    img.style.position = "absolute";
+    img.style.top = Math.random() * window.innerHeight + "px";
+    img.style.left = Math.random() * window.innerWidth + "px";
+    img.style.width = "150px"; // Adjust as needed
+    img.style.height = "auto"; // Maintain aspect ratio
+    img.style.zIndex = 9999; // Ensure it appears above other elements
+
+    document.body.appendChild(img);
+}
+
+// Function to clear all images from the body
+function clearAllImages() {
+    document.querySelectorAll("img").forEach(img => {
+        if (!img.id || img.id !== "hero") {
+            img.remove();
+        }
+    });
+}
+
+// Function to start the random image popping (AFK mode)
+function startAfkMode() {
+    if (afkInterval) return; // Avoid multiple intervals
+    afkInterval = setInterval(createRandomImage, 2000); // Every 2 seconds
+}
+
+// Function to stop the random image popping
+function stopAfkMode() {
+    if (afkInterval) {
+        clearInterval(afkInterval);
+        afkInterval = null;
+    }
+    clearAllImages(); // Clear all images when stopping AFK mode
+}
+
+// Reset idle timer on user activity
+function resetIdleTimer() {
+    idleTime = 0;
+    stopAfkMode();
+}
+
+// Increment the idle time every second
+setInterval(() => {
+    idleTime++;
+    if (idleTime >= 30) { // 30 seconds of inactivity
+        startAfkMode();
+    }
+}, 1000);
+
+// Attach event listeners to detect user activity
+["mousemove", "keypress", "scroll", "click", "touchstart"].forEach(event => {
+    document.addEventListener(event, resetIdleTimer);
+});
+
+// Start updating the #hero image every second
+setInterval(updateHeroImage, 1000);
