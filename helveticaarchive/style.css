@@ -32,6 +32,7 @@
         line-height: 80%;
         color: inherit;
         transition: color 0.3s ease;
+        letter-spacing: -4px;
     }
 
     a{
@@ -42,6 +43,7 @@
         font-weight: 700;
         color: black;
         transition: color 0.25s ease;
+        letter-spacing: -2px;
     }
 
     coloredElement:visited {
