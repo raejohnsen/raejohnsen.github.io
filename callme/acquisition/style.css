@@ -190,7 +190,7 @@
     body{
         background-color: #fffbf5;
         margin: 0px;
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
     }
 
     h1{
@@ -223,7 +223,7 @@
         color: #fffbf5;
         -webkit-text-stroke: 7px black;
         paint-order: stroke fill;
-        margin-top: 40px;
+        margin-top: 350px;
         margin-bottom: 0px;
         text-align: center;
     }
@@ -240,7 +240,8 @@
         font-style: normal;
         margin-bottom: 50px;
         text-align: center;
-        margin-top: 20px;
+        margin-top: 60px;
+        font-size: 30px;
     }
 
     #back{
@@ -255,7 +256,7 @@
     #back:hover{
         width: 8vw;
         top: 21px;
-        left: 19px;
+        left: 18px;
     }
 
     #next{
@@ -270,7 +271,7 @@
     #next:hover{
         width: 8vw;
         top: 21px;
-        right: 19px;
+        right: 18px;
     }
 
     #whole{
@@ -279,6 +280,7 @@
         margin: 0px;
         padding: 0px;
         position: absolute;
+        z-index: 1;
     }
 
     #text{
@@ -300,13 +302,63 @@
 
     p{
         line-height: 130%;
-        margin-top: 350px;
+        margin-top: 150px;
     }
 
     #images{
         background-color: #fffbf5;
         margin: 0px;
     }
+
+    #window1{
+        display: none;
+        position: fixed;
+        top: 72px;
+        height: 50vw;
+        width: 30vw;
+        z-index: 9999;
+    }
+
+    #window2{
+        display: block;
+        position: fixed;
+        top: 72px;
+        height: 50vw;
+        width: 30vw;
+        z-index: 9999;
+    }
+
+    .image1 {
+        width: 100vw;
+        left: 0px;
+        top: 1000px;
+        /* top: 550px; */
+        /* background-color: rgba(246, 196, 195, 0.9);
+        box-shadow: 0 0 20px rgba(246, 196, 195, 0.8), 
+        0 0 40px rgba(246, 196, 195, 0.7), 
+        0 0 60px rgba(246, 196, 195, 0.4), 
+        0 0 80px rgba(246, 196, 195, 0.2); */
+        opacity: 0; /* Start with images hidden */
+        transition: .5s ease-in-out; /* Smooth fade transition */
+    }
+    
+
+    .image2 {
+        width: 62vw;
+        margin-left: 80px;
+        top: 1000px;
+        /* top: 550px; */
+        /* background-color: rgba(246, 196, 195, 0.9);
+        box-shadow: 0 0 20px rgba(246, 196, 195, 0.8), 
+        0 0 40px rgba(246, 196, 195, 0.7), 
+        0 0 60px rgba(246, 196, 195, 0.4), 
+        0 0 80px rgba(246, 196, 195, 0.2); */
+        opacity: 0; /* Start with images hidden */
+        transition: .5s ease-in-out; /* Smooth fade transition */
+        margin-bottom: -160px;
+        margin-top: 40px;
+    }
+    
 
     img{
         width: 68vw;

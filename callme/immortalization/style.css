@@ -194,7 +194,7 @@
         color: #fffbf5;
         -webkit-text-stroke: 7px black;
         paint-order: stroke fill;
-        margin-top: 40px;
+        margin-top: 350px;
         margin-bottom: 0px;
         text-align: center;
     }
@@ -211,7 +211,8 @@
         font-style: normal;
         margin-bottom: 50px;
         text-align: center;
-        margin-top: 20px;
+        margin-top: 60px;
+        font-size: 30px;
     }
 
     #back{
@@ -220,12 +221,13 @@
         left: 10px;
         top: 23px;
         z-index: 10000;
+        transition: 0.25s ease-in-out;
     }
 
     #back:hover{
         width: 8vw;
         top: 21px;
-        left: 19px;
+        left: 8px;
     }
 
     #next{
@@ -234,12 +236,13 @@
         right: 10px;
         top: 23px;
         z-index: 9999;
+        transition: 0.25s ease-in-out;
     }
 
     #next:hover{
         width: 8vw;
         top: 21px;
-        right: 19px;
+        right: 8px;
     }
 
     #whole{
@@ -266,11 +269,12 @@
         top: 72px;
         position: absolute;
         width: 85vw;
+        z-index: 9997;
     }
 
     p{
         line-height: 130%;
-        margin-top: 350px;
+        margin-top: 150px;
     }
 
     #images{
@@ -281,4 +285,30 @@
     img{
         width: 68vw;
     }
+
+    #window{
+        display: block;
+        position: fixed;
+        top: 72px;
+        height: 50vw;
+        width: 30vw;
+        z-index: 9999;
+    }
+
+    .image{
+        width: 80vw;
+        margin-left: 50px;
+        top: 1000px;
+        /* top: 550px; */
+        /* background-color: rgba(246, 196, 195, 0.9);
+        box-shadow: 0 0 20px rgba(246, 196, 195, 0.8), 
+        0 0 40px rgba(246, 196, 195, 0.7), 
+        0 0 60px rgba(246, 196, 195, 0.4), 
+        0 0 80px rgba(246, 196, 195, 0.2); */
+        opacity: 0; /* Start with images hidden */
+        transition: .5s ease-in-out; /* Smooth fade transition */
+        margin-bottom: -150px;
+        margin-top: 40px;
+    }
+    
 }

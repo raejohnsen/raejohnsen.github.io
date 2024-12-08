@@ -129,10 +129,10 @@
         margin: 30px;
         background-image: url("sources/intro-ezgif.com-speed.gif");
         background-position: left top;
-        background-size: contain;
+        background-size: 100vw;
         background-repeat: no-repeat;
         margin-bottom: 100px;
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
     }
 
     h1{
@@ -144,7 +144,7 @@
         -webkit-text-stroke: 5px rgb(255, 255, 255);
         paint-order: stroke fill;
         letter-spacing: -2px;
-        margin-top: 170px;
+        margin-top: 362px;
     }
 
     #drop1{
@@ -155,7 +155,7 @@
 
     #text{
         position: absolute;
-        top: 300px;
+        top: 450px;
         left: 30px;
         font-family: clarendon-urw, serif;
         font-weight: 400;
@@ -180,9 +180,9 @@
     }
 
     p{
-        text-indent: 50px;
+        /* text-indent: 50px; */
         line-height: 120%;
-        margin-top: 100px;
+        margin-top: 450px;
         margin-bottom: 100px;
         text-align: left;
     }
@@ -214,22 +214,22 @@
     #gif{
         width: 90vw;
         position: absolute;
-        right: 40px;
-        top: 1410px;
+        right: 25px;
+        top: 700px;
     }
 
     #cards{
-        width: 90vw;
+        width: 110vw;
         position: absolute;
         right: -20px;
-        top: 2000px;
+        top: 2630px;
     }
 
     #me{
-        width: 50vw;
+        width: 40vw;
         position: absolute;
-        right: 1280px;
-        top: 2770px;
+        left: 30px;
+        top: 3130px;
         padding-bottom: 80px;
     }
 
@@ -239,9 +239,9 @@
         font-weight: 400;
         font-style: normal;
         font-size: 25px;
-        width: 50vw;
-        top: 2740px;
-        left: 500px;
-        margin-bottom: 1000px;
+        width: 80vw;
+        top: 2950px;
+        left: 30px;
+        padding-bottom: 80px;
     }
 }
