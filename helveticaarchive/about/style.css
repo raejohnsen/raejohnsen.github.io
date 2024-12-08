@@ -24,6 +24,7 @@
         text-decoration: none;
         color: black;
         font-weight: 700;
+        letter-spacing: -4px;
     }
 
     .back:hover{
