@@ -62,12 +62,13 @@
         width: fit-content;
         text-decoration: none;
         cursor: pointer;
+        transition: 0.3s ease-in-out;
     }
 
     .link:hover{
-        font-family: "General Sans Medium", sans-serif;
-        font-style: italic;
-        font-size: 41px;
+        font-family: "sutturah", sans-serif;
+        font-style: normal;
+        font-size: 55px;
         text-decoration: underline;
         transition: 60ms ease-in-out;
         color: inherit;
