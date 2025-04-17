@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grave Type</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="hamburger-menu">
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <div class="menu-content">
+      <select id="fontSelect">
+        <option value="font-one">Cooper</option>
+        <option value="font-two">Font Two</option>
+        <option value="font-three">Font Three</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="title">Grave Type</h1>
+    <textarea id="input" style="width:70vw" class="font-one" autofocus></textarea>
+  </div>
+
+  <script>
+    const input = document.getElementById('input');
+    const fontSelect = document.getElementById('fontSelect');
+
+    const fontNames = {
+      'font-one': 'Cooper',
+      'font-two': 'Font Two',
+      'font-three': 'Font Three'
+    };
+
+    fontSelect.addEventListener('change', (e) => {
+      const selected = e.target.value;
+      input.className = selected;
+    });
+
+  </script>
+</body>
+</html>
