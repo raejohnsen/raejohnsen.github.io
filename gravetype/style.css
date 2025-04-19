@@ -4,19 +4,19 @@
   }
   
   @font-face {
-    font-family: 'FontTwo';
-    src: url('fonts/FontTwo.woff2') format('woff2');
+    font-family: 'Heuys';
+    src: url('fonts/Heuys.woff2') format('woff2');
   }
   
   @font-face {
-    font-family: 'FontThree';
-    src: url('fonts/FontThree.woff2') format('woff2');
+    font-family: 'Whistler';
+    src: url('fonts/Whistler.woff2') format('woff2');
   }
 
   body {
     font-family: sans-serif;
     background: #111111;
-    color: #eee;
+    color: #ffffff;
     margin: 0;
     padding: 0;
   }
@@ -36,15 +36,17 @@
     top: 30px;
     left: 0px;
     font-family: 'Times New Roman', Times, serif;
+    color: #888888;
+    letter-spacing: -3px;
   }
   
   textarea {
     position: absolute;
     width: 70vw;
     left: 15vw;
-    top: 200px;
-    height: 72vh;
-    font-size: 10rem;
+    top: 150px;
+    height: 78vh;
+    font-size: 8rem;
     padding: 1rem;
     border: none;
     background: #111111;
@@ -55,17 +57,25 @@
     line-height: 100%;
     outline: none;
   }
+
+  textarea::-webkit-scrollbar {
+    display: none;
+  }
   
+  ::placeholder {
+    color: #ffffff;
+  }
+
   .font-one {
     font-family: 'Cooper', serif;
   }
   
   .font-two {
-    font-family: 'FontTwo', sans-serif;
+    font-family: 'Heuys', serif;
   }
   
   .font-three {
-    font-family: 'FontThree', monospace;
+    font-family: 'Whistler', sans-serif;
   }
   
   /* Hamburger Menu */
@@ -107,4 +117,47 @@
     border: none;
     font-size: 1rem;
   }
+
+  .controls {
+    position: fixed;
+    flex-flow: row nowrap;
+    justify-content: center;
+    bottom: 20px;
+    display: flex;
+    gap: 10rem;
+    margin-top: 1rem;
+    color: #eee;
+    width: 100vw;
+    left: 0px;
+  }
+  
+  .controls label {
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .controls input[type="range"] {
+    width: 100%;
+  }
+
+  #resetButton {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    color: #ffffff;
+    background-color: hwb(0 7% 93% / 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+  }
+  
+  #resetButton:hover {
+    background-color: #666;
+  }
+  
   
