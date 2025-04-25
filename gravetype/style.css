@@ -33,10 +33,27 @@
     width: 100%;
     text-align: center;
     margin-block: 0px;
-    top: 30px;
+    top: 15px;
     left: 0px;
-    font-family: 'Times New Roman', Times, serif;
-    color: #888888;
+    font-family: industry-inc-bevel-fill, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #0055ff;
+    letter-spacing: -3px;
+  }
+
+  #title2 {
+    position: fixed;
+    font-size: 100px;
+    width: 100%;
+    text-align: center;
+    margin-block: 0px;
+    top: 15px;
+    left: 0px;
+    font-family: industry-inc-detail-fill, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
     letter-spacing: -3px;
   }
   
@@ -45,7 +62,7 @@
     width: 70vw;
     left: 15vw;
     top: 150px;
-    height: 78vh;
+    height: 81vh;
     font-size: 8rem;
     padding: 1rem;
     border: none;
@@ -56,6 +73,21 @@
     text-align: center;
     line-height: 100%;
     outline: none;
+    margin-bottom: 100px;
+  }
+
+  #shadow{
+    position: absolute;
+    width: 70vw;
+    left: 15vw;
+    top: 0px;
+    height: 12.5vh;
+    padding: 1rem;
+    border: none;
+    transition: font-family 0.2s ease;
+    outline: none;
+    box-shadow: 0px 7px 15px 10px #111111;
+    z-index: 9999;
   }
 
   textarea::-webkit-scrollbar {
@@ -91,23 +123,34 @@
     cursor: pointer;
     color: white;
     user-select: none;
+    transition: 0.25s ease-in-out;
+  }
+
+  .menu-icon:hover {
+    color: #0055ff;
   }
   
   #menu-toggle {
     display: none;
+    transition: 0.25s ease-in-out;
   }
   
   .menu-content {
     display: none;
     flex-direction: column;
-    background-color: #222;
     padding: 1rem;
     border-radius: 8px;
     margin-top: 0.5rem;
+    position: absolute;
+    left: -25px;
+    top: 340px;
+    font-size: 25px;
+    transition: 0.25s ease-in-out;
   }
   
   #menu-toggle:checked + .menu-icon + .menu-content {
     display: flex;
+    transition: 0.25s ease-in-out;
   }
   
   .menu-content select {
@@ -118,6 +161,103 @@
     font-size: 1rem;
   }
 
+input[type="range"] {
+	font-size: 1.5rem;
+	width: 15em;
+}
+
+input[type="range"] {
+	--thumb-height: 1.125em;
+  --thumb-width: 0.3em;
+	--track-height: 0.125em;
+	--track-color: rgba(0, 0, 0, 0.2);
+	--brightness-hover: 180%;
+	--brightness-down: 80%;
+	--clip-edges: 0.125em;
+}
+
+input[type="range"] {
+		color: #0055ff;
+		--track-color: rgba(255, 255, 255, 1);
+	}
+
+/* === range commons === */
+input[type="range"] {
+	position: relative;
+	background: #fff0;
+	overflow: hidden;
+}
+
+input[type="range"]:active {
+	cursor: grabbing;
+}
+
+input[type="range"]:disabled {
+	filter: grayscale(1);
+	opacity: 0.3;
+	cursor: not-allowed;
+}
+
+/* === WebKit specific styles === */
+input[type="range"],
+input[type="range"]::-webkit-slider-runnable-track,
+input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	transition: all ease 100ms;
+	height: var(--thumb-height);
+}
+
+input[type="range"]::-webkit-slider-runnable-track,
+input[type="range"]::-webkit-slider-thumb {
+	position: relative;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+	--thumb-radius: calc((var(--thumb-height) * 0.5) - 1px);
+	--clip-top: calc((var(--thumb-height) - var(--track-height)) * 0.5 - 0.5px);
+	--clip-bottom: calc(var(--thumb-height) - var(--clip-top));
+	--clip-further: calc(100% + 1px);
+	--box-fill: calc(-100vmax - var(--thumb-width, var(--thumb-height))) 0 0
+		100vmax currentColor;
+
+	width: var(--thumb-width, var(--thumb-height));
+	/* background: linear-gradient(currentColor 0 0) scroll no-repeat left center /
+		50% calc(var(--track-height) + 1px); */
+	background-color: currentColor;
+	box-shadow: var(--box-fill);
+	border-radius: var(--thumb-width, var(--thumb-height));
+	filter: brightness(100%);
+	clip-path: polygon(
+		100% -1px,
+		var(--clip-edges) -1px,
+		0 var(--clip-top),
+		-100vmax var(--clip-top),
+		-100vmax var(--clip-bottom),
+		0 var(--clip-bottom),
+		var(--clip-edges) 100%,
+		var(--clip-further) var(--clip-further)
+	);
+}
+
+input[type="range"]:hover::-webkit-slider-thumb {
+	filter: brightness(var(--brightness-hover));
+	cursor: grab;
+}
+
+input[type="range"]:active::-webkit-slider-thumb {
+	filter: brightness(var(--brightness-down));
+	cursor: grabbing;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+	background: linear-gradient(var(--track-color) 0 0) scroll no-repeat center /
+		100% calc(var(--track-height) + 1px);
+}
+
+input[type="range"]:disabled::-webkit-slider-thumb {
+	cursor: not-allowed;
+}
+
   .controls {
     position: fixed;
     flex-flow: row nowrap;
@@ -126,14 +266,16 @@
     display: flex;
     gap: 10rem;
     margin-top: 1rem;
-    color: #eee;
+    color: #0055ff;
     width: 100vw;
-    left: 0px;
+    left: 200px;
   }
   
   .controls label {
-    font-size: 1rem;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.25rem;
+    font-family: "industry-inc-base", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -147,17 +289,63 @@
   #resetButton {
     margin-top: 1rem;
     padding: 0.5rem 1rem;
-    color: #ffffff;
+    color: #0055ff;
     background-color: hwb(0 7% 93% / 0);
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.25rem;
     transition: background-color 0.2s ease;
+    margin-left: 90px;
+    font-family: "industry-inc-base", sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
   
   #resetButton:hover {
-    background-color: #666;
+    text-decoration: underline 2px;
   }
   
+  .font-option {
+    padding: 0.5rem 1rem;
+    /* background-color: #333; */
+    color: #eee;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+    font-family: 'Times New Roman', serif;
+    text-align: left;
+    transition: 0.2s ease;
+    font-family: "industry-inc-base", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .font-option:hover {
+    color: #bdbdbd;
+    text-decoration: underline 2px;
+  }
+  
+  .font-option.active {
+    color: #0055ff;
+    text-decoration: underline 2px;
+  }
+
+  .afk {
+    color: transparent;
+    background: 
+      repeating-radial-gradient(#161616 0 0.0001%, #ffffff 0 0.0002%) 30% 10% / 40vw 40vw,
+      repeating-conic-gradient(#161616 0 0.0001%, #ffffff 0 0.0002%) 70% 70% / 60vw 60vw;
+    background-blend-mode: difference;
+    transition: all 10s ease;
+  }
+
+  #about{
+    margin-top: 330px;
+  }
+
+  #about:hover{
+    color: #0055ff;
+    text-decoration: underline 2px;
+  }
   

@@ -2,95 +2,89 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Grave Type</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/nma2tvk.css">
 </head>
 <body>
   <div class="hamburger-menu">
     <input type="checkbox" id="menu-toggle" />
     <label for="menu-toggle" class="menu-icon">&#9776;</label>
     <div class="menu-content">
-      <select id="fontSelect">
-        <option value="font-one">Cooper</option>
-        <option value="font-two">Heuys</option>
-        <option value="font-three">Whistler</option>
-      </select>
+      <div class="font-option" data-font="font-one">Cooper</div>
+      <div class="font-option" data-font="font-two">Heuys</div>
+      <div class="font-option" data-font="font-three">Whistler</div>
+      <a class="font-option" id="about">About</a>
     </div>
   </div>
 
   <div class="container">
-    <div id="title">Grave Type</h1>
-    <textarea id="input" style="width:70vw" class="font-one" autofocus placeholder="Type something..."></textarea>
+    <div id="title">Grave Type</div>
+    <div id="title2">Grave Type</div>
+    <textarea id="input" class="font-one" autofocus placeholder=""></textarea>
+    <div id="shadow"></div>
   </div>
 
   <div class="controls">
-    <label>
-      Size   
-      <input type="range" id="fontSizeSlider" min="30" max="200" value="80">
-    </label>
-    <label>
-      Spacing             
-      <input type="range" id="letterSpacingSlider" min="-10" max="25" step="0.01" value="0">
-    </label>
-    <label>
-      Line Height
-      <input type="range" id="lineHeightSlider" min="0.65" max="1.5" step="0.01" value="1">
-    </label>
+    <label>Size <input type="range" id="fontSizeSlider" min="30" max="200" value="130"></label>
+    <label>Spacing <input type="range" id="letterSpacingSlider" min="-10" max="25" step="0.01" value="0"></label>
+    <label>Height <input type="range" id="lineHeightSlider" min="0.65" max="1.5" step="0.01" value="1"></label>
     <button id="resetButton">Reset</button>
-  </div>  
+  </div>
 
   <script>
-  const input = document.getElementById('input');
-  const fontSelect = document.getElementById('fontSelect');
+    const input = document.getElementById('input');
+    const fontOptions = document.querySelectorAll('.font-option');
 
-  const placeholders = {
-    'font-one': 'Patriot, philanthropist, sage. pioneer under the free institutions of a new nation in works of industrial enterprise, and of far-sighted benevolence.',
-    'font-two': 'Hier Leyt Het Lichaem Van Maria Heuys Vrouw Van Simon Boerum Geb oren Den: 10th Dagh Van January Anno Domini 1726: En Overleden Den: 31st Dagh Van Maart Anno Domini 1771: Oudt Zynde: 45 Iaren, 2 Manden, En: 21 Daghen',
-    'font-three': 'CIVIL ENGINEER. BORN AT FORT WAYNE. INDIANA. MAY. 1800.  DIED AT ST. PETERSBURG. RUSSIA. APRIL. 1849.'
-  };
+    const placeholders = {
+      'font-one': 'Patriot, philanthropist, sage. pioneer under the free institutions of a new nation in works of industrial enterprise, and of far-sighted benevolence.',
+      'font-two': 'Hier Leyt Het Lichaem Van Maria Heuys Vrouw Van Simon Boerum Geb oren Den: 10th Dagh Van January Anno Domini 1726: En Overleden Den: 31st Dagh Van Maart Anno Domini 1771: Oudt Zynde: 45 Iaren, 2 Manden, En: 21 Daghen',
+      'font-three': 'CIVIL ENGINEER. BORN AT FORT WAYNE. INDIANA. MAY. 1800.  DIED AT ST. PETERSBURG. RUSSIA. APRIL. 1849.'
+    };
 
-  fontSelect.addEventListener('change', (e) => {
-    const selected = e.target.value;
-    input.className = selected;
-    input.placeholder = placeholders[selected];
-  },
-  
-  window.addEventListener('DOMContentLoaded', () => {
-  const selected = fontSelect.value;
-  input.className = selected;
-  input.placeholder = placeholders[selected];
-  }));
+    fontOptions.forEach(option => {
+      option.addEventListener('click', () => {
+        fontOptions.forEach(opt => opt.classList.remove('active'));
+        option.classList.add('active');
+        const font = option.getAttribute('data-font');
+        input.className = font;
+        input.placeholder = placeholders[font];
+      });
+    });
 
-  const fontSizeSlider = document.getElementById('fontSizeSlider');
-  const letterSpacingSlider = document.getElementById('letterSpacingSlider');
-  const lineHeightSlider = document.getElementById('lineHeightSlider');
+    window.addEventListener('DOMContentLoaded', () => {
+      const defaultFont = 'font-one';
+      input.className = defaultFont;
+      input.placeholder = placeholders[defaultFont];
+      document.querySelector(`[data-font="${defaultFont}"]`).classList.add('active');
+    });
 
-  fontSizeSlider.addEventListener('input', () => {
-    input.style.fontSize = `${fontSizeSlider.value}px`;
-  });
+    const fontSizeSlider = document.getElementById('fontSizeSlider');
+    const letterSpacingSlider = document.getElementById('letterSpacingSlider');
+    const lineHeightSlider = document.getElementById('lineHeightSlider');
 
-  letterSpacingSlider.addEventListener('input', () => {
-    input.style.letterSpacing = `${letterSpacingSlider.value}px`;
-  });
+    fontSizeSlider.addEventListener('input', () => {
+      input.style.fontSize = `${fontSizeSlider.value}px`;
+    });
 
-  lineHeightSlider.addEventListener('input', () => {
-    input.style.lineHeight = lineHeightSlider.value;
-  });
+    letterSpacingSlider.addEventListener('input', () => {
+      input.style.letterSpacing = `${letterSpacingSlider.value}px`;
+    });
 
-  const resetButton = document.getElementById('resetButton');
+    lineHeightSlider.addEventListener('input', () => {
+      input.style.lineHeight = lineHeightSlider.value;
+    });
 
-  resetButton.addEventListener('click', () => {
-    // Reset slider values
-    fontSizeSlider.value = 130;
-    letterSpacingSlider.value = 0;
-    lineHeightSlider.value = 1;
-
-    // Apply default styles to textarea
-    input.style.fontSize = '130px';
-    input.style.letterSpacing = '0px';
-    input.style.lineHeight = '1';
-  });
+    const resetButton = document.getElementById('resetButton');
+    resetButton.addEventListener('click', () => {
+      fontSizeSlider.value = 130;
+      letterSpacingSlider.value = 0;
+      lineHeightSlider.value = 1;
+      input.style.fontSize = '130px';
+      input.style.letterSpacing = '0px';
+      input.style.lineHeight = '1';
+    });
 
   </script>
 </body>
