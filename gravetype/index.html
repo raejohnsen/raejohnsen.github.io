@@ -19,6 +19,11 @@
     </div>
   </div>
 
+  <button id="sidebarToggle" class="sidebar-button">Font Info</button>
+  <div id="sidebar" class="sidebar">
+    <div id="sidebarContent">Select a font to see more info here.</div>
+  </div>
+
   <div class="container">
     <div id="title">Grave Type</div>
     <div id="title2">Grave Type</div>
@@ -54,11 +59,13 @@
     });
 
     window.addEventListener('DOMContentLoaded', () => {
-      const defaultFont = 'font-one';
-      input.className = defaultFont;
-      input.placeholder = placeholders[defaultFont];
-      document.querySelector(`[data-font="${defaultFont}"]`).classList.add('active');
-    });
+    const defaultFont = 'font-one'; // Cooper
+    input.className = defaultFont;
+    input.placeholder = placeholders[defaultFont];
+    document.querySelector(`[data-font="${defaultFont}"]`).classList.add('active');
+    sidebarContent.innerHTML = fontDescriptions[defaultFont]; // Set Cooper's description as default
+  });
+
 
     const fontSizeSlider = document.getElementById('fontSizeSlider');
     const letterSpacingSlider = document.getElementById('letterSpacingSlider');
@@ -85,6 +92,76 @@
       input.style.letterSpacing = '0px';
       input.style.lineHeight = '1';
     });
+
+    const sidebar = document.getElementById('sidebar');
+    const sidebarToggle = document.getElementById('sidebarToggle');
+    const sidebarContent = document.getElementById('sidebarContent');
+
+function updateSidebarContent(fontKey) {
+  sidebarContent.innerHTML = fontDescriptions[fontKey];
+}
+
+
+    const fontDescriptions = {
+  'font-one': `
+    <h2>Peter Cooper &<br>Sarah Bedell Cooper</h2>
+    <img src="https://images.findagrave.com/photos/2021/47/108495358_7393ec75-0e60-4227-b770-73c09c7cf595.png" style="width:100%" />
+    <p>
+      Peter Cooper (February 12, 1791 – April 4, 1883) was an American industrialist, inventor, philanthropist, and politician. 
+      He designed and built the first American steam locomotive, the Tom Thumb, founded the Cooper Union for the Advancement of Science and Art, 
+      served as its first president, and stood for election as the Greenback Party's candidate in the 1876 presidential election.
+      <br><br>
+      Cooper began tinkering at a young age while working in various positions in New York City. He purchased a glue factory in 1821 and used that 
+      factory's profits to found the Canton Iron Works, where he earned even larger profits by assembling the Tom Thumb. 
+      Cooper's success as a businessman and inventor continued over the ensuing decades, and he became the first mill operator to successfully use 
+      anthracite coal to puddle iron. He also developed numerous patents for products such as gelatin and participated in the laying of the first 
+      transatlantic telegraph cable.
+      <br><br>
+      During the Gilded Age, Cooper became an ardent critic of the gold standard and the debt-based monetary system of bank currency, advocating instead 
+      for government-issued banknotes. Cooper was nominated for president at the 1876 Greenback National Convention, and the Greenback ticket of Cooper 
+      and Samuel Fenton Cary won just under one percent of the popular vote. His son Edward and his son-in-law Abram Hewitt both served as Mayor of New York City.<br><br>
+      In 1813, Cooper married Sarah Bedell (1793–1869). Of their six children, only two survived past the age of four years: a son, Edward and a daughter, Sarah Amelia. Edward served as Mayor of New York City, as would the husband of Sarah Amelia, Abram S. Hewitt, a man also heavily involved in inventions and industrialization.<br><br>
+      Peter Cooper's granddaughters, Sarah Cooper Hewitt, Eleanor Garnier Hewitt and Amy Hewitt Green founded the Cooper-Hewitt National Design Museum, then named the Cooper-Hewitt Museum, in 1895. It was originally part of The Cooper Union, but since 1967 has been a unit of the Smithsonian Institution.
+    </p>
+    <img src="Cooper.jpg" style="width:100%; margin-bottom:20px;" />
+    <img src="Bedell.jpg" style="width:100%; margin-bottom:40px;" />
+  `,
+  'font-two': `
+    <h2>Maria Heuys<br>(Boerum)</h2>
+    <img src="Heuys.jpg" style="width:100%" />
+    <p>In 1849, an ordinance was passed which banned burials within Brooklyn's city limits. Maria Heuys' grave is one of many relocated from the First Dutch Church, Dutch Reformed Church, and St. Ann's Church into Green-Wood Cemetery in the late 1860s.<br><br>There is no record of her life available online, so all that we know about her comes from her gravestone. In Dutch, it reads "Here lies the body of Maria Heuys, wife of Simon Boerum, born on the 10th day of January Anno Domini 1726, and died on the 31st day of March Anno Domini 1771, being aged 45 years, 2 months, and 21 days."</p>
+  `,
+  'font-three': `
+    <h2>George<br>Washington Whistler</h2>
+    <img src="https://d3d00swyhr67nd.cloudfront.net/w1200h1200/collection/GLA/HAG/GLA_HAG_54134-001.jpg" style="width:100%" />
+    <p>
+      George Washington Whistler (May 19, 1800 – April 7, 1849) was an American civil engineer best known for building steam locomotives and railroads. 
+      He is credited with introducing the steam whistle to American locomotives.
+      <br><br>
+      In 1842, Tsar Nicholas I hired him to build the Saint Petersburg–Moscow Railway, Russia's first large-scale railroad. One of Whistler's important 
+      influences was the introduction of the Howe truss for the Russian railroad's bridges. This inspired the renowned Russian engineer Dmitrii Ivanovich 
+      Zhuravskii to perform studies and develop structural analysis techniques for Howe truss bridges.
+      <br><br>
+      He was the father of American artist James McNeill Whistler, whose painting "Whistler's Mother" (of his second wife Anna Whistler) is among the 
+      most famous paintings in American art.
+    </p>
+  `
+};
+
+
+    sidebarToggle.addEventListener('click', () => {
+      sidebar.classList.toggle('open');
+      sidebarToggle.textContent = sidebar.classList.contains('open') ? '✕' : 'Font Info';
+    });
+
+fontOptions.forEach(option => {
+  option.addEventListener('click', () => {
+    const font = option.getAttribute('data-font');
+    updateSidebarContent(font); // this already uses innerHTML
+  });
+});
+
+
 
   </script>
 </body>

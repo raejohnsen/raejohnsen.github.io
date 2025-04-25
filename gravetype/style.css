@@ -1,17 +1,17 @@
 @font-face {
     font-family: 'Cooper';
     src: url('fonts/Cooper.woff2') format('woff2');
-  }
+}
   
-  @font-face {
+@font-face {
     font-family: 'Heuys';
     src: url('fonts/Heuys.woff2') format('woff2');
-  }
+}
   
-  @font-face {
+@font-face {
     font-family: 'Whistler';
     src: url('fonts/Whistler.woff2') format('woff2');
-  }
+}
 
   body {
     font-family: sans-serif;
@@ -21,6 +21,18 @@
     padding: 0;
   }
   
+h2{
+  font-family: "industry-inc-base", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 10px;
+  line-height: 110%;
+}
+
+p{
+  margin-bottom: 40px;
+}
+
   .container {
     max-width: 800px;
     margin: 4rem auto;
@@ -87,7 +99,7 @@
     transition: font-family 0.2s ease;
     outline: none;
     box-shadow: 0px 7px 15px 10px #111111;
-    z-index: 9999;
+    z-index: 9998;
   }
 
   textarea::-webkit-scrollbar {
@@ -313,7 +325,6 @@ input[type="range"]:disabled::-webkit-slider-thumb {
     border-radius: 5px;
     cursor: pointer;
     margin-bottom: 0.5rem;
-    font-family: 'Times New Roman', serif;
     text-align: left;
     transition: 0.2s ease;
     font-family: "industry-inc-base", sans-serif;
@@ -348,4 +359,51 @@ input[type="range"]:disabled::-webkit-slider-thumb {
     color: #0055ff;
     text-decoration: underline 2px;
   }
+
+  .sidebar-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10000;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    transition: 0.25s ease-in-out;
+    font-family: "industry-inc-base", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .sidebar-button:hover{
+    color: #0055ff;
+  }
+  
+img{
+  border-radius: 0%;
+  margin-top: -10px;
+  margin-bottom: 0px;
+}
+
+  .sidebar {
+    position: fixed;
+    right: -300px;
+    top: 0;
+    width: 280px;
+    height: 100%;
+    background: #1a1a1a;
+    color: #fff;
+    padding: 1rem;
+    transition: right 0.3s ease-in-out;
+    z-index: 9999;
+    overflow-y: auto;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .sidebar.open {
+    right: 0;
+  }  
   
