@@ -1,0 +1,30 @@
+body{
+    background: #111111;
+    color: white;
+}
+
+h1{
+    font-family: industry-inc-bevel-fill, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    margin-left: 60px;
+    color: #003aaf;
+}
+
+h4{
+    font-family: "baskerville-no2", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 22px;
+    width: 50vw;
+    margin-left: 50px;
+}
+
+img{
+    position: absolute;
+    width: 34vw;
+    top: 30px;
+    right: 110px;
+}
+

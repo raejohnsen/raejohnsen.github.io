@@ -96,7 +96,7 @@ p{
     height: 9vh;
     padding: 1rem;
     border: none;
-    transition: font-family 0.2s ease;
+    transition: 0.2s ease;
     outline: none;
     box-shadow: 0px 7px 15px 10px #111111;
     z-index: 9998;
