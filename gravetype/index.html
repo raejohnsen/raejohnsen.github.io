@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Grave Type</title>
+  <title>MonuType</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://use.typekit.net/nma2tvk.css">
 </head>
@@ -25,8 +25,8 @@
   </div>
 
   <div class="container">
-    <div id="title">Grave Type</div>
-    <div id="title2">Grave Type</div>
+    <div id="title">Monutype</div>
+    <div id="title2">Monutype</div>
     <textarea id="input" class="font-one" autofocus placeholder=""></textarea>
     <div id="shadow"></div>
   </div>
@@ -145,6 +145,7 @@ function updateSidebarContent(fontKey) {
       He was the father of American artist James McNeill Whistler, whose painting "Whistler's Mother" (of his second wife Anna Whistler) is among the 
       most famous paintings in American art.
     </p>
+    <img src="Whistler.jpg" style="width:100%; margin-bottom:40px;" />
   `
 };
 
@@ -161,6 +162,15 @@ fontOptions.forEach(option => {
   });
 });
 
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.textArea.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("title").style.fontSize = "50px";
+  } else {
+    document.getElementById("title").style.fontSize = "100px";
+  }
+}
 
 
   </script>

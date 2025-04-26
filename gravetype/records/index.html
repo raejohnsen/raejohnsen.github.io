@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Green-Wood Cemetery Burial and Vital Records (1840-1937)</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+  <style>
+    @font-face {
+        font-family: 'Cooper';
+        src: url('Cooper.woff2') format('woff2');
+    }
+  
+    @font-face {
+        font-family: 'Heuys';
+        src: url('Heuys.woff2') format('woff2');
+    }
+    
+    @font-face {
+        font-family: 'Whistler';
+        src: url('Whistler.woff2') format('woff2');
+    }   
+   
+    body {
+      font-family: "Cooper", sans-serif;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-bottom: 20px;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 20px;
+        width: 97%;
+        margin-left: 21px;
+    }
+
+    th, td {
+      border: 1px solid #000000;
+      padding: 3px 5px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #0055ff;
+      color: white;
+      text-align: center;
+    }
+
+    .pagination {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    button {
+      margin: 0 5px;
+      padding: 6px 12px;
+      background-color: #0055ff;
+      color: white;
+      cursor: pointer;
+    }
+
+    #font-selector {
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    #font-buttons button {
+        margin-right: 10px;
+        padding: 6px 12px;
+        font-size: 20px;
+        cursor: pointer;
+        background-color: transparent;
+        color: #0055ff;
+        border: 0px;
+    }
+
+    #font-buttons button:hover {
+        text-decoration: underline 2px;
+    }
+
+    #font-buttons button.active {
+        text-decoration: underline 2px;
+}
+
+    #font-buttons{
+        margin-left: 690px;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Green-Wood Cemetery Burial and Vital Records (1840-1937)</h1>
+
+  <div id="font-buttons" style="margin-bottom: 15px;">
+    <button data-font="Cooper">Cooper</button>
+    <button data-font="Heuys">Heuys</button>
+    <button data-font="Whistler">Whistler</button>
+  </div>  
+
+  <div id="table-container">Loading...</div>
+  <div class="pagination">
+    <button id="prev" disabled>Previous</button>
+    <span id="page-info"></span>
+    <button id="next" disabled>Next</button>
+  </div>
+
+  <script>
+    const ROWS_PER_PAGE = 50;
+    let data = [];
+    let currentPage = 1;
+
+    function renderTablePage(page) {
+      const tableContainer = document.getElementById("table-container");
+      tableContainer.innerHTML = "";
+
+      const start = (page - 1) * ROWS_PER_PAGE;
+      const end = Math.min(start + ROWS_PER_PAGE, data.length);
+      const pageData = data.slice(start, end);
+
+      if (!pageData.length) {
+        tableContainer.innerHTML = "<p>No data found.</p>";
+        return;
+      }
+
+      const table = document.createElement("table");
+      const thead = document.createElement("thead");
+      const tbody = document.createElement("tbody");
+
+      const headers = Object.keys(pageData[0]);
+      const trHead = document.createElement("tr");
+      headers.forEach(header => {
+        const th = document.createElement("th");
+        th.textContent = header;
+        trHead.appendChild(th);
+      });
+      thead.appendChild(trHead);
+
+      pageData.forEach(row => {
+        const tr = document.createElement("tr");
+        headers.forEach(header => {
+          const td = document.createElement("td");
+          td.textContent = row[header];
+          tr.appendChild(td);
+        });
+        tbody.appendChild(tr);
+      });
+
+      table.appendChild(thead);
+      table.appendChild(tbody);
+      tableContainer.appendChild(table);
+
+      document.getElementById("page-info").textContent = `Page ${page} of ${Math.ceil(data.length / ROWS_PER_PAGE)}`;
+      document.getElementById("prev").disabled = page === 1;
+      document.getElementById("next").disabled = end >= data.length;
+
+    window.scrollTo(0, 0);
+    }
+
+    Papa.parse("Green-Wood.csv", {
+      download: true,
+      header: true,
+      skipEmptyLines: true,
+      complete: function(results) {
+        data = results.data;
+        renderTablePage(currentPage);
+      }
+    });
+
+    document.getElementById("prev").addEventListener("click", () => {
+      if (currentPage > 1) {
+        currentPage--;
+        renderTablePage(currentPage);
+      }
+    });
+
+    document.getElementById("next").addEventListener("click", () => {
+      if (currentPage * ROWS_PER_PAGE < data.length) {
+        currentPage++;
+        renderTablePage(currentPage);
+      }
+    });
+
+    document.querySelectorAll("#font-buttons button").forEach(button => {
+  button.addEventListener("click", () => {
+    const selectedFont = button.getAttribute("data-font");
+    document.body.style.fontFamily = `'${selectedFont}', sans-serif`;
+
+    // Font size tweak for Heuys
+    document.body.style.fontSize = selectedFont === "Heuys" ? "20px" : "16px";
+
+    // Handle active button underline
+    document.querySelectorAll("#font-buttons button").forEach(btn => {
+      btn.classList.remove("active");
+    });
+    button.classList.add("active");
+  });
+});
+
+
+
+  </script>
+</body>
+</html>
