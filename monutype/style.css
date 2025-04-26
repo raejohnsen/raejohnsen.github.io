@@ -333,7 +333,7 @@ input[type="range"]:disabled::-webkit-slider-thumb {
   }
   
   .font-option:hover {
-    color: #bdbdbd;
+    color:#0055ff;
     text-decoration: underline 2px;
   }
   
@@ -352,10 +352,20 @@ input[type="range"]:disabled::-webkit-slider-thumb {
   }
 
   #about{
-    margin-top: 330px;
+    margin-top: 250px;
+    text-decoration: none;
+  }
+
+  #records{
+    text-decoration: none;
   }
 
   #about:hover{
+    color: #0055ff;
+    text-decoration: underline 2px;
+  }
+
+  #records:hover{
     color: #0055ff;
     text-decoration: underline 2px;
   }
