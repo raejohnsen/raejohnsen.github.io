@@ -41,26 +41,26 @@ p{
   
   #title {
     position: fixed;
-    font-size: 100px;
+    font-size: 90px;
     width: 100%;
     text-align: center;
     margin-block: 0px;
-    top: 15px;
+    top: 10px;
     left: 0px;
     font-family: industry-inc-bevel-fill, sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #0055ff;
+    color: #003aaf;
     letter-spacing: -3px;
   }
 
   #title2 {
     position: fixed;
-    font-size: 100px;
+    font-size: 90px;
     width: 100%;
     text-align: center;
     margin-block: 0px;
-    top: 15px;
+    top: 10px;
     left: 0px;
     font-family: industry-inc-detail-fill, sans-serif;
     font-weight: 700;
@@ -73,8 +73,8 @@ p{
     position: absolute;
     width: 70vw;
     left: 15vw;
-    top: 150px;
-    height: 81vh;
+    top: 120px;
+    height: 84vh;
     font-size: 8rem;
     padding: 1rem;
     border: none;
@@ -93,7 +93,7 @@ p{
     width: 70vw;
     left: 15vw;
     top: 0px;
-    height: 12.5vh;
+    height: 9vh;
     padding: 1rem;
     border: none;
     transition: font-family 0.2s ease;
@@ -139,7 +139,7 @@ p{
   }
 
   .menu-icon:hover {
-    color: #0055ff;
+    color: #003aaf;
   }
   
   #menu-toggle {
@@ -189,7 +189,7 @@ input[type="range"] {
 }
 
 input[type="range"] {
-		color: #0055ff;
+		color: #003aaf;
 		--track-color: rgba(255, 255, 255, 1);
 	}
 
@@ -274,20 +274,21 @@ input[type="range"]:disabled::-webkit-slider-thumb {
     position: fixed;
     flex-flow: row nowrap;
     justify-content: center;
-    bottom: 20px;
+    bottom: 5px;
     display: flex;
     gap: 10rem;
     margin-top: 1rem;
-    color: #0055ff;
+    color: #003aaf;
     width: 100vw;
     left: 200px;
   }
   
   .controls label {
-    font-size: 1.25rem;
-    font-family: "industry-inc-base", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-size: 1.5rem;
+    font-family: "baskerville-bt", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    -webkit-text-stroke: 0.5px white;
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -299,23 +300,25 @@ input[type="range"]:disabled::-webkit-slider-thumb {
   }
 
   #resetButton {
-    margin-top: 1rem;
+    margin-bottom: 0.25rem;
     padding: 0.5rem 1rem;
-    color: #0055ff;
+    color: #003aaf;
     background-color: hwb(0 7% 93% / 0);
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     transition: background-color 0.2s ease;
     margin-left: 90px;
-    font-family: "industry-inc-base", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: "baskerville-bt", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    transition: 0.25s ease-in-out;
+    -webkit-text-stroke: 0.5px white;
   }
   
   #resetButton:hover {
-    text-decoration: underline 2px;
+    color: white;
   }
   
   .font-option {
@@ -327,18 +330,18 @@ input[type="range"]:disabled::-webkit-slider-thumb {
     margin-bottom: 0.5rem;
     text-align: left;
     transition: 0.2s ease;
-    font-family: "industry-inc-base", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: "baskerville-bt", sans-serif;
+    font-weight: 700;
+    font-style: italic;
   }
   
   .font-option:hover {
-    color:#0055ff;
+    color:#003aaf;
     text-decoration: underline 2px;
   }
   
   .font-option.active {
-    color: #0055ff;
+    color: #003aaf;
     text-decoration: underline 2px;
   }
 
@@ -352,7 +355,7 @@ input[type="range"]:disabled::-webkit-slider-thumb {
   }
 
   #about{
-    margin-top: 250px;
+    margin-top: 270px;
     text-decoration: none;
   }
 
@@ -361,12 +364,12 @@ input[type="range"]:disabled::-webkit-slider-thumb {
   }
 
   #about:hover{
-    color: #0055ff;
+    color: #003aaf;
     text-decoration: underline 2px;
   }
 
   #records:hover{
-    color: #0055ff;
+    color: #003aaf;
     text-decoration: underline 2px;
   }
 
@@ -377,19 +380,19 @@ input[type="range"]:disabled::-webkit-slider-thumb {
     z-index: 10000;
     border: none;
     padding: 10px 15px;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     cursor: pointer;
     border-radius: 5px;
     background-color: transparent;
     color: white;
     transition: 0.25s ease-in-out;
-    font-family: "industry-inc-base", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: "baskerville-bt", sans-serif;
+    font-weight: 700;
+    font-style: italic;
   }
 
   .sidebar-button:hover{
-    color: #0055ff;
+    color: #003aaf;
   }
   
 img{
@@ -411,6 +414,10 @@ img{
     z-index: 9999;
     overflow-y: auto;
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+    font-family: "baskerville-no2", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 16.5px;
   }
   
   .sidebar.open {
