@@ -288,7 +288,7 @@ input[type="range"]:disabled::-webkit-slider-thumb {
     font-family: "baskerville-bt", sans-serif;
     font-weight: 700;
     font-style: italic;
-    -webkit-text-stroke: 0.5px white;
+    /* -webkit-text-stroke: 0.5px white; */
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -314,7 +314,7 @@ input[type="range"]:disabled::-webkit-slider-thumb {
     font-weight: 700;
     font-style: italic;
     transition: 0.25s ease-in-out;
-    -webkit-text-stroke: 0.5px white;
+    /* -webkit-text-stroke: 0.5px white; */
   }
   
   #resetButton:hover {
