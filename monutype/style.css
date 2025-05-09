@@ -13,6 +13,10 @@
     src: url('fonts/Whistler.woff2') format('woff2');
 }
 
+html::-webkit-scrollbar {
+  display: none;
+}
+
   body {
     font-family: sans-serif;
     background: #111111;
