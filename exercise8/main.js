@@ -40,7 +40,7 @@ function updateTime() {
     let thisYear = today.getFullYear();
 
     let dateHere = document.getElementById("dateHere");
-    dateHere.innerHTML = days[thisWeekday] + ", " + monthWords[thisMonth] + " " + thisDate + ", " + thisYear
+    dateHere.innerHTML = days[thisWeekday] + ",<br>" + monthWords[thisMonth] + " " + thisDate + ", " + thisYear
 
     let thisHour = today.getHours();
 

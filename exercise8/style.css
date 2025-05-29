@@ -1,45 +1,148 @@
-body{
-    background-color: black;
-    font-family: "filmotype-yale", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    margin-top: 20px;
-    margin-left: 80px;
-    margin-right: 80px;
+@media all and (min-width: 1321px) {
+    body{
+        background-color: black;
+        font-family: "filmotype-yale", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-top: 20px;
+        margin-left: 80px;
+        margin-right: 80px;
+        line-height: 0.9;
+    }
+
+    #info{
+        display: flex;
+        flex-flow: row nowrap;
+        margin-top: 4%;
+    }
+
+    #dateHere, #timeHere{
+        color: pink;
+        width: 70%;
+        font-size: 80px;
+    }
+
+    #timeHere{
+        width: 30%;
+        margin-right: 20px;
+        text-align: right;
+    }
+
+    #dataHere{
+        text-align: left;
+    }
+
+    #gifs{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        margin-top: 2%;
+    }
+
+    img{
+        height: 50vh;
+    }
 }
 
-#info{
-    display: flex;
-    flex-flow: row nowrap;
-    margin-top: 4%;
+@media all and (min-width: 1001px) and (max-width: 1320px) {
+    body{
+        background-color: black;
+        font-family: "filmotype-yale", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-top: 20px;
+        margin-left: 60px;
+        margin-right: 60px;
+        line-height: 0.9;
+    }
+
+    #info{
+        display: flex;
+        flex-flow: row nowrap;
+        margin-top: 4%;
+    }
+
+    #dateHere, #timeHere{
+        color: pink;
+        width: 70%;
+        font-size: 65px;
+    }
+
+    #timeHere{
+        width: 30%;
+        margin-right: 30px;
+        text-align: right;
+    }
+
+    #dataHere{
+        text-align: left;
+    }
+
+    #gifs{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        margin-top: 5%;
+    }
+
+    img{
+        height: 25vh;
+    }
 }
 
-#dateHere, #timeHere{
-    color: pink;
-    width: 70%;
-    font-size: 80px;
-}
+@media all and (max-width: 1000px) {
+    body{
+        background-color: black;
+        font-family: "filmotype-yale", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        line-height: 0.9;
+    }
 
-#timeHere{
-    width: 30%;
-    margin-right: 30px;
-}
+    #info{
+        display: flex;
+        flex-flow: row nowrap;
+        margin-top: 4%;
+    }
 
-#dataHere{
-    text-align: left;
-}
+    #dateHere, #timeHere{
+        color: pink;
+        width: 70%;
+        font-size: 50px;
+    }
 
-#timeHere{
-    text-align: right;
-}
+    #timeHere{
+        text-align: right;
+        margin-right: 0px;
+    }
 
-#gifs{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    margin-top: 5%;
-}
+    #timeHere{
+        width: 30%;
+        padding-right: 15px;
+    }
 
-img{
-    height: 50vh;
+    #dataHere{
+        text-align: left;
+    }
+
+    #timeHere{
+        text-align: right;
+    }
+
+    #gifs{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        margin-top: 5%;
+        align-items: center;
+        /* width: 90vw; */
+    }
+
+    img{
+        /* height: auto; */
+        width: 57vw;
+    }
 }
