@@ -170,7 +170,7 @@
     /* overflow: hidden; */
   }
   
-  .outer{
+  #outer{
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -182,7 +182,7 @@
     height: 97vh;
     display: flex;
     flex-flow: row wrap;
-    justify-content: left;
+    justify-content: center;
     padding: 0px;
     /* border-right: 1px #434343 solid; */
   }
@@ -214,8 +214,8 @@
     z-index: 1000;
     position: absolute;
     width: 55%;
-    top: 25%;
-    left: 20%;
+    top: 17%;
+    left: 17%;
     padding: 5%;
     transition: 0.3s ease;
     display: block;
@@ -237,8 +237,8 @@
     font-weight: 700;
     font-size: 45px;
     position: absolute;
-    right: 5px;
-    bottom: 25px;
+    right: 3px;
+    bottom: 35px;
     cursor: pointer;
     width: 35px;
     height: 3%;
