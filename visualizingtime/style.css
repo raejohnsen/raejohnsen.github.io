@@ -9,6 +9,10 @@
     cursor: url('sources/cursor2.png'), auto;
   }
 
+  html::-webkit-scrollbar {
+    display: none;
+  }
+
   body{
     margin: 0px;
     padding: 0px;
@@ -162,6 +166,10 @@
   
   html{
     cursor: url('sources/cursor2.png'), auto;
+  }
+  
+  html::-webkit-scrollbar {
+    display: none;
   }
   
   body{

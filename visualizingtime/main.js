@@ -1,11 +1,11 @@
-
-window.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
+    const button = document.getElementById("button");
     const about = document.getElementById("about");
-
-    // Automatically hide after 7 seconds
-    setTimeout(() => {
-      about.classList.add("disappear");
-    }, 7000);
+  
+    button.addEventListener("click", function () {
+      about.classList.toggle("disappear");
+      about.classList.toggle("appear");
+    });
   });
   
 function updateTime() {
