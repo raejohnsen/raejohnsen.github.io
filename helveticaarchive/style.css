@@ -17,6 +17,7 @@
         color: #000000;
         z-index: 15000;
         transition: color 0.25s ease;
+        width: 100vw;
     }
 
     .color-change {
@@ -44,6 +45,8 @@
         color: black;
         transition: color 0.25s ease;
         letter-spacing: -2px;
+        /* position: absolute; */
+        margin-right: 30px;
     }
 
     coloredElement:visited {
@@ -208,6 +211,7 @@
         color: #000000;
         z-index: 15000;
         transition: color 0.25s ease;
+        width: 100vw;
     }
 
     .color-change {
@@ -223,6 +227,8 @@
         line-height: 80%;
         color: inherit;
         transition: color 0.3s ease;
+        letter-spacing: -4px;
+        max-width: 80vw;
     }
 
     a{
@@ -233,6 +239,9 @@
         font-weight: 700;
         color: black;
         transition: color 0.25s ease;
+        position: absolute;
+        right: 15px;
+        letter-spacing: -2px;
     }
 
     coloredElement:visited {
@@ -452,6 +461,7 @@
         z-index: 9999px;
         transition: color 0.25s ease;
         z-index: 9997;
+        width: 100vw;
     }
 
     .color-change {
@@ -465,15 +475,19 @@
         margin: 15px;
         line-height: 80%;
         width: 40%;
+        letter-spacing: -2px;
     }
 
     a{
         font-family: Helvetica, sans-serif;
         font-size: 30px;
         color: black;
-        margin: 15px;
+        margin-top: 10px;
         text-decoration: none;
         font-weight: 700;
+        position: absolute;
+        right: 10px;
+        letter-spacing: -1px;
     }
 
     a:hover{
