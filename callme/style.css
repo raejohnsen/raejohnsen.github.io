@@ -184,7 +184,7 @@
     }
 
     h1{
-        font-size: 60px;
+        font-size: 50px;
         margin: 0px;
         text-align: center;
         font-family: clarendon-urw-extra-narrow, serif;
@@ -196,7 +196,7 @@
         rotate: -8deg;
         animation: strokeColorChange 10s infinite;
         width: fit-content;
-        left: 135px;
+        left: 100px;
         top: 5px;
         position: absolute;
     }
@@ -252,8 +252,8 @@
         flex-flow: column wrap;
         justify-content: space-between;
         align-items: center;
-        top: 100px;
-        left: 100px;
+        top: 170px;
+        left: 12vw;
         margin-top: 118vw;
         position: absolute;
     }
