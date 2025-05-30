@@ -219,11 +219,13 @@
     padding: 5%;
     transition: 0.3s ease;
     display: block;
+    opacity: 1;
   }
   
   .disappear{
     opacity: 0;
     transition: 0.3s ease;
+    pointer-events: none;
   }
   
   .appear{
@@ -237,10 +239,13 @@
     font-weight: 700;
     font-size: 45px;
     position: absolute;
-    right: 3px;
-    bottom: 35px;
+    right: 5px;
+    bottom: 25px;
     cursor: pointer;
     width: 35px;
     height: 3%;
+      z-index: 99999;
+      position: absolute;
+      pointer-events: auto;
   }
 }

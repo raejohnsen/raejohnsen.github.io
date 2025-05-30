@@ -1,3 +1,14 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const button = document.getElementById("button");
+    const about = document.getElementById("about");
+  
+    button.addEventListener("click", function () {
+      about.classList.toggle("disappear");
+      about.classList.toggle("appear");
+    });
+  });
+  
+
 function updateTime() {
     
     let today = new Date();
@@ -37,7 +48,7 @@ function updateTime() {
     }
 
     if(thisHour < 10) {
-        thisHour = 0 + thisHour;
+        thisHour = "0" + thisHour;
     }
 
     if(thisHour == 9) {
@@ -45,20 +56,8 @@ function updateTime() {
     }
 
     if (thisHour > 12) {
-        thisHour = thisHour - 12;
+        thisHour = "0" + (thisHour - 12);
     }
-    
-    document.getElementById('button').addEventListener('mouseover', function() {
-        let aboutElement = document.getElementById('about');
-        aboutElement.classList.remove('disappear');
-        aboutElement.classList.add('appear');
-    });
-    
-    document.getElementById('button').addEventListener('mouseout', function() {
-        let aboutElement = document.getElementById('about');
-        aboutElement.classList.remove('appear');
-        aboutElement.classList.add('disappear');
-    });
 
     
 
