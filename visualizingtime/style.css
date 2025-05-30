@@ -179,7 +179,7 @@
   
   .column{
     width: 16.666666666666667vw;
-    height: 97vh;
+    height: 91vh;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -220,6 +220,8 @@
     transition: 0.3s ease;
     display: block;
     opacity: 1;
+    pointer-events: auto;
+    display: none;
   }
   
   .disappear{
@@ -247,5 +249,6 @@
       z-index: 99999;
       position: absolute;
       pointer-events: auto;
+    display: none;
   }
 }

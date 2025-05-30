@@ -1,14 +1,13 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const button = document.getElementById("button");
+
+window.addEventListener("DOMContentLoaded", function () {
     const about = document.getElementById("about");
-  
-    button.addEventListener("click", function () {
-      about.classList.toggle("disappear");
-      about.classList.toggle("appear");
-    });
+
+    // Automatically hide after 7 seconds
+    setTimeout(() => {
+      about.classList.add("disappear");
+    }, 7000);
   });
   
-
 function updateTime() {
     
     let today = new Date();
@@ -93,15 +92,6 @@ function updateTime() {
     for (let square of sec2Squares) {
         square.classList.remove('filled');
     }
-
-
-
-
-
-
-
-
-
 
     // Selecting the number of divs to fill based on the first digit of the hour
     let numOfDivsHr1 = parseInt(thisHour.toString()[0]);
@@ -216,9 +206,6 @@ function updateTime() {
         }
     }
 
-    console.log(thisHour);
-
-    // timeElem.innerHTML = thisHour + ":" + thisMinute + ":" + thisSecond;
 
 
 
